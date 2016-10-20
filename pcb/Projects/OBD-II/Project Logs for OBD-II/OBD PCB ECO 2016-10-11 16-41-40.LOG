@@ -1,0 +1,13 @@
+Added Component: Designator=X?(12Mhz-DFN)
+Added Member To Class: ClassName=OBD Member=Component H1 Download
+Added Member To Class: ClassName=OBD Member=Component L1 LED
+Added Member To Class: ClassName=OBD Member=Component L2 4.7uH
+Added Member To Class: ClassName=OBD Member=Component U1 TJF1051T / 3
+Added Member To Class: ClassName=OBD Member=Component U2 TPS5430
+Added Member To Class: ClassName=OBD Member=Component U3 LPC1549
+Added Member To Class: ClassName=OBD Member=Component U4 MC33660EFR2
+Added Member To Class: ClassName=OBD Member=Component U5 OBD-Connector
+Added Member To Class: ClassName=OBD Member=Component U6 LM317L
+Added Member To Class: ClassName=OBD Member=Component U7 IMP809TEUR-T
+Added Member To Class: ClassName=OBD Member=Component X1 12MHZ
+Added Member To Class: ClassName=OBD Member=Component X? 12MHZ

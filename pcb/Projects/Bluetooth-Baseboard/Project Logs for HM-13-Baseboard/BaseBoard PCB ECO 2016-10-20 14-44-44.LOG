@@ -1,0 +1,18 @@
+Removed Pin From Net: NetName=3.3V Pin=R1-2
+Removed Pin From Net: NetName=GND Pin=S1-2
+Removed Pin From Net: NetName=GND Pin=S1-2
+Removed Pin From Net: NetName=GND Pin=S2-1
+Removed Pin From Net: NetName=GND Pin=S2-1
+Removed Pin From Net: NetName=RST Pin=S2-2
+Removed Pin From Net: NetName=RST Pin=S2-2
+Removed Member From Class: ClassName=HM-13 Member=R4
+Removed Member From Class: ClassName=HM-13 Member=S1
+Removed Member From Class: ClassName=HM-13 Member=S2
+Change Component Designator: OldDesignator=C1 NewDesignator=C2
+Change Component Designator: OldDesignator=C2 NewDesignator=C1
+Change Component Designator: OldDesignator=R2 NewDesignator=R1
+Change Component Designator: OldDesignator=R3 NewDesignator=R2
+Change Component Designator: OldDesignator=R4 NewDesignator=R3
+Change Net Name : Old Net Name=NetR2_1 New Net Name=NetR1_1
+Change Net Name : Old Net Name=NetR3_1 New Net Name=NetR2_1
+Added Room: Name=HM-13

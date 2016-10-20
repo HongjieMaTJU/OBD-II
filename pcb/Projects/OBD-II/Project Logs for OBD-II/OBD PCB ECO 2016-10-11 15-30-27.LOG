@@ -1,0 +1,3 @@
+Change Component Footprint: Designator=X1 Old Footprint=12Mhz-DFN New Footprint=12Mhz-DIP
+Added Component: Designator=X?(12Mhz-DIP)
+Added Member To Class: ClassName=OBD Member=Component X? 12MHZ

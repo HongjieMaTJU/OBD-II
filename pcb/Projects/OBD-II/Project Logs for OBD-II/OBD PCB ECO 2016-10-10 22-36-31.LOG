@@ -1,0 +1,15 @@
+Added Component: Designator=H?(DownLoad-H)
+Added Component: Designator=L?(0805)
+Added Component: Designator=L?(0805)
+Added Component: Designator=L?(0805)
+Added Component: Designator=U?(SOT23-3)
+Added Component: Designator=U?(LM317L)
+Added Component: Designator=U?(SOP-8)
+Added Component: Designator=U?(OBD-MaleConnector)
+Added Component: Designator=U?(TPS5430)
+Added Component: Designator=U?(TJF1051)
+Added Component: Designator=U£¿(LPC1549JBD48)
+Added Component: Designator=X?(12Mhz-DIP)
+Added Component: Designator=X?(12Mhz-DIP)
+Added Class: Name=OBD
+Added Room: Name=OBD
