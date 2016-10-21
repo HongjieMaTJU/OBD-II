@@ -56,7 +56,7 @@ GenerateClassCluster=0
 DocumentUniqueId=HCIMNIPU
 
 [Document2]
-DocumentPath=BaseBoard.PcbDoc
+DocumentPath=bm78spp05nc2-multiple.PcbDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -71,6 +71,27 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=KXNQTUNF
+
+[Document3]
+DocumentPath=BaseBoard.PcbDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=JONONDFF
+
+[GeneratedDocument1]
+DocumentPath=Project Outputs for BM78SPP05NC2-Baseboard\Design Rule Check - bm78spp05nc2-multiple.html
+DItemRevisionGUID=
 
 [Configuration1]
 Name=Default Configuration
