@@ -1,0 +1,5 @@
+Change Component Footprint: Designator=B1 Old Footprint=0805 New Footprint=0603
+Added Pin To Net: NetName=GND Pin=B1-2
+Added Pin To Net: NetName=GND Pin=C2-2
+Change Net Name : Old Net Name=GND New Net Name=ANT
+Added Room: Name=BM78SPP05NC2

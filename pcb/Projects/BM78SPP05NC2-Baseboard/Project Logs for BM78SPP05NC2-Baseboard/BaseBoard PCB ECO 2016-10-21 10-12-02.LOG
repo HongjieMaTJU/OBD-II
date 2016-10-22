@@ -1,0 +1,11 @@
+Removed Pin From Net: NetName=ANT Pin=B1-2
+Removed Pin From Net: NetName=ANT Pin=C2-2
+Added Component: Designator=E?(BM78SPP05NC2_ANT)
+Added Pin To Net: NetName=ANT Pin=E?-2
+Change Net Name : Old Net Name=ANT New Net Name=GND
+Added Pin To Net: NetName=NetB1_2 Pin=B1-2
+Added Pin To Net: NetName=NetB1_2 Pin=C2-2
+Added Pin To Net: NetName=NetB1_2 Pin=E?-1
+Added Net: Name=NetB1_2
+Added Member To Class: ClassName=BM78SPP05NC2 Member=Component E? PCB_ANT
+Added Room: Name=BM78SPP05NC2

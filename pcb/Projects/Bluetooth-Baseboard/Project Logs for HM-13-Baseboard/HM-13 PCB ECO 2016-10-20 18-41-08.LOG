@@ -1,0 +1,35 @@
+Added Pin To Net: NetName=GND Pin=C1-1
+Added Pin To Net: NetName=5V Pin=C1-2
+Added Pin To Net: NetName=GND Pin=C2-1
+Added Pin To Net: NetName=3.3V Pin=C2-2
+Added Pin To Net: NetName=GND Pin=C3-1
+Added Pin To Net: NetName=3.3V Pin=C3-2
+Added Pin To Net: NetName=3.3V Pin=C4-1
+Added Pin To Net: NetName=GND Pin=C4-2
+Added Pin To Net: NetName=GND Pin=D1-1
+Added Pin To Net: NetName=5V Pin=D1-2
+Added Pin To Net: NetName=NetL1_1 Pin=L1-1
+Added Pin To Net: NetName=GND Pin=L1-2
+Added Pin To Net: NetName=NetR1_1 Pin=R1-1
+Added Pin To Net: NetName=NetL1_1 Pin=R1-2
+Added Pin To Net: NetName=NetR2_1 Pin=R2-1
+Added Pin To Net: NetName=GND Pin=R3-1
+Added Pin To Net: NetName=NetR2_1 Pin=R3-2
+Added Pin To Net: NetName=5V Pin=U1-1
+Added Pin To Net: NetName=3.3V Pin=U1-2
+Added Pin To Net: NetName=GND Pin=U1-3
+Change Net Name : Old Net Name=RX New Net Name=TX
+Added Pin To Net: NetName=RX Pin=P1-3
+Added Pin To Net: NetName=RX Pin=R2-2
+Added Net: Name=RX
+Added Member To Class: ClassName=HM-13 Member=Component C1 1uF
+Added Member To Class: ClassName=HM-13 Member=Component C2 1uF
+Added Member To Class: ClassName=HM-13 Member=Component C3 0.1uF
+Added Member To Class: ClassName=HM-13 Member=Component C4 10uF/16V
+Added Member To Class: ClassName=HM-13 Member=Component D1 TVS
+Added Member To Class: ClassName=HM-13 Member=Component L1 LED
+Added Member To Class: ClassName=HM-13 Member=Component R1 470
+Added Member To Class: ClassName=HM-13 Member=Component R2 2.2K
+Added Member To Class: ClassName=HM-13 Member=Component R3 4.7K
+Added Member To Class: ClassName=HM-13 Member=Component U1 AP7313
+Added Room: Name=HM-13

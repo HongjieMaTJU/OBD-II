@@ -1,0 +1,12 @@
+Change Physical Footprint: Designator=H1 Old Footprint=DownLoad-H New Footprint=DownLoad-H
+Change Physical Footprint: Designator=L1 Old Footprint=0805 New Footprint=0805
+Change Physical Footprint: Designator=L2 Old Footprint=0805 New Footprint=0805
+Change Physical Footprint: Designator=U1 Old Footprint=TJF1051 New Footprint=TJF1051
+Change Physical Footprint: Designator=U2 Old Footprint=TPS5430 New Footprint=TPS5430
+Change Physical Footprint: Designator=U3 Old Footprint=LPC1549JBD48 New Footprint=LPC1549JBD48
+Change Physical Footprint: Designator=U4 Old Footprint=SOP-8 New Footprint=SOP-8
+Change Physical Footprint: Designator=U5 Old Footprint=OBD-MaleConnector New Footprint=OBD-MaleConnector
+Change Physical Footprint: Designator=U6 Old Footprint=LM317L New Footprint=LM317L
+Change Physical Footprint: Designator=U7 Old Footprint=SOT23-3 New Footprint=SOT23-3
+Change Physical Footprint: Designator=X1 Old Footprint=12Mhz-DIP New Footprint=12Mhz-DIP
+Change Physical Footprint: Designator=X? Old Footprint=12Mhz-DIP New Footprint=12Mhz-DIP

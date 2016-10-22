@@ -1,0 +1,5 @@
+Remove Pin=P1-3 From Net=TX
+Remove Pin=P1-4 From Net=RX
+Remove Pin=R2-2 From Net=TX
+Remove Pin=U2-2 From Net=RX
+Remove Pin=U2-11 From Net=RST
