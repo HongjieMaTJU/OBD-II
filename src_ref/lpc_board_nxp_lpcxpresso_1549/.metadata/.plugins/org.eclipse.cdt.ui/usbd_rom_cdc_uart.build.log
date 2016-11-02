@@ -1,0 +1,41 @@
+21:05:11 **** Build of configuration Debug for project usbd_rom_cdc_uart ****
+make -r all 
+Building file: ../example/src/cdc_desc.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -D__REDLIB__ -DCORE_M3 -I"C:\Users\Topon\Desktop\OBD-II\src_ref\lpc_board_nxp_lpcxpresso_1549\lpc_chip_15xx\inc" -I"C:\Users\Topon\Desktop\OBD-II\src_ref\lpc_board_nxp_lpcxpresso_1549\lpc_board_nxp_lpcxpresso_1549\inc" -I"C:\Users\Topon\Desktop\OBD-II\src_ref\lpc_board_nxp_lpcxpresso_1549\usbd_rom_cdc_uart\example\inc" -I"C:\Users\Topon\Desktop\OBD-II\src_ref\lpc_board_nxp_lpcxpresso_1549\lpc_chip_15xx\inc\usbd" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"example/src/cdc_desc.d" -MT"example/src/cdc_desc.o" -MT"example/src/cdc_desc.d" -o "example/src/cdc_desc.o" "../example/src/cdc_desc.c"
+Finished building: ../example/src/cdc_desc.c
+ 
+Building file: ../example/src/cdc_main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -D__REDLIB__ -DCORE_M3 -I"C:\Users\Topon\Desktop\OBD-II\src_ref\lpc_board_nxp_lpcxpresso_1549\lpc_chip_15xx\inc" -I"C:\Users\Topon\Desktop\OBD-II\src_ref\lpc_board_nxp_lpcxpresso_1549\lpc_board_nxp_lpcxpresso_1549\inc" -I"C:\Users\Topon\Desktop\OBD-II\src_ref\lpc_board_nxp_lpcxpresso_1549\usbd_rom_cdc_uart\example\inc" -I"C:\Users\Topon\Desktop\OBD-II\src_ref\lpc_board_nxp_lpcxpresso_1549\lpc_chip_15xx\inc\usbd" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"example/src/cdc_main.d" -MT"example/src/cdc_main.o" -MT"example/src/cdc_main.d" -o "example/src/cdc_main.o" "../example/src/cdc_main.c"
+Finished building: ../example/src/cdc_main.c
+ 
+Building file: ../example/src/cdc_uart.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -D__REDLIB__ -DCORE_M3 -I"C:\Users\Topon\Desktop\OBD-II\src_ref\lpc_board_nxp_lpcxpresso_1549\lpc_chip_15xx\inc" -I"C:\Users\Topon\Desktop\OBD-II\src_ref\lpc_board_nxp_lpcxpresso_1549\lpc_board_nxp_lpcxpresso_1549\inc" -I"C:\Users\Topon\Desktop\OBD-II\src_ref\lpc_board_nxp_lpcxpresso_1549\usbd_rom_cdc_uart\example\inc" -I"C:\Users\Topon\Desktop\OBD-II\src_ref\lpc_board_nxp_lpcxpresso_1549\lpc_chip_15xx\inc\usbd" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"example/src/cdc_uart.d" -MT"example/src/cdc_uart.o" -MT"example/src/cdc_uart.d" -o "example/src/cdc_uart.o" "../example/src/cdc_uart.c"
+Finished building: ../example/src/cdc_uart.c
+ 
+Building file: ../example/src/cr_startup_lpc15xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -D__REDLIB__ -DCORE_M3 -I"C:\Users\Topon\Desktop\OBD-II\src_ref\lpc_board_nxp_lpcxpresso_1549\lpc_chip_15xx\inc" -I"C:\Users\Topon\Desktop\OBD-II\src_ref\lpc_board_nxp_lpcxpresso_1549\lpc_board_nxp_lpcxpresso_1549\inc" -I"C:\Users\Topon\Desktop\OBD-II\src_ref\lpc_board_nxp_lpcxpresso_1549\usbd_rom_cdc_uart\example\inc" -I"C:\Users\Topon\Desktop\OBD-II\src_ref\lpc_board_nxp_lpcxpresso_1549\lpc_chip_15xx\inc\usbd" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"example/src/cr_startup_lpc15xx.d" -MT"example/src/cr_startup_lpc15xx.o" -MT"example/src/cr_startup_lpc15xx.d" -o "example/src/cr_startup_lpc15xx.o" "../example/src/cr_startup_lpc15xx.c"
+Finished building: ../example/src/cr_startup_lpc15xx.c
+ 
+Building file: ../example/src/sysinit.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -D__REDLIB__ -DCORE_M3 -I"C:\Users\Topon\Desktop\OBD-II\src_ref\lpc_board_nxp_lpcxpresso_1549\lpc_chip_15xx\inc" -I"C:\Users\Topon\Desktop\OBD-II\src_ref\lpc_board_nxp_lpcxpresso_1549\lpc_board_nxp_lpcxpresso_1549\inc" -I"C:\Users\Topon\Desktop\OBD-II\src_ref\lpc_board_nxp_lpcxpresso_1549\usbd_rom_cdc_uart\example\inc" -I"C:\Users\Topon\Desktop\OBD-II\src_ref\lpc_board_nxp_lpcxpresso_1549\lpc_chip_15xx\inc\usbd" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"example/src/sysinit.d" -MT"example/src/sysinit.o" -MT"example/src/sysinit.d" -o "example/src/sysinit.o" "../example/src/sysinit.c"
+Finished building: ../example/src/sysinit.c
+ 
+Building target: usbd_rom_cdc_uart.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"C:\Users\Topon\Desktop\OBD-II\src_ref\lpc_board_nxp_lpcxpresso_1549\lpc_chip_15xx\Debug" -L"C:\Users\Topon\Desktop\OBD-II\src_ref\lpc_board_nxp_lpcxpresso_1549\lpc_board_nxp_lpcxpresso_1549\Debug" -Xlinker -Map="usbd_rom_cdc_uart.map" -Xlinker --gc-sections -mcpu=cortex-m3 -mthumb -T "usbd_rom_cdc_uart_Debug.ld" -o "usbd_rom_cdc_uart.axf"  ./example/src/cdc_desc.o ./example/src/cdc_main.o ./example/src/cdc_uart.o ./example/src/cr_startup_lpc15xx.o ./example/src/sysinit.o   -llpc_board_nxp_lpcxpresso_1549 -llpc_chip_15xx
+Finished building target: usbd_rom_cdc_uart.axf
+ 
+/bin/make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "usbd_rom_cdc_uart.axf"; # arm-none-eabi-objcopy -v -O binary "usbd_rom_cdc_uart.axf" "usbd_rom_cdc_uart.bin" ; # checksum -p LPC1549 -d "usbd_rom_cdc_uart.bin";
+   text	   data	    bss	    dec	    hex	filename
+   9064	     76	    372	   9512	   2528	usbd_rom_cdc_uart.axf
+ 
+
+21:05:13 Build Finished (took 2s.201ms)
+
