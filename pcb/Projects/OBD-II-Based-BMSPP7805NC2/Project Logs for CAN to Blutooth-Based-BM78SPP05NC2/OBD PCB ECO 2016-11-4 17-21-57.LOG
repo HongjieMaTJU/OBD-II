@@ -1,0 +1,11 @@
+Removed Pin From Net: NetName=GND Pin=R14-1
+Removed Pin From Net: NetName=R\S\T\ Pin=R14-2
+Removed Pin From Net: NetName=R\S\T\ Pin=U9-2
+Added Pin To Net: NetName=R\S\T\ Pin=R14-1
+Added Pin To Net: NetName=NetR14_2 Pin=R14-2
+Added Pin To Net: NetName=NetR14_2 Pin=U9-2
+Added Net: Name=NetR14_2
+Added Room: Name=Bluetooth
+Added Room: Name=Core
+Added Room: Name=Power
+Added Room: Name=USB
