@@ -1,0 +1,14 @@
+Added Component: Designator=R14(0603)
+Added Component: Designator=U9(SOT23-3)
+Added Pin To Net: NetName=GND Pin=R14-1
+Added Pin To Net: NetName=GND Pin=U9-1
+Added Pin To Net: NetName=3.3V Pin=U9-3
+Added Pin To Net: NetName=NetR14_2 Pin=R14-2
+Added Pin To Net: NetName=NetR14_2 Pin=U9-2
+Added Net: Name=NetR14_2
+Added Member To Class: ClassName=Core Member=Component R14 100K
+Added Member To Class: ClassName=Core Member=Component U9 IMP809TEUR-T
+Added Room: Name=Bluetooth
+Added Room: Name=Core
+Added Room: Name=Power
+Added Room: Name=USB
