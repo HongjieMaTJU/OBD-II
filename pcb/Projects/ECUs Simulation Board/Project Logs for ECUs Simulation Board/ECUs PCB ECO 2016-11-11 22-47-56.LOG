@@ -1,0 +1,5 @@
+Added Component: Designator=U10(DC-12V-Con)
+Added Pin To Net: NetName=12V Pin=U10-1
+Added Pin To Net: NetName=GND Pin=U10-2
+Added Pin To Net: NetName=GND Pin=U10-3
+Added Member To Class: ClassName=Power Member=Component U10 DC-12V-Conector
