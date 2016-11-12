@@ -1,0 +1,11 @@
+Removed Pin From Net: NetName=ISP0 Pin=U2-4
+Removed Pin From Net: NetName=3.3V Pin=U3-10
+Removed Pin From Net: NetName=ISP0 Pin=U3-45
+Added Pin To Net: NetName=3.3V Pin=U3-9
+Added Pin To Net: NetName=NetU2_4 Pin=U2-4
+Added Pin To Net: NetName=NetU2_4 Pin=U3-45
+Added Net: Name=NetU2_4
+Added Room: Name=Core
+Added Room: Name=PL2303A
+Added Room: Name=Power
+Added Room: Name=USB

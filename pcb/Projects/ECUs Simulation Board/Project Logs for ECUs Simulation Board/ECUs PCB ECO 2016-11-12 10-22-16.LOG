@@ -1,0 +1,3 @@
+Added Pin To Net: NetName=PIN_37 Pin=U3-43
+Change Net Name : Old Net Name=PIN_37 New Net Name=PIN_43
+Added Room: Name=Core
