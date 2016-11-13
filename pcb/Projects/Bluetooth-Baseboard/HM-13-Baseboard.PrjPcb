@@ -70,7 +70,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=NFXOEUYP
+DocumentUniqueId=IVRPHRPW
 
 [Document3]
 DocumentPath=HM-13.PcbDoc
@@ -87,7 +87,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=IVRPHRPW
+DocumentUniqueId=QVEBHNPX
 
 [GeneratedDocument1]
 DocumentPath=Project Outputs for HM-13-Baseboard\Design Rule Check - BaseBoard.html

@@ -1,0 +1,14 @@
+Removed Pin From Net: NetName=GND Pin=C16-1
+Removed Pin From Net: NetName=3.3V Pin=C16-2
+Removed Member From Class: ClassName=Core Member=C16
+Added Component: Designator=R15(0603)
+Added Component: Designator=U11(SOT23-3)
+Added Pin To Net: NetName=R\S\T\ Pin=R15-1
+Added Pin To Net: NetName=GND Pin=U11-1
+Added Pin To Net: NetName=3.3V Pin=U11-3
+Added Pin To Net: NetName=NetR15_2 Pin=R15-2
+Added Pin To Net: NetName=NetR15_2 Pin=U11-2
+Added Net: Name=NetR15_2
+Added Member To Class: ClassName=Core Member=Component R15 100K
+Added Member To Class: ClassName=Core Member=Component U11 IMP809TEUR-T
+Added Room: Name=Core

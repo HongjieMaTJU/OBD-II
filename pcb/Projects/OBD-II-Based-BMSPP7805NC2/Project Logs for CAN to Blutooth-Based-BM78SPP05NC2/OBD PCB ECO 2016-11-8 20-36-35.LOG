@@ -1,0 +1,4 @@
+Change Physical Footprint: Designator=P1 Old Footprint=JATG_10pin New Footprint=JATG_10pin
+Change Physical Footprint: Designator=R5 Old Footprint=0603 New Footprint=0603
+Change Physical Footprint: Designator=R6 Old Footprint=0603 New Footprint=0603
+Change Physical Footprint: Designator=U5 Old Footprint=LPC1549JBD48 New Footprint=LPC1549JBD48

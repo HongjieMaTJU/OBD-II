@@ -1,0 +1,8 @@
+Removed Pin From Net: NetName=TX Pin=P4-2
+Removed Pin From Net: NetName=RX Pin=P4-3
+Added Pin To Net: NetName=RX Pin=P4-2
+Added Pin To Net: NetName=TX Pin=P4-3
+Added Room: Name=Bluetooth
+Added Room: Name=Core
+Added Room: Name=Power
+Added Room: Name=USB

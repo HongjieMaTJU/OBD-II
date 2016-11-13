@@ -1,0 +1,8 @@
+Removed Pin From Net: NetName=PIN_18 Pin=U5-18
+Removed Pin From Net: NetName=PIN_19 Pin=U5-19
+Added Pin To Net: NetName=PIN_19 Pin=U5-37
+Added Pin To Net: NetName=PIN_18 Pin=U5-38
+Added Room: Name=Bluetooth
+Added Room: Name=Core
+Added Room: Name=Power
+Added Room: Name=USB

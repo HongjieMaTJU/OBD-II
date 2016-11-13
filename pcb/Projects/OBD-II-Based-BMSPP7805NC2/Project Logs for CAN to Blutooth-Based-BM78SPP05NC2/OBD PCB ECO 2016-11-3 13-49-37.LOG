@@ -1,0 +1,6 @@
+Added Pin To Net: NetName=R\S\T\ Pin=R14-2
+Added Pin To Net: NetName=R\S\T\ Pin=U9-2
+Added Room: Name=Bluetooth
+Added Room: Name=Core
+Added Room: Name=Power
+Added Room: Name=USB

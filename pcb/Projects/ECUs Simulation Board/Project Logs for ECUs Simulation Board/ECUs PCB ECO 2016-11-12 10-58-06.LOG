@@ -1,0 +1,5 @@
+Removed Pin From Net: NetName=NetU2_1 Pin=U3-13
+Added Pin To Net: NetName=ISP0 Pin=U2-4
+Added Pin To Net: NetName=ISP0 Pin=U3-45
+Added Pin To Net: NetName=NetU2_1 Pin=U3-46
+Added Room: Name=Core

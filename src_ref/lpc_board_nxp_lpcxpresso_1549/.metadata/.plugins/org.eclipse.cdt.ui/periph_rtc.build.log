@@ -1,0 +1,31 @@
+21:05:04 **** Build of configuration Debug for project periph_rtc ****
+make -r all 
+Building file: ../example/src/cr_startup_lpc15xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -D__REDLIB__ -DCORE_M3 -I"C:\Users\Topon\Desktop\OBD-II\src_ref\lpc_board_nxp_lpcxpresso_1549\lpc_chip_15xx\inc" -I"C:\Users\Topon\Desktop\OBD-II\src_ref\lpc_board_nxp_lpcxpresso_1549\lpc_board_nxp_lpcxpresso_1549\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"example/src/cr_startup_lpc15xx.d" -MT"example/src/cr_startup_lpc15xx.o" -MT"example/src/cr_startup_lpc15xx.d" -o "example/src/cr_startup_lpc15xx.o" "../example/src/cr_startup_lpc15xx.c"
+Finished building: ../example/src/cr_startup_lpc15xx.c
+ 
+Building file: ../example/src/rtc.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -D__REDLIB__ -DCORE_M3 -I"C:\Users\Topon\Desktop\OBD-II\src_ref\lpc_board_nxp_lpcxpresso_1549\lpc_chip_15xx\inc" -I"C:\Users\Topon\Desktop\OBD-II\src_ref\lpc_board_nxp_lpcxpresso_1549\lpc_board_nxp_lpcxpresso_1549\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"example/src/rtc.d" -MT"example/src/rtc.o" -MT"example/src/rtc.d" -o "example/src/rtc.o" "../example/src/rtc.c"
+Finished building: ../example/src/rtc.c
+ 
+Building file: ../example/src/sysinit.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -D__REDLIB__ -DCORE_M3 -I"C:\Users\Topon\Desktop\OBD-II\src_ref\lpc_board_nxp_lpcxpresso_1549\lpc_chip_15xx\inc" -I"C:\Users\Topon\Desktop\OBD-II\src_ref\lpc_board_nxp_lpcxpresso_1549\lpc_board_nxp_lpcxpresso_1549\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"example/src/sysinit.d" -MT"example/src/sysinit.o" -MT"example/src/sysinit.d" -o "example/src/sysinit.o" "../example/src/sysinit.c"
+Finished building: ../example/src/sysinit.c
+ 
+Building target: periph_rtc.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"C:\Users\Topon\Desktop\OBD-II\src_ref\lpc_board_nxp_lpcxpresso_1549\lpc_chip_15xx\Debug" -L"C:\Users\Topon\Desktop\OBD-II\src_ref\lpc_board_nxp_lpcxpresso_1549\lpc_board_nxp_lpcxpresso_1549\Debug" -Xlinker -Map="periph_rtc.map" -Xlinker --gc-sections -mcpu=cortex-m3 -mthumb -T "periph_rtc_Debug.ld" -o "periph_rtc.axf"  ./example/src/cr_startup_lpc15xx.o ./example/src/rtc.o ./example/src/sysinit.o   -llpc_board_nxp_lpcxpresso_1549 -llpc_chip_15xx
+Finished building target: periph_rtc.axf
+ 
+/bin/make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "periph_rtc.axf"; # arm-none-eabi-objcopy -v -O binary "periph_rtc.axf" "periph_rtc.bin" ; # checksum -p LPC1549 -d "periph_rtc.bin";
+   text	   data	    bss	    dec	    hex	filename
+  16032	      0	    344	  16376	   3ff8	periph_rtc.axf
+ 
+
+21:05:05 Build Finished (took 1s.153ms)
+

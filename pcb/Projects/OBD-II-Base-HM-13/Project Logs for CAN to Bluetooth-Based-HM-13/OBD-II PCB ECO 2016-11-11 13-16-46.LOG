@@ -1,0 +1,5 @@
+Change Component Footprint: Designator=C19 Old Footprint=CAPAE-8.5*8.5 New Footprint=CAPM-7.0*4.5
+Added Room: Name=Bluetooth
+Added Room: Name=Core
+Added Room: Name=Power
+Added Room: Name=USB
