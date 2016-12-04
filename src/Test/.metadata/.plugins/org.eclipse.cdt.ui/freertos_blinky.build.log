@@ -1,0 +1,16 @@
+21:35:41 **** Incremental Build of configuration Debug for project freertos_blinky ****
+make -r all 
+Building target: freertos_blinky.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"C:\Users\Topon\Desktop\OBD-II\src\Test\lpc_chip_15xx\Debug" -L"C:\Users\Topon\Desktop\OBD-II\src\Test\lpc_board_nxp_lpcxpresso_1549\Debug" -Xlinker -Map="freertos_blinky.map" -Xlinker --gc-sections -mcpu=cortex-m3 -mthumb -T "freertos_blinky_Debug.ld" -o "freertos_blinky.axf"  ./freertos/src/FreeRTOSCommonHooks.o ./freertos/src/croutine.o ./freertos/src/event_groups.o ./freertos/src/heap_3.o ./freertos/src/list.o ./freertos/src/port.o ./freertos/src/queue.o ./freertos/src/tasks.o ./freertos/src/timers.o  ./example/src/cr_startup_lpc15xx.o ./example/src/freertos_blinky.o ./example/src/sysinit.o   -llpc_board_nxp_lpcxpresso_1549 -llpc_chip_15xx
+Finished building target: freertos_blinky.axf
+ 
+/bin/make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "freertos_blinky.axf"; # arm-none-eabi-objcopy -v -O binary "freertos_blinky.axf" "freertos_blinky.bin" ; # checksum -p LPC1549 -d "freertos_blinky.bin";
+   text	   data	    bss	    dec	    hex	filename
+  18888	      8	    664	  19560	   4c68	freertos_blinky.axf
+ 
+
+21:35:44 Build Finished (took 2s.786ms)
+

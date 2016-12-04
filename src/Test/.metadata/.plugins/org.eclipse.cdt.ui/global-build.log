@@ -1,163 +1,306 @@
-22:41:32 **** Build of configuration Debug for project lpc_board_nxp_lpcxpresso_1549 ****
+22:30:59 **** Incremental Build of configuration Debug for project lpc_board_nxp_lpcxpresso_1549 ****
+make -r all 
+make: Nothing to be done for `all'.
+22:31:00 **** Incremental Build of configuration Debug for project lpc_chip_15xx ****
+make -r all 
+make: Nothing to be done for `all'.
+22:31:01 **** Incremental Build of configuration Debug for project periph_blinky ****
+make -r all 
+make: Nothing to be done for `all'.
+22:31:12 **** Incremental Build of configuration Debug for project periph_blinky ****
+make -r all 
+make: Nothing to be done for `all'.
+22:31:46 **** Incremental Build of configuration Debug for project lpc_board_nxp_lpcxpresso_1549 ****
+make -r all 
+make: Nothing to be done for `all'.
+22:31:47 **** Incremental Build of configuration Debug for project lpc_chip_15xx ****
+make -r all 
+make: Nothing to be done for `all'.
+22:31:48 **** Build of configuration Debug for project freertos_blinky ****
+make -r all 
+Building file: ../freertos/src/FreeRTOSCommonHooks.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -D__REDLIB__ -DCORE_M3 -I"C:\Users\Topon\Desktop\OBD-II\src\Test\lpc_chip_15xx\inc" -I"C:\Users\Topon\Desktop\OBD-II\src\Test\lpc_board_nxp_lpcxpresso_1549\inc" -I"C:\Users\Topon\Desktop\OBD-II\src\Test\freertos_blinky\example\inc" -I"C:\Users\Topon\Desktop\OBD-II\src\Test\freertos_blinky\freertos\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"freertos/src/FreeRTOSCommonHooks.d" -MT"freertos/src/FreeRTOSCommonHooks.o" -MT"freertos/src/FreeRTOSCommonHooks.d" -o "freertos/src/FreeRTOSCommonHooks.o" "../freertos/src/FreeRTOSCommonHooks.c"
+Finished building: ../freertos/src/FreeRTOSCommonHooks.c
+ 
+Building file: ../freertos/src/croutine.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -D__REDLIB__ -DCORE_M3 -I"C:\Users\Topon\Desktop\OBD-II\src\Test\lpc_chip_15xx\inc" -I"C:\Users\Topon\Desktop\OBD-II\src\Test\lpc_board_nxp_lpcxpresso_1549\inc" -I"C:\Users\Topon\Desktop\OBD-II\src\Test\freertos_blinky\example\inc" -I"C:\Users\Topon\Desktop\OBD-II\src\Test\freertos_blinky\freertos\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"freertos/src/croutine.d" -MT"freertos/src/croutine.o" -MT"freertos/src/croutine.d" -o "freertos/src/croutine.o" "../freertos/src/croutine.c"
+Finished building: ../freertos/src/croutine.c
+ 
+Building file: ../freertos/src/event_groups.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -D__REDLIB__ -DCORE_M3 -I"C:\Users\Topon\Desktop\OBD-II\src\Test\lpc_chip_15xx\inc" -I"C:\Users\Topon\Desktop\OBD-II\src\Test\lpc_board_nxp_lpcxpresso_1549\inc" -I"C:\Users\Topon\Desktop\OBD-II\src\Test\freertos_blinky\example\inc" -I"C:\Users\Topon\Desktop\OBD-II\src\Test\freertos_blinky\freertos\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"freertos/src/event_groups.d" -MT"freertos/src/event_groups.o" -MT"freertos/src/event_groups.d" -o "freertos/src/event_groups.o" "../freertos/src/event_groups.c"
+Finished building: ../freertos/src/event_groups.c
+ 
+Building file: ../freertos/src/heap_3.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -D__REDLIB__ -DCORE_M3 -I"C:\Users\Topon\Desktop\OBD-II\src\Test\lpc_chip_15xx\inc" -I"C:\Users\Topon\Desktop\OBD-II\src\Test\lpc_board_nxp_lpcxpresso_1549\inc" -I"C:\Users\Topon\Desktop\OBD-II\src\Test\freertos_blinky\example\inc" -I"C:\Users\Topon\Desktop\OBD-II\src\Test\freertos_blinky\freertos\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"freertos/src/heap_3.d" -MT"freertos/src/heap_3.o" -MT"freertos/src/heap_3.d" -o "freertos/src/heap_3.o" "../freertos/src/heap_3.c"
+Finished building: ../freertos/src/heap_3.c
+ 
+Building file: ../freertos/src/list.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -D__REDLIB__ -DCORE_M3 -I"C:\Users\Topon\Desktop\OBD-II\src\Test\lpc_chip_15xx\inc" -I"C:\Users\Topon\Desktop\OBD-II\src\Test\lpc_board_nxp_lpcxpresso_1549\inc" -I"C:\Users\Topon\Desktop\OBD-II\src\Test\freertos_blinky\example\inc" -I"C:\Users\Topon\Desktop\OBD-II\src\Test\freertos_blinky\freertos\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"freertos/src/list.d" -MT"freertos/src/list.o" -MT"freertos/src/list.d" -o "freertos/src/list.o" "../freertos/src/list.c"
+Finished building: ../freertos/src/list.c
+ 
+Building file: ../freertos/src/port.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -D__REDLIB__ -DCORE_M3 -I"C:\Users\Topon\Desktop\OBD-II\src\Test\lpc_chip_15xx\inc" -I"C:\Users\Topon\Desktop\OBD-II\src\Test\lpc_board_nxp_lpcxpresso_1549\inc" -I"C:\Users\Topon\Desktop\OBD-II\src\Test\freertos_blinky\example\inc" -I"C:\Users\Topon\Desktop\OBD-II\src\Test\freertos_blinky\freertos\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"freertos/src/port.d" -MT"freertos/src/port.o" -MT"freertos/src/port.d" -o "freertos/src/port.o" "../freertos/src/port.c"
+Finished building: ../freertos/src/port.c
+ 
+Building file: ../freertos/src/queue.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -D__REDLIB__ -DCORE_M3 -I"C:\Users\Topon\Desktop\OBD-II\src\Test\lpc_chip_15xx\inc" -I"C:\Users\Topon\Desktop\OBD-II\src\Test\lpc_board_nxp_lpcxpresso_1549\inc" -I"C:\Users\Topon\Desktop\OBD-II\src\Test\freertos_blinky\example\inc" -I"C:\Users\Topon\Desktop\OBD-II\src\Test\freertos_blinky\freertos\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"freertos/src/queue.d" -MT"freertos/src/queue.o" -MT"freertos/src/queue.d" -o "freertos/src/queue.o" "../freertos/src/queue.c"
+Finished building: ../freertos/src/queue.c
+ 
+Building file: ../freertos/src/tasks.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -D__REDLIB__ -DCORE_M3 -I"C:\Users\Topon\Desktop\OBD-II\src\Test\lpc_chip_15xx\inc" -I"C:\Users\Topon\Desktop\OBD-II\src\Test\lpc_board_nxp_lpcxpresso_1549\inc" -I"C:\Users\Topon\Desktop\OBD-II\src\Test\freertos_blinky\example\inc" -I"C:\Users\Topon\Desktop\OBD-II\src\Test\freertos_blinky\freertos\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"freertos/src/tasks.d" -MT"freertos/src/tasks.o" -MT"freertos/src/tasks.d" -o "freertos/src/tasks.o" "../freertos/src/tasks.c"
+Finished building: ../freertos/src/tasks.c
+ 
+Building file: ../freertos/src/timers.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -D__REDLIB__ -DCORE_M3 -I"C:\Users\Topon\Desktop\OBD-II\src\Test\lpc_chip_15xx\inc" -I"C:\Users\Topon\Desktop\OBD-II\src\Test\lpc_board_nxp_lpcxpresso_1549\inc" -I"C:\Users\Topon\Desktop\OBD-II\src\Test\freertos_blinky\example\inc" -I"C:\Users\Topon\Desktop\OBD-II\src\Test\freertos_blinky\freertos\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"freertos/src/timers.d" -MT"freertos/src/timers.o" -MT"freertos/src/timers.d" -o "freertos/src/timers.o" "../freertos/src/timers.c"
+Finished building: ../freertos/src/timers.c
+ 
+Building file: ../example/src/cr_startup_lpc15xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -D__REDLIB__ -DCORE_M3 -I"C:\Users\Topon\Desktop\OBD-II\src\Test\lpc_chip_15xx\inc" -I"C:\Users\Topon\Desktop\OBD-II\src\Test\lpc_board_nxp_lpcxpresso_1549\inc" -I"C:\Users\Topon\Desktop\OBD-II\src\Test\freertos_blinky\example\inc" -I"C:\Users\Topon\Desktop\OBD-II\src\Test\freertos_blinky\freertos\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"example/src/cr_startup_lpc15xx.d" -MT"example/src/cr_startup_lpc15xx.o" -MT"example/src/cr_startup_lpc15xx.d" -o "example/src/cr_startup_lpc15xx.o" "../example/src/cr_startup_lpc15xx.c"
+Finished building: ../example/src/cr_startup_lpc15xx.c
+ 
+Building file: ../example/src/freertos_blinky.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -D__REDLIB__ -DCORE_M3 -I"C:\Users\Topon\Desktop\OBD-II\src\Test\lpc_chip_15xx\inc" -I"C:\Users\Topon\Desktop\OBD-II\src\Test\lpc_board_nxp_lpcxpresso_1549\inc" -I"C:\Users\Topon\Desktop\OBD-II\src\Test\freertos_blinky\example\inc" -I"C:\Users\Topon\Desktop\OBD-II\src\Test\freertos_blinky\freertos\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"example/src/freertos_blinky.d" -MT"example/src/freertos_blinky.o" -MT"example/src/freertos_blinky.d" -o "example/src/freertos_blinky.o" "../example/src/freertos_blinky.c"
+Finished building: ../example/src/freertos_blinky.c
+ 
+Building file: ../example/src/sysinit.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -D__REDLIB__ -DCORE_M3 -I"C:\Users\Topon\Desktop\OBD-II\src\Test\lpc_chip_15xx\inc" -I"C:\Users\Topon\Desktop\OBD-II\src\Test\lpc_board_nxp_lpcxpresso_1549\inc" -I"C:\Users\Topon\Desktop\OBD-II\src\Test\freertos_blinky\example\inc" -I"C:\Users\Topon\Desktop\OBD-II\src\Test\freertos_blinky\freertos\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"example/src/sysinit.d" -MT"example/src/sysinit.o" -MT"example/src/sysinit.d" -o "example/src/sysinit.o" "../example/src/sysinit.c"
+Finished building: ../example/src/sysinit.c
+ 
+Building target: freertos_blinky.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"C:\Users\Topon\Desktop\OBD-II\src\Test\lpc_chip_15xx\Debug" -L"C:\Users\Topon\Desktop\OBD-II\src\Test\lpc_board_nxp_lpcxpresso_1549\Debug" -Xlinker -Map="freertos_blinky.map" -Xlinker --gc-sections -mcpu=cortex-m3 -mthumb -T "freertos_blinky_Debug.ld" -o "freertos_blinky.axf"  ./freertos/src/FreeRTOSCommonHooks.o ./freertos/src/croutine.o ./freertos/src/event_groups.o ./freertos/src/heap_3.o ./freertos/src/list.o ./freertos/src/port.o ./freertos/src/queue.o ./freertos/src/tasks.o ./freertos/src/timers.o  ./example/src/cr_startup_lpc15xx.o ./example/src/freertos_blinky.o ./example/src/sysinit.o   -llpc_board_nxp_lpcxpresso_1549 -llpc_chip_15xx
+Finished building target: freertos_blinky.axf
+ 
+/bin/make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "freertos_blinky.axf"; # arm-none-eabi-objcopy -v -O binary "freertos_blinky.axf" "freertos_blinky.bin" ; # checksum -p LPC1549 -d "freertos_blinky.bin";
+   text	   data	    bss	    dec	    hex	filename
+  18888	      8	    664	  19560	   4c68	freertos_blinky.axf
+ 
+22:31:55 **** Incremental Build of configuration Debug for project freertos_blinky ****
+make -r all 
+make: Nothing to be done for `all'.
+21:35:41 **** Incremental Build of configuration Debug for project freertos_blinky ****
+make -r all 
+Building target: freertos_blinky.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"C:\Users\Topon\Desktop\OBD-II\src\Test\lpc_chip_15xx\Debug" -L"C:\Users\Topon\Desktop\OBD-II\src\Test\lpc_board_nxp_lpcxpresso_1549\Debug" -Xlinker -Map="freertos_blinky.map" -Xlinker --gc-sections -mcpu=cortex-m3 -mthumb -T "freertos_blinky_Debug.ld" -o "freertos_blinky.axf"  ./freertos/src/FreeRTOSCommonHooks.o ./freertos/src/croutine.o ./freertos/src/event_groups.o ./freertos/src/heap_3.o ./freertos/src/list.o ./freertos/src/port.o ./freertos/src/queue.o ./freertos/src/tasks.o ./freertos/src/timers.o  ./example/src/cr_startup_lpc15xx.o ./example/src/freertos_blinky.o ./example/src/sysinit.o   -llpc_board_nxp_lpcxpresso_1549 -llpc_chip_15xx
+Finished building target: freertos_blinky.axf
+ 
+/bin/make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "freertos_blinky.axf"; # arm-none-eabi-objcopy -v -O binary "freertos_blinky.axf" "freertos_blinky.bin" ; # checksum -p LPC1549 -d "freertos_blinky.bin";
+   text	   data	    bss	    dec	    hex	filename
+  18888	      8	    664	  19560	   4c68	freertos_blinky.axf
+ 
+21:36:19 **** Incremental Build of configuration Debug for project lpc_board_nxp_lpcxpresso_1549 ****
+make -r all 
+make: Nothing to be done for `all'.
+21:36:20 **** Incremental Build of configuration Debug for project lpc_chip_15xx ****
+make -r all 
+make: Nothing to be done for `all'.
+21:36:21 **** Build of configuration Debug for project periph_gpio ****
+make -r all 
+Building file: ../example/src/cr_startup_lpc15xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -D__REDLIB__ -DCORE_M3 -I"C:\Users\Topon\Desktop\OBD-II\src\Test\lpc_chip_15xx\inc" -I"C:\Users\Topon\Desktop\OBD-II\src\Test\lpc_board_nxp_lpcxpresso_1549\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"example/src/cr_startup_lpc15xx.d" -MT"example/src/cr_startup_lpc15xx.o" -MT"example/src/cr_startup_lpc15xx.d" -o "example/src/cr_startup_lpc15xx.o" "../example/src/cr_startup_lpc15xx.c"
+Finished building: ../example/src/cr_startup_lpc15xx.c
+ 
+Building file: ../example/src/gpio.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -D__REDLIB__ -DCORE_M3 -I"C:\Users\Topon\Desktop\OBD-II\src\Test\lpc_chip_15xx\inc" -I"C:\Users\Topon\Desktop\OBD-II\src\Test\lpc_board_nxp_lpcxpresso_1549\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"example/src/gpio.d" -MT"example/src/gpio.o" -MT"example/src/gpio.d" -o "example/src/gpio.o" "../example/src/gpio.c"
+Finished building: ../example/src/gpio.c
+ 
+Building file: ../example/src/sysinit.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -D__REDLIB__ -DCORE_M3 -I"C:\Users\Topon\Desktop\OBD-II\src\Test\lpc_chip_15xx\inc" -I"C:\Users\Topon\Desktop\OBD-II\src\Test\lpc_board_nxp_lpcxpresso_1549\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"example/src/sysinit.d" -MT"example/src/sysinit.o" -MT"example/src/sysinit.d" -o "example/src/sysinit.o" "../example/src/sysinit.c"
+Finished building: ../example/src/sysinit.c
+ 
+Building target: periph_gpio.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"C:\Users\Topon\Desktop\OBD-II\src\Test\lpc_chip_15xx\Debug" -L"C:\Users\Topon\Desktop\OBD-II\src\Test\lpc_board_nxp_lpcxpresso_1549\Debug" -Xlinker -Map="periph_gpio.map" -Xlinker --gc-sections -mcpu=cortex-m3 -mthumb -T "periph_gpio_Debug.ld" -o "periph_gpio.axf"  ./example/src/cr_startup_lpc15xx.o ./example/src/gpio.o ./example/src/sysinit.o   -llpc_board_nxp_lpcxpresso_1549 -llpc_chip_15xx
+Finished building target: periph_gpio.axf
+ 
+/bin/make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "periph_gpio.axf"; # arm-none-eabi-objcopy -v -O binary "periph_gpio.axf" "periph_gpio.bin" ; # checksum -p LPC1549 -d "periph_gpio.bin";
+   text	   data	    bss	    dec	    hex	filename
+   6880	      0	    340	   7220	   1c34	periph_gpio.axf
+ 
+21:36:24 **** Incremental Build of configuration Debug for project periph_gpio ****
+make -r all 
+make: Nothing to be done for `all'.
+21:54:48 **** Incremental Build of configuration Debug for project lpc_board_nxp_lpcxpresso_1549 ****
 make -r all 
 Building file: ../src/board.c
 Invoking: MCU C Compiler
-arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Topon\Desktop\OBD-II\src\Test\lpc_chip_15xx\inc" -I"C:\Users\Topon\Desktop\OBD-II\src\Test\lpc_board_nxp_lpcxpresso_1549\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/board.d" -MT"src/board.o" -MT"src/board.d" -o "src/board.o" "../src/board.c"
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\cheri\Desktop\OBD-II\src\Test\lpc_chip_15xx\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Test\lpc_board_nxp_lpcxpresso_1549\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/board.d" -MT"src/board.o" -MT"src/board.d" -o "src/board.o" "../src/board.c"
 Finished building: ../src/board.c
  
 Building file: ../src/board_sysinit.c
 Invoking: MCU C Compiler
-arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Topon\Desktop\OBD-II\src\Test\lpc_chip_15xx\inc" -I"C:\Users\Topon\Desktop\OBD-II\src\Test\lpc_board_nxp_lpcxpresso_1549\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/board_sysinit.d" -MT"src/board_sysinit.o" -MT"src/board_sysinit.d" -o "src/board_sysinit.o" "../src/board_sysinit.c"
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\cheri\Desktop\OBD-II\src\Test\lpc_chip_15xx\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Test\lpc_board_nxp_lpcxpresso_1549\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/board_sysinit.d" -MT"src/board_sysinit.o" -MT"src/board_sysinit.d" -o "src/board_sysinit.o" "../src/board_sysinit.c"
 Finished building: ../src/board_sysinit.c
  
 Building target: liblpc_board_nxp_lpcxpresso_1549.a
 Invoking: MCU Archiver
 arm-none-eabi-ar -r  "liblpc_board_nxp_lpcxpresso_1549.a"  ./src/board.o ./src/board_sysinit.o   
-d:\nxp\LPCXpresso_8.2.2_650\lpcxpresso\tools\bin\arm-none-eabi-ar.exe: creating liblpc_board_nxp_lpcxpresso_1549.a
 Finished building target: liblpc_board_nxp_lpcxpresso_1549.a
  
-/bin/make --no-print-directory post-build
+make --no-print-directory post-build
 Performing post-build steps
 arm-none-eabi-size "liblpc_board_nxp_lpcxpresso_1549.a" ; # arm-none-eabi-objdump -h -S "liblpc_board_nxp_lpcxpresso_1549.a" >"liblpc_board_nxp_lpcxpresso_1549.lss"
    text	   data	    bss	    dec	    hex	filename
    1317	      0	      0	   1317	    525	board.o (ex liblpc_board_nxp_lpcxpresso_1549.a)
     574	      0	      0	    574	    23e	board_sysinit.o (ex liblpc_board_nxp_lpcxpresso_1549.a)
  
-22:41:34 **** Build of configuration Debug for project lpc_chip_15xx ****
+21:54:52 **** Incremental Build of configuration Debug for project lpc_chip_15xx ****
 make -r all 
 Building file: ../src/acmp_15xx.c
 Invoking: MCU C Compiler
-arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Topon\Desktop\OBD-II\src\Test\lpc_chip_15xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/acmp_15xx.d" -MT"src/acmp_15xx.o" -MT"src/acmp_15xx.d" -o "src/acmp_15xx.o" "../src/acmp_15xx.c"
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\cheri\Desktop\OBD-II\src\Test\lpc_chip_15xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/acmp_15xx.d" -MT"src/acmp_15xx.o" -MT"src/acmp_15xx.d" -o "src/acmp_15xx.o" "../src/acmp_15xx.c"
 Finished building: ../src/acmp_15xx.c
  
 Building file: ../src/adc_15xx.c
 Invoking: MCU C Compiler
-arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Topon\Desktop\OBD-II\src\Test\lpc_chip_15xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/adc_15xx.d" -MT"src/adc_15xx.o" -MT"src/adc_15xx.d" -o "src/adc_15xx.o" "../src/adc_15xx.c"
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\cheri\Desktop\OBD-II\src\Test\lpc_chip_15xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/adc_15xx.d" -MT"src/adc_15xx.o" -MT"src/adc_15xx.d" -o "src/adc_15xx.o" "../src/adc_15xx.c"
 Finished building: ../src/adc_15xx.c
  
 Building file: ../src/chip_15xx.c
 Invoking: MCU C Compiler
-arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Topon\Desktop\OBD-II\src\Test\lpc_chip_15xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/chip_15xx.d" -MT"src/chip_15xx.o" -MT"src/chip_15xx.d" -o "src/chip_15xx.o" "../src/chip_15xx.c"
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\cheri\Desktop\OBD-II\src\Test\lpc_chip_15xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/chip_15xx.d" -MT"src/chip_15xx.o" -MT"src/chip_15xx.d" -o "src/chip_15xx.o" "../src/chip_15xx.c"
 Finished building: ../src/chip_15xx.c
  
 Building file: ../src/clock_15xx.c
 Invoking: MCU C Compiler
-arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Topon\Desktop\OBD-II\src\Test\lpc_chip_15xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/clock_15xx.d" -MT"src/clock_15xx.o" -MT"src/clock_15xx.d" -o "src/clock_15xx.o" "../src/clock_15xx.c"
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\cheri\Desktop\OBD-II\src\Test\lpc_chip_15xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/clock_15xx.d" -MT"src/clock_15xx.o" -MT"src/clock_15xx.d" -o "src/clock_15xx.o" "../src/clock_15xx.c"
 Finished building: ../src/clock_15xx.c
  
 Building file: ../src/crc_15xx.c
 Invoking: MCU C Compiler
-arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Topon\Desktop\OBD-II\src\Test\lpc_chip_15xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/crc_15xx.d" -MT"src/crc_15xx.o" -MT"src/crc_15xx.d" -o "src/crc_15xx.o" "../src/crc_15xx.c"
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\cheri\Desktop\OBD-II\src\Test\lpc_chip_15xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/crc_15xx.d" -MT"src/crc_15xx.o" -MT"src/crc_15xx.d" -o "src/crc_15xx.o" "../src/crc_15xx.c"
 Finished building: ../src/crc_15xx.c
  
 Building file: ../src/dac_15xx.c
 Invoking: MCU C Compiler
-arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Topon\Desktop\OBD-II\src\Test\lpc_chip_15xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/dac_15xx.d" -MT"src/dac_15xx.o" -MT"src/dac_15xx.d" -o "src/dac_15xx.o" "../src/dac_15xx.c"
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\cheri\Desktop\OBD-II\src\Test\lpc_chip_15xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/dac_15xx.d" -MT"src/dac_15xx.o" -MT"src/dac_15xx.d" -o "src/dac_15xx.o" "../src/dac_15xx.c"
 Finished building: ../src/dac_15xx.c
  
 Building file: ../src/dma_15xx.c
 Invoking: MCU C Compiler
-arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Topon\Desktop\OBD-II\src\Test\lpc_chip_15xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/dma_15xx.d" -MT"src/dma_15xx.o" -MT"src/dma_15xx.d" -o "src/dma_15xx.o" "../src/dma_15xx.c"
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\cheri\Desktop\OBD-II\src\Test\lpc_chip_15xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/dma_15xx.d" -MT"src/dma_15xx.o" -MT"src/dma_15xx.d" -o "src/dma_15xx.o" "../src/dma_15xx.c"
 Finished building: ../src/dma_15xx.c
  
 Building file: ../src/eeprom.c
 Invoking: MCU C Compiler
-arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Topon\Desktop\OBD-II\src\Test\lpc_chip_15xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/eeprom.d" -MT"src/eeprom.o" -MT"src/eeprom.d" -o "src/eeprom.o" "../src/eeprom.c"
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\cheri\Desktop\OBD-II\src\Test\lpc_chip_15xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/eeprom.d" -MT"src/eeprom.o" -MT"src/eeprom.d" -o "src/eeprom.o" "../src/eeprom.c"
 Finished building: ../src/eeprom.c
  
 Building file: ../src/gpio_15xx.c
 Invoking: MCU C Compiler
-arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Topon\Desktop\OBD-II\src\Test\lpc_chip_15xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/gpio_15xx.d" -MT"src/gpio_15xx.o" -MT"src/gpio_15xx.d" -o "src/gpio_15xx.o" "../src/gpio_15xx.c"
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\cheri\Desktop\OBD-II\src\Test\lpc_chip_15xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/gpio_15xx.d" -MT"src/gpio_15xx.o" -MT"src/gpio_15xx.d" -o "src/gpio_15xx.o" "../src/gpio_15xx.c"
 Finished building: ../src/gpio_15xx.c
  
 Building file: ../src/i2c_common_15xx.c
 Invoking: MCU C Compiler
-arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Topon\Desktop\OBD-II\src\Test\lpc_chip_15xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/i2c_common_15xx.d" -MT"src/i2c_common_15xx.o" -MT"src/i2c_common_15xx.d" -o "src/i2c_common_15xx.o" "../src/i2c_common_15xx.c"
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\cheri\Desktop\OBD-II\src\Test\lpc_chip_15xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/i2c_common_15xx.d" -MT"src/i2c_common_15xx.o" -MT"src/i2c_common_15xx.d" -o "src/i2c_common_15xx.o" "../src/i2c_common_15xx.c"
 Finished building: ../src/i2c_common_15xx.c
  
 Building file: ../src/i2cm_15xx.c
 Invoking: MCU C Compiler
-arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Topon\Desktop\OBD-II\src\Test\lpc_chip_15xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/i2cm_15xx.d" -MT"src/i2cm_15xx.o" -MT"src/i2cm_15xx.d" -o "src/i2cm_15xx.o" "../src/i2cm_15xx.c"
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\cheri\Desktop\OBD-II\src\Test\lpc_chip_15xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/i2cm_15xx.d" -MT"src/i2cm_15xx.o" -MT"src/i2cm_15xx.d" -o "src/i2cm_15xx.o" "../src/i2cm_15xx.c"
 Finished building: ../src/i2cm_15xx.c
  
 Building file: ../src/i2cs_15xx.c
 Invoking: MCU C Compiler
-arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Topon\Desktop\OBD-II\src\Test\lpc_chip_15xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/i2cs_15xx.d" -MT"src/i2cs_15xx.o" -MT"src/i2cs_15xx.d" -o "src/i2cs_15xx.o" "../src/i2cs_15xx.c"
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\cheri\Desktop\OBD-II\src\Test\lpc_chip_15xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/i2cs_15xx.d" -MT"src/i2cs_15xx.o" -MT"src/i2cs_15xx.d" -o "src/i2cs_15xx.o" "../src/i2cs_15xx.c"
 Finished building: ../src/i2cs_15xx.c
  
 Building file: ../src/iap.c
 Invoking: MCU C Compiler
-arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Topon\Desktop\OBD-II\src\Test\lpc_chip_15xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/iap.d" -MT"src/iap.o" -MT"src/iap.d" -o "src/iap.o" "../src/iap.c"
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\cheri\Desktop\OBD-II\src\Test\lpc_chip_15xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/iap.d" -MT"src/iap.o" -MT"src/iap.d" -o "src/iap.o" "../src/iap.c"
 Finished building: ../src/iap.c
  
 Building file: ../src/iocon_15xx.c
 Invoking: MCU C Compiler
-arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Topon\Desktop\OBD-II\src\Test\lpc_chip_15xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/iocon_15xx.d" -MT"src/iocon_15xx.o" -MT"src/iocon_15xx.d" -o "src/iocon_15xx.o" "../src/iocon_15xx.c"
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\cheri\Desktop\OBD-II\src\Test\lpc_chip_15xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/iocon_15xx.d" -MT"src/iocon_15xx.o" -MT"src/iocon_15xx.d" -o "src/iocon_15xx.o" "../src/iocon_15xx.c"
 Finished building: ../src/iocon_15xx.c
  
 Building file: ../src/pinint_15xx.c
 Invoking: MCU C Compiler
-arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Topon\Desktop\OBD-II\src\Test\lpc_chip_15xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/pinint_15xx.d" -MT"src/pinint_15xx.o" -MT"src/pinint_15xx.d" -o "src/pinint_15xx.o" "../src/pinint_15xx.c"
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\cheri\Desktop\OBD-II\src\Test\lpc_chip_15xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/pinint_15xx.d" -MT"src/pinint_15xx.o" -MT"src/pinint_15xx.d" -o "src/pinint_15xx.o" "../src/pinint_15xx.c"
 Finished building: ../src/pinint_15xx.c
  
 Building file: ../src/pmu_15xx.c
 Invoking: MCU C Compiler
-arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Topon\Desktop\OBD-II\src\Test\lpc_chip_15xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/pmu_15xx.d" -MT"src/pmu_15xx.o" -MT"src/pmu_15xx.d" -o "src/pmu_15xx.o" "../src/pmu_15xx.c"
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\cheri\Desktop\OBD-II\src\Test\lpc_chip_15xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/pmu_15xx.d" -MT"src/pmu_15xx.o" -MT"src/pmu_15xx.d" -o "src/pmu_15xx.o" "../src/pmu_15xx.c"
 Finished building: ../src/pmu_15xx.c
  
 Building file: ../src/ring_buffer.c
 Invoking: MCU C Compiler
-arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Topon\Desktop\OBD-II\src\Test\lpc_chip_15xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/ring_buffer.d" -MT"src/ring_buffer.o" -MT"src/ring_buffer.d" -o "src/ring_buffer.o" "../src/ring_buffer.c"
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\cheri\Desktop\OBD-II\src\Test\lpc_chip_15xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/ring_buffer.d" -MT"src/ring_buffer.o" -MT"src/ring_buffer.d" -o "src/ring_buffer.o" "../src/ring_buffer.c"
 Finished building: ../src/ring_buffer.c
  
 Building file: ../src/ritimer_15xx.c
 Invoking: MCU C Compiler
-arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Topon\Desktop\OBD-II\src\Test\lpc_chip_15xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/ritimer_15xx.d" -MT"src/ritimer_15xx.o" -MT"src/ritimer_15xx.d" -o "src/ritimer_15xx.o" "../src/ritimer_15xx.c"
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\cheri\Desktop\OBD-II\src\Test\lpc_chip_15xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/ritimer_15xx.d" -MT"src/ritimer_15xx.o" -MT"src/ritimer_15xx.d" -o "src/ritimer_15xx.o" "../src/ritimer_15xx.c"
 Finished building: ../src/ritimer_15xx.c
  
 Building file: ../src/rtc_15xx.c
 Invoking: MCU C Compiler
-arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Topon\Desktop\OBD-II\src\Test\lpc_chip_15xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/rtc_15xx.d" -MT"src/rtc_15xx.o" -MT"src/rtc_15xx.d" -o "src/rtc_15xx.o" "../src/rtc_15xx.c"
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\cheri\Desktop\OBD-II\src\Test\lpc_chip_15xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/rtc_15xx.d" -MT"src/rtc_15xx.o" -MT"src/rtc_15xx.d" -o "src/rtc_15xx.o" "../src/rtc_15xx.c"
 Finished building: ../src/rtc_15xx.c
  
 Building file: ../src/sct_15xx.c
 Invoking: MCU C Compiler
-arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Topon\Desktop\OBD-II\src\Test\lpc_chip_15xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/sct_15xx.d" -MT"src/sct_15xx.o" -MT"src/sct_15xx.d" -o "src/sct_15xx.o" "../src/sct_15xx.c"
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\cheri\Desktop\OBD-II\src\Test\lpc_chip_15xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/sct_15xx.d" -MT"src/sct_15xx.o" -MT"src/sct_15xx.d" -o "src/sct_15xx.o" "../src/sct_15xx.c"
 Finished building: ../src/sct_15xx.c
  
 Building file: ../src/sct_pwm_15xx.c
 Invoking: MCU C Compiler
-arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Topon\Desktop\OBD-II\src\Test\lpc_chip_15xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/sct_pwm_15xx.d" -MT"src/sct_pwm_15xx.o" -MT"src/sct_pwm_15xx.d" -o "src/sct_pwm_15xx.o" "../src/sct_pwm_15xx.c"
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\cheri\Desktop\OBD-II\src\Test\lpc_chip_15xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/sct_pwm_15xx.d" -MT"src/sct_pwm_15xx.o" -MT"src/sct_pwm_15xx.d" -o "src/sct_pwm_15xx.o" "../src/sct_pwm_15xx.c"
 Finished building: ../src/sct_pwm_15xx.c
  
 Building file: ../src/sctipu_15xx.c
 Invoking: MCU C Compiler
-arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Topon\Desktop\OBD-II\src\Test\lpc_chip_15xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/sctipu_15xx.d" -MT"src/sctipu_15xx.o" -MT"src/sctipu_15xx.d" -o "src/sctipu_15xx.o" "../src/sctipu_15xx.c"
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\cheri\Desktop\OBD-II\src\Test\lpc_chip_15xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/sctipu_15xx.d" -MT"src/sctipu_15xx.o" -MT"src/sctipu_15xx.d" -o "src/sctipu_15xx.o" "../src/sctipu_15xx.c"
 Finished building: ../src/sctipu_15xx.c
  
 Building file: ../src/spi_15xx.c
 Invoking: MCU C Compiler
-arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Topon\Desktop\OBD-II\src\Test\lpc_chip_15xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/spi_15xx.d" -MT"src/spi_15xx.o" -MT"src/spi_15xx.d" -o "src/spi_15xx.o" "../src/spi_15xx.c"
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\cheri\Desktop\OBD-II\src\Test\lpc_chip_15xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/spi_15xx.d" -MT"src/spi_15xx.o" -MT"src/spi_15xx.d" -o "src/spi_15xx.o" "../src/spi_15xx.c"
 Finished building: ../src/spi_15xx.c
  
 Building file: ../src/stopwatch_15xx.c
 Invoking: MCU C Compiler
-arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Topon\Desktop\OBD-II\src\Test\lpc_chip_15xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/stopwatch_15xx.d" -MT"src/stopwatch_15xx.o" -MT"src/stopwatch_15xx.d" -o "src/stopwatch_15xx.o" "../src/stopwatch_15xx.c"
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\cheri\Desktop\OBD-II\src\Test\lpc_chip_15xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/stopwatch_15xx.d" -MT"src/stopwatch_15xx.o" -MT"src/stopwatch_15xx.d" -o "src/stopwatch_15xx.o" "../src/stopwatch_15xx.c"
 Finished building: ../src/stopwatch_15xx.c
  
 Building file: ../src/swm_15xx.c
 Invoking: MCU C Compiler
-arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Topon\Desktop\OBD-II\src\Test\lpc_chip_15xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/swm_15xx.d" -MT"src/swm_15xx.o" -MT"src/swm_15xx.d" -o "src/swm_15xx.o" "../src/swm_15xx.c"
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\cheri\Desktop\OBD-II\src\Test\lpc_chip_15xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/swm_15xx.d" -MT"src/swm_15xx.o" -MT"src/swm_15xx.d" -o "src/swm_15xx.o" "../src/swm_15xx.c"
 Finished building: ../src/swm_15xx.c
  
 Building file: ../src/sysctl_15xx.c
 Invoking: MCU C Compiler
-arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Topon\Desktop\OBD-II\src\Test\lpc_chip_15xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/sysctl_15xx.d" -MT"src/sysctl_15xx.o" -MT"src/sysctl_15xx.d" -o "src/sysctl_15xx.o" "../src/sysctl_15xx.c"
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\cheri\Desktop\OBD-II\src\Test\lpc_chip_15xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/sysctl_15xx.d" -MT"src/sysctl_15xx.o" -MT"src/sysctl_15xx.d" -o "src/sysctl_15xx.o" "../src/sysctl_15xx.c"
 Finished building: ../src/sysctl_15xx.c
  
 Building file: ../src/sysinit_15xx.c
 Invoking: MCU C Compiler
-arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Topon\Desktop\OBD-II\src\Test\lpc_chip_15xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/sysinit_15xx.d" -MT"src/sysinit_15xx.o" -MT"src/sysinit_15xx.d" -o "src/sysinit_15xx.o" "../src/sysinit_15xx.c"
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\cheri\Desktop\OBD-II\src\Test\lpc_chip_15xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/sysinit_15xx.d" -MT"src/sysinit_15xx.o" -MT"src/sysinit_15xx.d" -o "src/sysinit_15xx.o" "../src/sysinit_15xx.c"
 ../src/sysinit_15xx.c: In function 'Chip_SetupIrcClocking':
 ../src/sysinit_15xx.c:53:15: warning: unused variable 'i' [-Wunused-variable]
   volatile int i;
@@ -166,21 +309,20 @@ Finished building: ../src/sysinit_15xx.c
  
 Building file: ../src/uart_15xx.c
 Invoking: MCU C Compiler
-arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Topon\Desktop\OBD-II\src\Test\lpc_chip_15xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/uart_15xx.d" -MT"src/uart_15xx.o" -MT"src/uart_15xx.d" -o "src/uart_15xx.o" "../src/uart_15xx.c"
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\cheri\Desktop\OBD-II\src\Test\lpc_chip_15xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/uart_15xx.d" -MT"src/uart_15xx.o" -MT"src/uart_15xx.d" -o "src/uart_15xx.o" "../src/uart_15xx.c"
 Finished building: ../src/uart_15xx.c
  
 Building file: ../src/wwdt_15xx.c
 Invoking: MCU C Compiler
-arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Topon\Desktop\OBD-II\src\Test\lpc_chip_15xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/wwdt_15xx.d" -MT"src/wwdt_15xx.o" -MT"src/wwdt_15xx.d" -o "src/wwdt_15xx.o" "../src/wwdt_15xx.c"
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\cheri\Desktop\OBD-II\src\Test\lpc_chip_15xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/wwdt_15xx.d" -MT"src/wwdt_15xx.o" -MT"src/wwdt_15xx.d" -o "src/wwdt_15xx.o" "../src/wwdt_15xx.c"
 Finished building: ../src/wwdt_15xx.c
  
 Building target: liblpc_chip_15xx.a
 Invoking: MCU Archiver
 arm-none-eabi-ar -r  "liblpc_chip_15xx.a"  ./src/acmp_15xx.o ./src/adc_15xx.o ./src/chip_15xx.o ./src/clock_15xx.o ./src/crc_15xx.o ./src/dac_15xx.o ./src/dma_15xx.o ./src/eeprom.o ./src/gpio_15xx.o ./src/i2c_common_15xx.o ./src/i2cm_15xx.o ./src/i2cs_15xx.o ./src/iap.o ./src/iocon_15xx.o ./src/pinint_15xx.o ./src/pmu_15xx.o ./src/ring_buffer.o ./src/ritimer_15xx.o ./src/rtc_15xx.o ./src/sct_15xx.o ./src/sct_pwm_15xx.o ./src/sctipu_15xx.o ./src/spi_15xx.o ./src/stopwatch_15xx.o ./src/swm_15xx.o ./src/sysctl_15xx.o ./src/sysinit_15xx.o ./src/uart_15xx.o ./src/wwdt_15xx.o   
-d:\nxp\LPCXpresso_8.2.2_650\lpcxpresso\tools\bin\arm-none-eabi-ar.exe: creating liblpc_chip_15xx.a
 Finished building target: liblpc_chip_15xx.a
  
-/bin/make --no-print-directory post-build
+make --no-print-directory post-build
 Performing post-build steps
 arm-none-eabi-size "liblpc_chip_15xx.a" ; # arm-none-eabi-objdump -h -S "liblpc_chip_15xx.a" >"liblpc_chip_15xx.lss"
    text	   data	    bss	    dec	    hex	filename
@@ -214,31 +356,84 @@ arm-none-eabi-size "liblpc_chip_15xx.a" ; # arm-none-eabi-objdump -h -S "liblpc_
    1136	      0	      0	   1136	    470	uart_15xx.o (ex liblpc_chip_15xx.a)
     116	      0	      0	    116	     74	wwdt_15xx.o (ex liblpc_chip_15xx.a)
  
-22:41:45 **** Build of configuration Debug for project periph_blinky ****
+21:55:06 **** Incremental Build of configuration Debug for project periph_blinky ****
 make -r all 
-Building file: ../example/src/cr_startup_lpc15xx.c
-Invoking: MCU C Compiler
-arm-none-eabi-gcc -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -D__REDLIB__ -DCORE_M3 -I"C:\Users\Topon\Desktop\OBD-II\src\Test\lpc_chip_15xx\inc" -I"C:\Users\Topon\Desktop\OBD-II\src\Test\lpc_board_nxp_lpcxpresso_1549\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"example/src/cr_startup_lpc15xx.d" -MT"example/src/cr_startup_lpc15xx.o" -MT"example/src/cr_startup_lpc15xx.d" -o "example/src/cr_startup_lpc15xx.o" "../example/src/cr_startup_lpc15xx.c"
-Finished building: ../example/src/cr_startup_lpc15xx.c
- 
 Building file: ../example/src/sysinit.c
 Invoking: MCU C Compiler
-arm-none-eabi-gcc -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -D__REDLIB__ -DCORE_M3 -I"C:\Users\Topon\Desktop\OBD-II\src\Test\lpc_chip_15xx\inc" -I"C:\Users\Topon\Desktop\OBD-II\src\Test\lpc_board_nxp_lpcxpresso_1549\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"example/src/sysinit.d" -MT"example/src/sysinit.o" -MT"example/src/sysinit.d" -o "example/src/sysinit.o" "../example/src/sysinit.c"
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -D__REDLIB__ -DCORE_M3 -I"C:\Users\cheri\Desktop\OBD-II\src\Test\lpc_chip_15xx\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Test\lpc_board_nxp_lpcxpresso_1549\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"example/src/sysinit.d" -MT"example/src/sysinit.o" -MT"example/src/sysinit.d" -o "example/src/sysinit.o" "../example/src/sysinit.c"
 Finished building: ../example/src/sysinit.c
  
 Building file: ../example/src/systick.c
 Invoking: MCU C Compiler
-arm-none-eabi-gcc -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -D__REDLIB__ -DCORE_M3 -I"C:\Users\Topon\Desktop\OBD-II\src\Test\lpc_chip_15xx\inc" -I"C:\Users\Topon\Desktop\OBD-II\src\Test\lpc_board_nxp_lpcxpresso_1549\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"example/src/systick.d" -MT"example/src/systick.o" -MT"example/src/systick.d" -o "example/src/systick.o" "../example/src/systick.c"
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -D__REDLIB__ -DCORE_M3 -I"C:\Users\cheri\Desktop\OBD-II\src\Test\lpc_chip_15xx\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Test\lpc_board_nxp_lpcxpresso_1549\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"example/src/systick.d" -MT"example/src/systick.o" -MT"example/src/systick.d" -o "example/src/systick.o" "../example/src/systick.c"
 Finished building: ../example/src/systick.c
  
 Building target: periph_blinky.axf
 Invoking: MCU Linker
-arm-none-eabi-gcc -nostdlib -L"C:\Users\Topon\Desktop\OBD-II\src\Test\lpc_chip_15xx\Debug" -L"C:\Users\Topon\Desktop\OBD-II\src\Test\lpc_board_nxp_lpcxpresso_1549\Debug" -Xlinker -Map="periph_blinky.map" -Xlinker --gc-sections -mcpu=cortex-m3 -mthumb -T "periph_blinky_Debug.ld" -o "periph_blinky.axf"  ./example/src/cr_startup_lpc15xx.o ./example/src/sysinit.o ./example/src/systick.o   -llpc_board_nxp_lpcxpresso_1549 -llpc_chip_15xx
+arm-none-eabi-gcc -nostdlib -L"C:\Users\cheri\Desktop\OBD-II\src\Test\lpc_chip_15xx\Debug" -L"C:\Users\cheri\Desktop\OBD-II\src\Test\lpc_board_nxp_lpcxpresso_1549\Debug" -Xlinker -Map="periph_blinky.map" -Xlinker --gc-sections -mcpu=cortex-m3 -mthumb -T "periph_blinky_Debug.ld" -o "periph_blinky.axf"  ./example/src/cr_startup_lpc15xx.o ./example/src/sysinit.o ./example/src/systick.o   -llpc_board_nxp_lpcxpresso_1549 -llpc_chip_15xx
 Finished building target: periph_blinky.axf
  
-/bin/make --no-print-directory post-build
+make --no-print-directory post-build
 Performing post-build steps
 arm-none-eabi-size "periph_blinky.axf"; # arm-none-eabi-objcopy -v -O binary "periph_blinky.axf" "periph_blinky.bin" ; # checksum -p LPC1549 -d "periph_blinky.bin";
    text	   data	    bss	    dec	    hex	filename
    6964	      0	    340	   7304	   1c88	periph_blinky.axf
  
+21:55:08 **** Incremental Build of configuration Debug for project periph_blinky ****
+make -r all 
+make: Nothing to be done for `all'.
+21:24:19 **** Incremental Build of configuration Debug for project lpc_board_nxp_lpcxpresso_1549 ****
+make -r all 
+make: Nothing to be done for `all'.
+21:24:21 **** Incremental Build of configuration Debug for project lpc_chip_15xx ****
+make -r all 
+make: Nothing to be done for `all'.
+21:24:23 **** Incremental Build of configuration Debug for project periph_blinky ****
+make -r all 
+Building target: periph_blinky.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"C:\Users\cheri\Desktop\OBD-II\src\Test\lpc_chip_15xx\Debug" -L"C:\Users\cheri\Desktop\OBD-II\src\Test\lpc_board_nxp_lpcxpresso_1549\Debug" -Xlinker -Map="periph_blinky.map" -Xlinker --gc-sections -mcpu=cortex-m3 -mthumb -T "periph_blinky_Debug.ld" -o "periph_blinky.axf"  ./example/src/cr_startup_lpc15xx.o ./example/src/sysinit.o ./example/src/systick.o   -llpc_board_nxp_lpcxpresso_1549 -llpc_chip_15xx
+Finished building target: periph_blinky.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "periph_blinky.axf"; # arm-none-eabi-objcopy -v -O binary "periph_blinky.axf" "periph_blinky.bin" ; # checksum -p LPC1549 -d "periph_blinky.bin";
+   text	   data	    bss	    dec	    hex	filename
+   6964	      0	    340	   7304	   1c88	periph_blinky.axf
+ 
+21:24:24 **** Incremental Build of configuration Debug for project periph_blinky ****
+make -r all 
+make: Nothing to be done for `all'.
+21:25:20 **** Incremental Build of configuration Debug for project periph_blinky ****
+make -r all 
+make: Nothing to be done for `all'.
+21:25:26 **** Incremental Build of configuration Debug for project periph_blinky ****
+make -r all 
+make: Nothing to be done for `all'.
+21:28:27 **** Incremental Build of configuration Debug for project periph_blinky ****
+make -r all 
+make: Nothing to be done for `all'.
+21:28:57 **** Incremental Build of configuration Debug for project periph_blinky ****
+make -r all 
+make: Nothing to be done for `all'.
+21:29:37 **** Incremental Build of configuration Debug for project periph_blinky ****
+make -r all 
+make: Nothing to be done for `all'.
+21:30:42 **** Incremental Build of configuration Debug for project periph_blinky ****
+make -r all 
+make: Nothing to be done for `all'.
+21:30:53 **** Incremental Build of configuration Debug for project periph_blinky ****
+make -r all 
+make: Nothing to be done for `all'.
+21:31:43 **** Incremental Build of configuration Debug for project periph_blinky ****
+make -r all 
+make: Nothing to be done for `all'.
+21:32:58 **** Incremental Build of configuration Debug for project periph_blinky ****
+make -r all 
+make: Nothing to be done for `all'.
+21:33:33 **** Incremental Build of configuration Debug for project periph_blinky ****
+make -r all 
+make: Nothing to be done for `all'.
+21:33:52 **** Incremental Build of configuration Debug for project periph_blinky ****
+make -r all 
+make: Nothing to be done for `all'.
