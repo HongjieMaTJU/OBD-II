@@ -36,7 +36,7 @@
  * Private types/enumerations/variables
  ****************************************************************************/
 
-#define TICKRATE_HZ1 (15)	/* 15 ticks per second */
+#define TICKRATE_HZ1 (5)	/* 15 ticks per second */
 
 /*****************************************************************************
  * Public types/enumerations/variables

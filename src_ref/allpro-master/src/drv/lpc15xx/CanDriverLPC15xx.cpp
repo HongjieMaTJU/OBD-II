@@ -154,6 +154,7 @@ CanDriver::CanDriver()
         nullptr,
         nullptr
     };
+//
 
     if (LPC_CAND_API->hwCAN_Init(&handle_, &apiInitCfg) != 0) {
          while (1) {
@@ -163,6 +164,7 @@ CanDriver::CanDriver()
 
     // Enable the CAN Interrupt
     NVIC_EnableIRQ(C_CAN0_IRQn);
+
 }
 
 /**

@@ -1298,26 +1298,26 @@ typedef struct {                                    /*!< SYSCON Structure       
   */
 
 typedef struct {                                    /*!< MRT Structure                                                         */
-  __IO uint32_t  INTVAL0;                           /*!< MRT0 Time interval value register. This value is loaded into
-                                                         the TIMER0 register.                                                  */
+  __IO uint32_t  INTVAL0;                           /*!< MRT0 Time interval value register. This value is loaded into                                                        the TIMER0 register.                                                  */
   __I  uint32_t  TIMER0;                            /*!< MRT0 Timer register. This register reads the value of the down-counter. */
   __IO uint32_t  CTRL0;                             /*!< MRT0 Control register. This register controls the MRT0 modes.         */
   __IO uint32_t  STAT0;                             /*!< MRT0 Status register.                                                 */
-  __IO uint32_t  INTVAL1;                           /*!< MRT0 Time interval value register. This value is loaded into
-                                                         the TIMER0 register.                                                  */
-  __I  uint32_t  TIMER1;                            /*!< MRT0 Timer register. This register reads the value of the down-counter. */
-  __IO uint32_t  CTRL1;                             /*!< MRT0 Control register. This register controls the MRT0 modes.         */
-  __IO uint32_t  STAT1;                             /*!< MRT0 Status register.                                                 */
-  __IO uint32_t  INTVAL2;                           /*!< MRT0 Time interval value register. This value is loaded into
-                                                         the TIMER0 register.                                                  */
-  __I  uint32_t  TIMER2;                            /*!< MRT0 Timer register. This register reads the value of the down-counter. */
-  __IO uint32_t  CTRL2;                             /*!< MRT0 Control register. This register controls the MRT0 modes.         */
-  __IO uint32_t  STAT2;                             /*!< MRT0 Status register.                                                 */
-  __IO uint32_t  INTVAL3;                           /*!< MRT0 Time interval value register. This value is loaded into
-                                                         the TIMER0 register.                                                  */
-  __I  uint32_t  TIMER3;                            /*!< MRT0 Timer register. This register reads the value of the down-counter. */
-  __IO uint32_t  CTRL3;                             /*!< MRT0 Control register. This register controls the MRT0 modes.         */
-  __IO uint32_t  STAT3;                             /*!< MRT0 Status register.                                                 */
+
+  __IO uint32_t  INTVAL1;                           /*!< MRT1 Time interval value register. This value is loaded into                                                     the TIMER0 register.                                                  */
+  __I  uint32_t  TIMER1;                            /*!< MRT1 Timer register. This register reads the value of the down-counter. */
+  __IO uint32_t  CTRL1;                             /*!< MRT1 Control register. This register controls the MRT0 modes.         */
+  __IO uint32_t  STAT1;                             /*!< MRT1 Status register.                                                 */
+
+
+  __IO uint32_t  INTVAL2;                           /*!< MRT2 Time interval value register. This value is loaded into                                                      the TIMER0 register.                                                  */
+  __I  uint32_t  TIMER2;                            /*!< MRT2 Timer register. This register reads the value of the down-counter. */
+  __IO uint32_t  CTRL2;                             /*!< MRT2 Control register. This register controls the MRT0 modes.         */
+  __IO uint32_t  STAT2;                             /*!< MRT2 Status register.                                                 */
+
+  __IO uint32_t  INTVAL3;                           /*!< MRT3 Time interval value register. This value is loaded into the TIMER3 register.                                                  */
+  __I  uint32_t  TIMER3;                            /*!< MRT3 Timer register. This register reads the value of the down-counter. */
+  __IO uint32_t  CTRL3;                             /*!< MRT3 Control register. This register controls the MRT3 modes.         */
+  __IO uint32_t  STAT3;                             /*!< MRT3 Status register.                                                 */
   __I  uint32_t  RESERVED0[45];
   __I  uint32_t  IDLE_CH;                           /*!< Idle channel register. This register returns the number of the
                                                          first idle channel.                                                   */
@@ -1472,8 +1472,8 @@ typedef struct {                                    /*!< C_CAN0 Structure       
   __IO uint32_t  CANIF1_CMDREQ;                     /*!< Message interface 1 command request                                   */
   
   union {
-    __IO uint32_t  CANIF1_CMDMSK_R;                 /*!< Message interface 1 command mask (read direction)                     */
-    __IO uint32_t  CANIF1_CMDMSK_W;                 /*!< Message interface 1 command mask (write direction)                    */
+  __IO uint32_t  CANIF1_CMDMSK_R;                 /*!< Message interface 1 command mask (read direction)                     */
+  __IO uint32_t  CANIF1_CMDMSK_W;                 /*!< Message interface 1 command mask (write direction)                    */
   };
   __IO uint32_t  CANIF1_MSK1;                       /*!< Message interface 1 mask 1                                            */
   __IO uint32_t  CANIF1_MSK2;                       /*!< Message interface 1 mask 2                                            */
