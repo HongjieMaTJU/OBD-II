@@ -1,0 +1,16 @@
+14:59:46 **** Build of configuration Debug for project periph_gpio ****
+make -r all 
+Building target: periph_gpio.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"C:\Users\cheri\Desktop\OBD-II\src\Adapter\lpc_chip_15xx\Debug" -L"C:\Users\cheri\Desktop\OBD-II\src\Adapter\lpc_board_nxp_lpcxpresso_1549\Debug" -Xlinker -Map="periph_gpio.map" -Xlinker --gc-sections -mcpu=cortex-m3 -mthumb -T "periph_gpio_Debug.ld" -o "periph_gpio.axf"  ./example/src/cr_startup_lpc15xx.o ./example/src/gpio.o ./example/src/sysinit.o   -llpc_board_nxp_lpcxpresso_1549 -llpc_chip_15xx
+Finished building target: periph_gpio.axf
+ 
+/bin/make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "periph_gpio.axf"; # arm-none-eabi-objcopy -v -O binary "periph_gpio.axf" "periph_gpio.bin" ; # checksum -p LPC1549 -d "periph_gpio.bin";
+   text	   data	    bss	    dec	    hex	filename
+   6880	      0	    340	   7220	   1c34	periph_gpio.axf
+ 
+
+14:59:47 Build Finished (took 438ms)
+

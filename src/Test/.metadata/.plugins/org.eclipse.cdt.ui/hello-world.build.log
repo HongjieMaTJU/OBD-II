@@ -1,0 +1,7 @@
+21:28:22 **** Clean-only build of configuration Debug for project hello-world ****
+make -r clean 
+rm -rf  ./src/cr_cpp_config.o ./src/cr_startup_lpc15xx.o ./src/crp.o ./src/hello-world.o ./src/sysinit.o  ./src/cr_cpp_config.d ./src/cr_startup_lpc15xx.d ./src/hello-world.d  ./src/crp.d ./src/sysinit.d  hello-world.axf
+ 
+
+21:28:22 Build Finished (took 84ms)
+

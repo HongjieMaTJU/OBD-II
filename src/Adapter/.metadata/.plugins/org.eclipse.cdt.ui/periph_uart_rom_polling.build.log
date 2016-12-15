@@ -1,0 +1,16 @@
+14:59:52 **** Build of configuration Debug for project periph_uart_rom_polling ****
+make -r all 
+Building target: periph_uart_rom_polling.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"C:\Users\cheri\Desktop\OBD-II\src\Adapter\lpc_chip_15xx\Debug" -L"C:\Users\cheri\Desktop\OBD-II\src\Adapter\lpc_board_nxp_lpcxpresso_1549\Debug" -Xlinker -Map="periph_uart_rom_polling.map" -Xlinker --gc-sections -mcpu=cortex-m3 -mthumb -T "periph_uart_rom_polling_Debug.ld" -o "periph_uart_rom_polling.axf"  ./example/src/cr_startup_lpc15xx.o ./example/src/sysinit.o ./example/src/uart_rom_polling.o   -llpc_board_nxp_lpcxpresso_1549 -llpc_chip_15xx
+Finished building target: periph_uart_rom_polling.axf
+ 
+/bin/make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "periph_uart_rom_polling.axf"; # arm-none-eabi-objcopy -v -O binary "periph_uart_rom_polling.axf" "periph_uart_rom_polling.bin" ; # checksum -p LPC1549 -d "periph_uart_rom_polling.bin";
+   text	   data	    bss	    dec	    hex	filename
+   7504	      0	    440	   7944	   1f08	periph_uart_rom_polling.axf
+ 
+
+14:59:52 Build Finished (took 437ms)
+

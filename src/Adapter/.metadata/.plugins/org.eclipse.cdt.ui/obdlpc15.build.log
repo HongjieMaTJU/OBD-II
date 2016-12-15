@@ -1,0 +1,216 @@
+12:59:35 **** Incremental Build of configuration Debug for project obdlpc15 ****
+make all 
+Building file: ../src/util/algorithms.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -std=gnu++11 -D__NEWLIB__ -DDEBUG -D__CODE_RED -DCORE_M3 -DCPP_USE_HEAP -D__LPC15XX__ -D__USE_CMSIS -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\lpc_chip_15xx" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\lpc_board_nxp_lpcxpresso_1549" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\src\drv\lpc15xx" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\src\util" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\src\adapter" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\inc\chip_15xx" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\inc\chip_common" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\lpc_board_nxp_lpcxpresso_1549\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\lpc_chip_15xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -mcpu=cortex-m3 -mthumb -D__NEWLIB__ -MMD -MP -MF"src/util/algorithms.d" -MT"src/util/algorithms.o" -MT"src/util/algorithms.d" -o "src/util/algorithms.o" "../src/util/algorithms.cpp"
+../src/util/algorithms.cpp: In function 'void util::to_lower(util::string&)':
+../src/util/algorithms.cpp:22:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i = 0; i < str.length(); i++) {
+                       ^
+../src/util/algorithms.cpp: In function 'void util::to_upper(util::string&)':
+../src/util/algorithms.cpp:33:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i = 0; i < str.length(); i++) {
+                       ^
+Finished building: ../src/util/algorithms.cpp
+ 
+Building file: ../src/util/canmsgbuffer.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -std=gnu++11 -D__NEWLIB__ -DDEBUG -D__CODE_RED -DCORE_M3 -DCPP_USE_HEAP -D__LPC15XX__ -D__USE_CMSIS -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\lpc_chip_15xx" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\lpc_board_nxp_lpcxpresso_1549" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\src\drv\lpc15xx" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\src\util" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\src\adapter" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\inc\chip_15xx" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\inc\chip_common" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\lpc_board_nxp_lpcxpresso_1549\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\lpc_chip_15xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -mcpu=cortex-m3 -mthumb -D__NEWLIB__ -MMD -MP -MF"src/util/canmsgbuffer.d" -MT"src/util/canmsgbuffer.o" -MT"src/util/canmsgbuffer.d" -o "src/util/canmsgbuffer.o" "../src/util/canmsgbuffer.cpp"
+Finished building: ../src/util/canmsgbuffer.cpp
+ 
+Building file: ../src/util/lstring.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -std=gnu++11 -D__NEWLIB__ -DDEBUG -D__CODE_RED -DCORE_M3 -DCPP_USE_HEAP -D__LPC15XX__ -D__USE_CMSIS -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\lpc_chip_15xx" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\lpc_board_nxp_lpcxpresso_1549" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\src\drv\lpc15xx" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\src\util" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\src\adapter" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\inc\chip_15xx" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\inc\chip_common" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\lpc_board_nxp_lpcxpresso_1549\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\lpc_chip_15xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -mcpu=cortex-m3 -mthumb -D__NEWLIB__ -MMD -MP -MF"src/util/lstring.d" -MT"src/util/lstring.o" -MT"src/util/lstring.d" -o "src/util/lstring.o" "../src/util/lstring.cpp"
+Finished building: ../src/util/lstring.cpp
+ 
+Building file: ../src/drv/lpc15xx/AdcLPC15xx.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -std=gnu++11 -D__NEWLIB__ -DDEBUG -D__CODE_RED -DCORE_M3 -DCPP_USE_HEAP -D__LPC15XX__ -D__USE_CMSIS -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\lpc_chip_15xx" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\lpc_board_nxp_lpcxpresso_1549" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\src\drv\lpc15xx" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\src\util" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\src\adapter" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\inc\chip_15xx" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\inc\chip_common" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\lpc_board_nxp_lpcxpresso_1549\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\lpc_chip_15xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -mcpu=cortex-m3 -mthumb -D__NEWLIB__ -MMD -MP -MF"src/drv/lpc15xx/AdcLPC15xx.d" -MT"src/drv/lpc15xx/AdcLPC15xx.o" -MT"src/drv/lpc15xx/AdcLPC15xx.d" -o "src/drv/lpc15xx/AdcLPC15xx.o" "../src/drv/lpc15xx/AdcLPC15xx.cpp"
+In file included from ../src/drv/lpc15xx/AdcLPC15xx.cpp:9:0:
+C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\inc\chip_15xx/romapi_15xx.h:103:20: warning: 'void iap_entry(unsigned int*, unsigned int*)' defined but not used [-Wunused-function]
+ static INLINE void iap_entry(unsigned int cmd_param[5], unsigned int status_result[4])
+                    ^
+Finished building: ../src/drv/lpc15xx/AdcLPC15xx.cpp
+ 
+Building file: ../src/drv/lpc15xx/CanDriverLPC15xx.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -std=gnu++11 -D__NEWLIB__ -DDEBUG -D__CODE_RED -DCORE_M3 -DCPP_USE_HEAP -D__LPC15XX__ -D__USE_CMSIS -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\lpc_chip_15xx" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\lpc_board_nxp_lpcxpresso_1549" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\src\drv\lpc15xx" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\src\util" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\src\adapter" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\inc\chip_15xx" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\inc\chip_common" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\lpc_board_nxp_lpcxpresso_1549\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\lpc_chip_15xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -mcpu=cortex-m3 -mthumb -D__NEWLIB__ -MMD -MP -MF"src/drv/lpc15xx/CanDriverLPC15xx.d" -MT"src/drv/lpc15xx/CanDriverLPC15xx.o" -MT"src/drv/lpc15xx/CanDriverLPC15xx.d" -o "src/drv/lpc15xx/CanDriverLPC15xx.o" "../src/drv/lpc15xx/CanDriverLPC15xx.cpp"
+In file included from ../src/drv/lpc15xx/CanDriverLPC15xx.cpp:12:0:
+C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\inc\chip_15xx/romapi_15xx.h:103:20: warning: 'void iap_entry(unsigned int*, unsigned int*)' defined but not used [-Wunused-function]
+ static INLINE void iap_entry(unsigned int cmd_param[5], unsigned int status_result[4])
+                    ^
+Finished building: ../src/drv/lpc15xx/CanDriverLPC15xx.cpp
+ 
+Building file: ../src/drv/lpc15xx/CmdUartLPC15xx.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -std=gnu++11 -D__NEWLIB__ -DDEBUG -D__CODE_RED -DCORE_M3 -DCPP_USE_HEAP -D__LPC15XX__ -D__USE_CMSIS -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\lpc_chip_15xx" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\lpc_board_nxp_lpcxpresso_1549" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\src\drv\lpc15xx" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\src\util" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\src\adapter" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\inc\chip_15xx" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\inc\chip_common" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\lpc_board_nxp_lpcxpresso_1549\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\lpc_chip_15xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -mcpu=cortex-m3 -mthumb -D__NEWLIB__ -MMD -MP -MF"src/drv/lpc15xx/CmdUartLPC15xx.d" -MT"src/drv/lpc15xx/CmdUartLPC15xx.o" -MT"src/drv/lpc15xx/CmdUartLPC15xx.d" -o "src/drv/lpc15xx/CmdUartLPC15xx.o" "../src/drv/lpc15xx/CmdUartLPC15xx.cpp"
+In file included from ../src/drv/lpc15xx/UartLPC15xx.h:6:0,
+                 from ../src/drv/lpc15xx/CmdUartLPC15xx.cpp:9:
+C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\inc\chip_15xx/romapi_15xx.h:103:20: warning: 'void iap_entry(unsigned int*, unsigned int*)' defined but not used [-Wunused-function]
+ static INLINE void iap_entry(unsigned int cmd_param[5], unsigned int status_result[4])
+                    ^
+Finished building: ../src/drv/lpc15xx/CmdUartLPC15xx.cpp
+ 
+Building file: ../src/drv/lpc15xx/EcuUartLPC15xx.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -std=gnu++11 -D__NEWLIB__ -DDEBUG -D__CODE_RED -DCORE_M3 -DCPP_USE_HEAP -D__LPC15XX__ -D__USE_CMSIS -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\lpc_chip_15xx" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\lpc_board_nxp_lpcxpresso_1549" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\src\drv\lpc15xx" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\src\util" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\src\adapter" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\inc\chip_15xx" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\inc\chip_common" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\lpc_board_nxp_lpcxpresso_1549\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\lpc_chip_15xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -mcpu=cortex-m3 -mthumb -D__NEWLIB__ -MMD -MP -MF"src/drv/lpc15xx/EcuUartLPC15xx.d" -MT"src/drv/lpc15xx/EcuUartLPC15xx.o" -MT"src/drv/lpc15xx/EcuUartLPC15xx.d" -o "src/drv/lpc15xx/EcuUartLPC15xx.o" "../src/drv/lpc15xx/EcuUartLPC15xx.cpp"
+In file included from ../src/drv/lpc15xx/UartLPC15xx.h:6:0,
+                 from ../src/drv/lpc15xx/EcuUartLPC15xx.cpp:9:
+C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\inc\chip_15xx/romapi_15xx.h:103:20: warning: 'void iap_entry(unsigned int*, unsigned int*)' defined but not used [-Wunused-function]
+ static INLINE void iap_entry(unsigned int cmd_param[5], unsigned int status_result[4])
+                    ^
+Finished building: ../src/drv/lpc15xx/EcuUartLPC15xx.cpp
+ 
+Building file: ../src/drv/lpc15xx/GpioDrvLPC15xx.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -std=gnu++11 -D__NEWLIB__ -DDEBUG -D__CODE_RED -DCORE_M3 -DCPP_USE_HEAP -D__LPC15XX__ -D__USE_CMSIS -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\lpc_chip_15xx" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\lpc_board_nxp_lpcxpresso_1549" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\src\drv\lpc15xx" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\src\util" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\src\adapter" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\inc\chip_15xx" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\inc\chip_common" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\lpc_board_nxp_lpcxpresso_1549\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\lpc_chip_15xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -mcpu=cortex-m3 -mthumb -D__NEWLIB__ -MMD -MP -MF"src/drv/lpc15xx/GpioDrvLPC15xx.d" -MT"src/drv/lpc15xx/GpioDrvLPC15xx.o" -MT"src/drv/lpc15xx/GpioDrvLPC15xx.d" -o "src/drv/lpc15xx/GpioDrvLPC15xx.o" "../src/drv/lpc15xx/GpioDrvLPC15xx.cpp"
+Finished building: ../src/drv/lpc15xx/GpioDrvLPC15xx.cpp
+ 
+Building file: ../src/drv/lpc15xx/PwmDriverLPC15xx.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -std=gnu++11 -D__NEWLIB__ -DDEBUG -D__CODE_RED -DCORE_M3 -DCPP_USE_HEAP -D__LPC15XX__ -D__USE_CMSIS -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\lpc_chip_15xx" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\lpc_board_nxp_lpcxpresso_1549" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\src\drv\lpc15xx" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\src\util" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\src\adapter" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\inc\chip_15xx" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\inc\chip_common" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\lpc_board_nxp_lpcxpresso_1549\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\lpc_chip_15xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -mcpu=cortex-m3 -mthumb -D__NEWLIB__ -MMD -MP -MF"src/drv/lpc15xx/PwmDriverLPC15xx.d" -MT"src/drv/lpc15xx/PwmDriverLPC15xx.o" -MT"src/drv/lpc15xx/PwmDriverLPC15xx.d" -o "src/drv/lpc15xx/PwmDriverLPC15xx.o" "../src/drv/lpc15xx/PwmDriverLPC15xx.cpp"
+Finished building: ../src/drv/lpc15xx/PwmDriverLPC15xx.cpp
+ 
+Building file: ../src/drv/lpc15xx/SysutilityLPC15xx.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -std=gnu++11 -D__NEWLIB__ -DDEBUG -D__CODE_RED -DCORE_M3 -DCPP_USE_HEAP -D__LPC15XX__ -D__USE_CMSIS -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\lpc_chip_15xx" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\lpc_board_nxp_lpcxpresso_1549" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\src\drv\lpc15xx" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\src\util" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\src\adapter" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\inc\chip_15xx" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\inc\chip_common" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\lpc_board_nxp_lpcxpresso_1549\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\lpc_chip_15xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -mcpu=cortex-m3 -mthumb -D__NEWLIB__ -MMD -MP -MF"src/drv/lpc15xx/SysutilityLPC15xx.d" -MT"src/drv/lpc15xx/SysutilityLPC15xx.o" -MT"src/drv/lpc15xx/SysutilityLPC15xx.d" -o "src/drv/lpc15xx/SysutilityLPC15xx.o" "../src/drv/lpc15xx/SysutilityLPC15xx.cpp"
+In file included from ../src/drv/lpc15xx/SysutilityLPC15xx.cpp:11:0:
+C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\inc\chip_15xx/romapi_15xx.h:103:20: warning: 'void iap_entry(unsigned int*, unsigned int*)' defined but not used [-Wunused-function]
+ static INLINE void iap_entry(unsigned int cmd_param[5], unsigned int status_result[4])
+                    ^
+Finished building: ../src/drv/lpc15xx/SysutilityLPC15xx.cpp
+ 
+Building file: ../src/drv/lpc15xx/TimerLPC15xx.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -std=gnu++11 -D__NEWLIB__ -DDEBUG -D__CODE_RED -DCORE_M3 -DCPP_USE_HEAP -D__LPC15XX__ -D__USE_CMSIS -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\lpc_chip_15xx" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\lpc_board_nxp_lpcxpresso_1549" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\src\drv\lpc15xx" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\src\util" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\src\adapter" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\inc\chip_15xx" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\inc\chip_common" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\lpc_board_nxp_lpcxpresso_1549\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\lpc_chip_15xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -mcpu=cortex-m3 -mthumb -D__NEWLIB__ -MMD -MP -MF"src/drv/lpc15xx/TimerLPC15xx.d" -MT"src/drv/lpc15xx/TimerLPC15xx.o" -MT"src/drv/lpc15xx/TimerLPC15xx.d" -o "src/drv/lpc15xx/TimerLPC15xx.o" "../src/drv/lpc15xx/TimerLPC15xx.cpp"
+Finished building: ../src/drv/lpc15xx/TimerLPC15xx.cpp
+ 
+Building file: ../src/drv/lpc15xx/led.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -std=gnu++11 -D__NEWLIB__ -DDEBUG -D__CODE_RED -DCORE_M3 -DCPP_USE_HEAP -D__LPC15XX__ -D__USE_CMSIS -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\lpc_chip_15xx" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\lpc_board_nxp_lpcxpresso_1549" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\src\drv\lpc15xx" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\src\util" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\src\adapter" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\inc\chip_15xx" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\inc\chip_common" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\lpc_board_nxp_lpcxpresso_1549\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\lpc_chip_15xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -mcpu=cortex-m3 -mthumb -D__NEWLIB__ -MMD -MP -MF"src/drv/lpc15xx/led.d" -MT"src/drv/lpc15xx/led.o" -MT"src/drv/lpc15xx/led.d" -o "src/drv/lpc15xx/led.o" "../src/drv/lpc15xx/led.cpp"
+Finished building: ../src/drv/lpc15xx/led.cpp
+ 
+Building file: ../src/adapter/obd/autoadapter.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -std=gnu++11 -D__NEWLIB__ -DDEBUG -D__CODE_RED -DCORE_M3 -DCPP_USE_HEAP -D__LPC15XX__ -D__USE_CMSIS -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\lpc_chip_15xx" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\lpc_board_nxp_lpcxpresso_1549" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\src\drv\lpc15xx" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\src\util" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\src\adapter" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\inc\chip_15xx" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\inc\chip_common" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\lpc_board_nxp_lpcxpresso_1549\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\lpc_chip_15xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -mcpu=cortex-m3 -mthumb -D__NEWLIB__ -MMD -MP -MF"src/adapter/obd/autoadapter.d" -MT"src/adapter/obd/autoadapter.o" -MT"src/adapter/obd/autoadapter.d" -o "src/adapter/obd/autoadapter.o" "../src/adapter/obd/autoadapter.cpp"
+Finished building: ../src/adapter/obd/autoadapter.cpp
+ 
+Building file: ../src/adapter/obd/canhistory.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -std=gnu++11 -D__NEWLIB__ -DDEBUG -D__CODE_RED -DCORE_M3 -DCPP_USE_HEAP -D__LPC15XX__ -D__USE_CMSIS -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\lpc_chip_15xx" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\lpc_board_nxp_lpcxpresso_1549" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\src\drv\lpc15xx" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\src\util" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\src\adapter" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\inc\chip_15xx" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\inc\chip_common" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\lpc_board_nxp_lpcxpresso_1549\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\lpc_chip_15xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -mcpu=cortex-m3 -mthumb -D__NEWLIB__ -MMD -MP -MF"src/adapter/obd/canhistory.d" -MT"src/adapter/obd/canhistory.o" -MT"src/adapter/obd/canhistory.d" -o "src/adapter/obd/canhistory.o" "../src/adapter/obd/canhistory.cpp"
+Finished building: ../src/adapter/obd/canhistory.cpp
+ 
+Building file: ../src/adapter/obd/isocan.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -std=gnu++11 -D__NEWLIB__ -DDEBUG -D__CODE_RED -DCORE_M3 -DCPP_USE_HEAP -D__LPC15XX__ -D__USE_CMSIS -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\lpc_chip_15xx" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\lpc_board_nxp_lpcxpresso_1549" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\src\drv\lpc15xx" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\src\util" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\src\adapter" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\inc\chip_15xx" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\inc\chip_common" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\lpc_board_nxp_lpcxpresso_1549\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\lpc_chip_15xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -mcpu=cortex-m3 -mthumb -D__NEWLIB__ -MMD -MP -MF"src/adapter/obd/isocan.d" -MT"src/adapter/obd/isocan.o" -MT"src/adapter/obd/isocan.d" -o "src/adapter/obd/isocan.o" "../src/adapter/obd/isocan.cpp"
+Finished building: ../src/adapter/obd/isocan.cpp
+ 
+Building file: ../src/adapter/obd/isoserial.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -std=gnu++11 -D__NEWLIB__ -DDEBUG -D__CODE_RED -DCORE_M3 -DCPP_USE_HEAP -D__LPC15XX__ -D__USE_CMSIS -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\lpc_chip_15xx" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\lpc_board_nxp_lpcxpresso_1549" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\src\drv\lpc15xx" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\src\util" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\src\adapter" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\inc\chip_15xx" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\inc\chip_common" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\lpc_board_nxp_lpcxpresso_1549\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\lpc_chip_15xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -mcpu=cortex-m3 -mthumb -D__NEWLIB__ -MMD -MP -MF"src/adapter/obd/isoserial.d" -MT"src/adapter/obd/isoserial.o" -MT"src/adapter/obd/isoserial.d" -o "src/adapter/obd/isoserial.o" "../src/adapter/obd/isoserial.cpp"
+Finished building: ../src/adapter/obd/isoserial.cpp
+ 
+Building file: ../src/adapter/obd/obdprofile.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -std=gnu++11 -D__NEWLIB__ -DDEBUG -D__CODE_RED -DCORE_M3 -DCPP_USE_HEAP -D__LPC15XX__ -D__USE_CMSIS -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\lpc_chip_15xx" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\lpc_board_nxp_lpcxpresso_1549" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\src\drv\lpc15xx" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\src\util" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\src\adapter" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\inc\chip_15xx" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\inc\chip_common" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\lpc_board_nxp_lpcxpresso_1549\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\lpc_chip_15xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -mcpu=cortex-m3 -mthumb -D__NEWLIB__ -MMD -MP -MF"src/adapter/obd/obdprofile.d" -MT"src/adapter/obd/obdprofile.o" -MT"src/adapter/obd/obdprofile.d" -o "src/adapter/obd/obdprofile.o" "../src/adapter/obd/obdprofile.cpp"
+Finished building: ../src/adapter/obd/obdprofile.cpp
+ 
+Building file: ../src/adapter/obd/padapter.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -std=gnu++11 -D__NEWLIB__ -DDEBUG -D__CODE_RED -DCORE_M3 -DCPP_USE_HEAP -D__LPC15XX__ -D__USE_CMSIS -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\lpc_chip_15xx" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\lpc_board_nxp_lpcxpresso_1549" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\src\drv\lpc15xx" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\src\util" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\src\adapter" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\inc\chip_15xx" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\inc\chip_common" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\lpc_board_nxp_lpcxpresso_1549\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\lpc_chip_15xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -mcpu=cortex-m3 -mthumb -D__NEWLIB__ -MMD -MP -MF"src/adapter/obd/padapter.d" -MT"src/adapter/obd/padapter.o" -MT"src/adapter/obd/padapter.d" -o "src/adapter/obd/padapter.o" "../src/adapter/obd/padapter.cpp"
+../src/adapter/obd/padapter.cpp: In static member function 'static void ProtocolAdapter::appendToHistory(const Ecumsg*)':
+../src/adapter/obd/padapter.cpp:72:34: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     if ((historyPos_ + ITEM_LEN) > sizeof(history_)) {
+                                  ^
+../src/adapter/obd/padapter.cpp: In member function 'virtual void ProtocolAdapter::dumpBuffer()':
+../src/adapter/obd/padapter.cpp:85:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i = 0; i < sizeof(history_); i += ITEM_LEN) {
+                       ^
+Finished building: ../src/adapter/obd/padapter.cpp
+ 
+Building file: ../src/adapter/obd/pwm.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -std=gnu++11 -D__NEWLIB__ -DDEBUG -D__CODE_RED -DCORE_M3 -DCPP_USE_HEAP -D__LPC15XX__ -D__USE_CMSIS -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\lpc_chip_15xx" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\lpc_board_nxp_lpcxpresso_1549" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\src\drv\lpc15xx" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\src\util" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\src\adapter" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\inc\chip_15xx" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\inc\chip_common" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\lpc_board_nxp_lpcxpresso_1549\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\lpc_chip_15xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -mcpu=cortex-m3 -mthumb -D__NEWLIB__ -MMD -MP -MF"src/adapter/obd/pwm.d" -MT"src/adapter/obd/pwm.o" -MT"src/adapter/obd/pwm.d" -o "src/adapter/obd/pwm.o" "../src/adapter/obd/pwm.cpp"
+Finished building: ../src/adapter/obd/pwm.cpp
+ 
+Building file: ../src/adapter/obd/vpw.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -std=gnu++11 -D__NEWLIB__ -DDEBUG -D__CODE_RED -DCORE_M3 -DCPP_USE_HEAP -D__LPC15XX__ -D__USE_CMSIS -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\lpc_chip_15xx" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\lpc_board_nxp_lpcxpresso_1549" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\src\drv\lpc15xx" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\src\util" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\src\adapter" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\inc\chip_15xx" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\inc\chip_common" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\lpc_board_nxp_lpcxpresso_1549\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\lpc_chip_15xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -mcpu=cortex-m3 -mthumb -D__NEWLIB__ -MMD -MP -MF"src/adapter/obd/vpw.d" -MT"src/adapter/obd/vpw.o" -MT"src/adapter/obd/vpw.d" -o "src/adapter/obd/vpw.o" "../src/adapter/obd/vpw.cpp"
+Finished building: ../src/adapter/obd/vpw.cpp
+ 
+Building file: ../src/adapter/adapter.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -std=gnu++11 -D__NEWLIB__ -DDEBUG -D__CODE_RED -DCORE_M3 -DCPP_USE_HEAP -D__LPC15XX__ -D__USE_CMSIS -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\lpc_chip_15xx" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\lpc_board_nxp_lpcxpresso_1549" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\src\drv\lpc15xx" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\src\util" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\src\adapter" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\inc\chip_15xx" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\inc\chip_common" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\lpc_board_nxp_lpcxpresso_1549\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\lpc_chip_15xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -mcpu=cortex-m3 -mthumb -D__NEWLIB__ -MMD -MP -MF"src/adapter/adapter.d" -MT"src/adapter/adapter.o" -MT"src/adapter/adapter.d" -o "src/adapter/adapter.o" "../src/adapter/adapter.cpp"
+Finished building: ../src/adapter/adapter.cpp
+ 
+Building file: ../src/adapter/adapterconfig.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -std=gnu++11 -D__NEWLIB__ -DDEBUG -D__CODE_RED -DCORE_M3 -DCPP_USE_HEAP -D__LPC15XX__ -D__USE_CMSIS -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\lpc_chip_15xx" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\lpc_board_nxp_lpcxpresso_1549" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\src\drv\lpc15xx" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\src\util" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\src\adapter" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\inc\chip_15xx" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\inc\chip_common" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\lpc_board_nxp_lpcxpresso_1549\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\lpc_chip_15xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -mcpu=cortex-m3 -mthumb -D__NEWLIB__ -MMD -MP -MF"src/adapter/adapterconfig.d" -MT"src/adapter/adapterconfig.o" -MT"src/adapter/adapterconfig.d" -o "src/adapter/adapterconfig.o" "../src/adapter/adapterconfig.cpp"
+Finished building: ../src/adapter/adapterconfig.cpp
+ 
+Building file: ../src/adapter/dispatcher.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -std=gnu++11 -D__NEWLIB__ -DDEBUG -D__CODE_RED -DCORE_M3 -DCPP_USE_HEAP -D__LPC15XX__ -D__USE_CMSIS -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\lpc_chip_15xx" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\lpc_board_nxp_lpcxpresso_1549" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\src\drv\lpc15xx" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\src\util" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\src\adapter" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\inc\chip_15xx" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\inc\chip_common" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\lpc_board_nxp_lpcxpresso_1549\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\lpc_chip_15xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -mcpu=cortex-m3 -mthumb -D__NEWLIB__ -MMD -MP -MF"src/adapter/dispatcher.d" -MT"src/adapter/dispatcher.o" -MT"src/adapter/dispatcher.d" -o "src/adapter/dispatcher.o" "../src/adapter/dispatcher.cpp"
+../src/adapter/dispatcher.cpp: In function 'bool DispatchATCmd(const util::string&, int, int)':
+../src/adapter/dispatcher.cpp:460:42: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     if (type == 1 && (cmdString.length() > (numOfChar + 2)))
+                                          ^
+../src/adapter/dispatcher.cpp:463:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i = 0; i < sizeof(dispatchTbl)/sizeof(dispatchTbl[0]); i++) {
+                       ^
+Finished building: ../src/adapter/dispatcher.cpp
+ 
+Building file: ../src/adapter/ecumsg.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -std=gnu++11 -D__NEWLIB__ -DDEBUG -D__CODE_RED -DCORE_M3 -DCPP_USE_HEAP -D__LPC15XX__ -D__USE_CMSIS -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\lpc_chip_15xx" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\lpc_board_nxp_lpcxpresso_1549" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\src\drv\lpc15xx" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\src\util" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\src\adapter" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\inc\chip_15xx" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\inc\chip_common" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\lpc_board_nxp_lpcxpresso_1549\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\lpc_chip_15xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -mcpu=cortex-m3 -mthumb -D__NEWLIB__ -MMD -MP -MF"src/adapter/ecumsg.d" -MT"src/adapter/ecumsg.o" -MT"src/adapter/ecumsg.d" -o "src/adapter/ecumsg.o" "../src/adapter/ecumsg.cpp"
+Finished building: ../src/adapter/ecumsg.cpp
+ 
+Building file: ../src/adapter/functions.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -std=gnu++11 -D__NEWLIB__ -DDEBUG -D__CODE_RED -DCORE_M3 -DCPP_USE_HEAP -D__LPC15XX__ -D__USE_CMSIS -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\lpc_chip_15xx" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\lpc_board_nxp_lpcxpresso_1549" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\src\drv\lpc15xx" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\src\util" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\src\adapter" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\inc\chip_15xx" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\inc\chip_common" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\lpc_board_nxp_lpcxpresso_1549\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\lpc_chip_15xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -mcpu=cortex-m3 -mthumb -D__NEWLIB__ -MMD -MP -MF"src/adapter/functions.d" -MT"src/adapter/functions.o" -MT"src/adapter/functions.d" -o "src/adapter/functions.o" "../src/adapter/functions.cpp"
+../src/adapter/functions.cpp: In function 'void to_ascii(const uint8_t*, uint32_t, util::string&)':
+../src/adapter/functions.cpp:136:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i = 0; i < length; i++) {
+                       ^
+Finished building: ../src/adapter/functions.cpp
+ 
+Building file: ../src/cr_cpp_config.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -std=gnu++11 -D__NEWLIB__ -DDEBUG -D__CODE_RED -DCORE_M3 -DCPP_USE_HEAP -D__LPC15XX__ -D__USE_CMSIS -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\lpc_chip_15xx" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\lpc_board_nxp_lpcxpresso_1549" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\src\drv\lpc15xx" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\src\util" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\src\adapter" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\inc\chip_15xx" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\inc\chip_common" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\lpc_board_nxp_lpcxpresso_1549\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\lpc_chip_15xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -mcpu=cortex-m3 -mthumb -D__NEWLIB__ -MMD -MP -MF"src/cr_cpp_config.d" -MT"src/cr_cpp_config.o" -MT"src/cr_cpp_config.d" -o "src/cr_cpp_config.o" "../src/cr_cpp_config.cpp"
+Finished building: ../src/cr_cpp_config.cpp
+ 
+Building file: ../src/cr_startup_lpc15xx.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -std=gnu++11 -D__NEWLIB__ -DDEBUG -D__CODE_RED -DCORE_M3 -DCPP_USE_HEAP -D__LPC15XX__ -D__USE_CMSIS -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\lpc_chip_15xx" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\lpc_board_nxp_lpcxpresso_1549" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\src\drv\lpc15xx" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\src\util" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\src\adapter" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\inc\chip_15xx" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\inc\chip_common" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\lpc_board_nxp_lpcxpresso_1549\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\lpc_chip_15xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -mcpu=cortex-m3 -mthumb -D__NEWLIB__ -MMD -MP -MF"src/cr_startup_lpc15xx.d" -MT"src/cr_startup_lpc15xx.o" -MT"src/cr_startup_lpc15xx.d" -o "src/cr_startup_lpc15xx.o" "../src/cr_startup_lpc15xx.cpp"
+Finished building: ../src/cr_startup_lpc15xx.cpp
+ 
+Building file: ../src/system_LPC15xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -DCORE_M3 -DCPP_USE_HEAP -D__LPC15XX__ -D__USE_CMSIS -D__NEWLIB__ -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\lpc_chip_15xx" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\lpc_board_nxp_lpcxpresso_1549" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\lpc_board_nxp_lpcxpresso_1549\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\lpc_chip_15xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -mcpu=cortex-m3 -mthumb -D__NEWLIB__ -MMD -MP -MF"src/system_LPC15xx.d" -MT"src/system_LPC15xx.o" -MT"src/system_LPC15xx.d" -o "src/system_LPC15xx.o" "../src/system_LPC15xx.c"
+Finished building: ../src/system_LPC15xx.c
+ 
+Building target: obdlpc15.axf
+Invoking: MCU C++ Linker
+arm-none-eabi-c++ -L"C:\Users\cheri\Desktop\OBD-II\src\Adapter\lpc_chip_15xx\Debug" -L"C:\Users\cheri\Desktop\OBD-II\src\Adapter\lpc_board_nxp_lpcxpresso_1549\Debug" -mcpu=cortex-m3 -mthumb -o "obdlpc15.axf"  ./src/util/algorithms.o ./src/util/canmsgbuffer.o ./src/util/lstring.o  ./src/drv/lpc15xx/AdcLPC15xx.o ./src/drv/lpc15xx/CanDriverLPC15xx.o ./src/drv/lpc15xx/CmdUartLPC15xx.o ./src/drv/lpc15xx/EcuUartLPC15xx.o ./src/drv/lpc15xx/GpioDrvLPC15xx.o ./src/drv/lpc15xx/PwmDriverLPC15xx.o ./src/drv/lpc15xx/SysutilityLPC15xx.o ./src/drv/lpc15xx/TimerLPC15xx.o ./src/drv/lpc15xx/led.o  ./src/adapter/obd/autoadapter.o ./src/adapter/obd/canhistory.o ./src/adapter/obd/isocan.o ./src/adapter/obd/isoserial.o ./src/adapter/obd/obdprofile.o ./src/adapter/obd/padapter.o ./src/adapter/obd/pwm.o ./src/adapter/obd/vpw.o  ./src/adapter/adapter.o ./src/adapter/adapterconfig.o ./src/adapter/dispatcher.o ./src/adapter/ecumsg.o ./src/adapter/functions.o  ./src/cr_cpp_config.o ./src/cr_startup_lpc15xx.o ./src/system_LPC15xx.o   -llpc_chip_15xx -llpc_board_nxp_lpcxpresso_1549
+c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libc.a(lib_a-exit.o): In function `exit':
+exit.c:(.text.exit+0x16): undefined reference to `_exit'
+./src/cr_startup_lpc15xx.o:(.isr_vector+0x0): undefined reference to `_vStackTop'
+./src/cr_startup_lpc15xx.o: In function `ResetISR':
+C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\Debug/../src/cr_startup_lpc15xx.cpp:446: undefined reference to `__data_section_table'
+C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\Debug/../src/cr_startup_lpc15xx.cpp:446: undefined reference to `__data_section_table_end'
+C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\Debug/../src/cr_startup_lpc15xx.cpp:446: undefined reference to `__bss_section_table_end'
+c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libc.a(lib_a-abort.o): In function `abort':
+abort.c:(.text.abort+0xa): undefined reference to `_exit'
+c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libc.a(lib_a-sbrkr.o): In function `_sbrk_r':
+sbrkr.c:(.text._sbrk_r+0xc): undefined reference to `_sbrk'
+c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libc.a(lib_a-signalr.o): In function `_kill_r':
+signalr.c:(.text._kill_r+0x10): undefined reference to `_kill'
+c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libc.a(lib_a-signalr.o): In function `_getpid_r':
+signalr.c:(.text._getpid_r+0x0): undefined reference to `_getpid'
+c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libc.a(lib_a-writer.o): In function `_write_r':
+writer.c:(.text._write_r+0x12): undefined reference to `_write'
+collect2.exe: error: ld returned 1 exit status
+make: *** [obdlpc15.axf] Error 1
+
+12:59:45 Build Finished (took 10s.455ms)
+

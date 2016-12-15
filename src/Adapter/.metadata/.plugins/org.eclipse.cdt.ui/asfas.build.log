@@ -1,0 +1,29 @@
+14:48:27 **** Incremental Build of configuration Debug for project asfas ****
+make -r all 
+Building file: ../src/asfas.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -D__NEWLIB__ -DDEBUG -D__CODE_RED -DCORE_M3 -D__USE_LPCOPEN -DNO_BOARD_LIB -DCPP_USE_HEAP -D__LPC15XX__ -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\asfas\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\lpc_chip_15xx\inc" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/asfas.d" -MT"src/asfas.o" -MT"src/asfas.d" -o "src/asfas.o" "../src/asfas.cpp"
+Finished building: ../src/asfas.cpp
+ 
+Building file: ../src/sysinit.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__NEWLIB__ -DDEBUG -D__CODE_RED -DCORE_M3 -D__USE_LPCOPEN -DNO_BOARD_LIB -DCPP_USE_HEAP -D__LPC15XX__ -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\asfas\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\lpc_chip_15xx\inc" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/sysinit.d" -MT"src/sysinit.o" -MT"src/sysinit.d" -o "src/sysinit.o" "../src/sysinit.c"
+Finished building: ../src/sysinit.c
+ 
+Building target: asfas.axf
+Invoking: MCU C++ Linker
+arm-none-eabi-c++ -nostdlib -L"C:\Users\cheri\Desktop\OBD-II\src\Adapter\periph_ccan_rom\Debug" -Xlinker -Map="asfas.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -mcpu=cortex-m3 -mthumb -T "asfas_Debug.ld" -o "asfas.axf"  ./src/asfas.o ./src/cr_cpp_config.o ./src/cr_startup_lpc15xx.o ./src/crp.o ./src/sysinit.o   
+Memory region         Used Size  Region Size  %age Used
+       MFlash256:        1004 B       256 KB      0.38%
+         Ram0_16:          32 B        16 KB      0.20%
+         Ram1_16:          0 GB        16 KB      0.00%
+./src/asfas.o: In function `main':
+C:\Users\cheri\Desktop\OBD-II\src\Adapter\asfas\Debug/../src/asfas.cpp:31: undefined reference to `SystemCoreClockUpdate'
+./src/sysinit.o: In function `SystemInit':
+C:\Users\cheri\Desktop\OBD-II\src\Adapter\asfas\Debug/../src/sysinit.c:65: undefined reference to `Chip_SystemInit'
+collect2.exe: error: ld returned 1 exit status
+          Ram2_4:          0 GB         4 KB      0.00%
+make: *** [asfas.axf] Error 1
+
+14:48:28 Build Finished (took 687ms)
+

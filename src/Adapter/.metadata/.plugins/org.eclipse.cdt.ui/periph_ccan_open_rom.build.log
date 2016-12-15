@@ -1,0 +1,16 @@
+14:59:42 **** Build of configuration Debug for project periph_ccan_open_rom ****
+make -r all 
+Building target: periph_ccan_open_rom.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"C:\Users\cheri\Desktop\OBD-II\src\Adapter\lpc_chip_15xx\Debug" -L"C:\Users\cheri\Desktop\OBD-II\src\Adapter\lpc_board_nxp_lpcxpresso_1549\Debug" -Xlinker -Map="periph_ccan_open_rom.map" -Xlinker --gc-sections -mcpu=cortex-m3 -mthumb -T "periph_ccan_open_rom_Debug.ld" -o "periph_ccan_open_rom.axf"  ./example/src/ccan_open_rom.o ./example/src/cr_startup_lpc15xx.o ./example/src/sysinit.o   -llpc_board_nxp_lpcxpresso_1549 -llpc_chip_15xx
+Finished building target: periph_ccan_open_rom.axf
+ 
+/bin/make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "periph_ccan_open_rom.axf"; # arm-none-eabi-objcopy -v -O binary "periph_ccan_open_rom.axf" "periph_ccan_open_rom.bin" ; # checksum -p LPC1549 -d "periph_ccan_open_rom.bin";
+   text	   data	    bss	    dec	    hex	filename
+   7276	     76	   2440	   9792	   2640	periph_ccan_open_rom.axf
+ 
+
+14:59:43 Build Finished (took 711ms)
+

@@ -1,16 +1,39 @@
-21:35:41 **** Incremental Build of configuration Debug for project freertos_blinky ****
+23:13:06 **** Build of configuration Debug for project freertos_blinky ****
 make -r all 
-Building target: freertos_blinky.axf
-Invoking: MCU Linker
-arm-none-eabi-gcc -nostdlib -L"C:\Users\Topon\Desktop\OBD-II\src\Test\lpc_chip_15xx\Debug" -L"C:\Users\Topon\Desktop\OBD-II\src\Test\lpc_board_nxp_lpcxpresso_1549\Debug" -Xlinker -Map="freertos_blinky.map" -Xlinker --gc-sections -mcpu=cortex-m3 -mthumb -T "freertos_blinky_Debug.ld" -o "freertos_blinky.axf"  ./freertos/src/FreeRTOSCommonHooks.o ./freertos/src/croutine.o ./freertos/src/event_groups.o ./freertos/src/heap_3.o ./freertos/src/list.o ./freertos/src/port.o ./freertos/src/queue.o ./freertos/src/tasks.o ./freertos/src/timers.o  ./example/src/cr_startup_lpc15xx.o ./example/src/freertos_blinky.o ./example/src/sysinit.o   -llpc_board_nxp_lpcxpresso_1549 -llpc_chip_15xx
-Finished building target: freertos_blinky.axf
+Building file: ../freertos/src/FreeRTOSCommonHooks.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -D__REDLIB__ -DCORE_M3 -I"C:\Users\cheri\Desktop\OBD-II\src\Test\lpc_chip_15xx\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Test\lpc_board_nxp_lpcxpresso_1549\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Test\freertos_blinky\example\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Test\freertos_blinky\freertos\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"freertos/src/FreeRTOSCommonHooks.d" -MT"freertos/src/FreeRTOSCommonHooks.o" -MT"freertos/src/FreeRTOSCommonHooks.d" -o "freertos/src/FreeRTOSCommonHooks.o" "../freertos/src/FreeRTOSCommonHooks.c"
+Finished building: ../freertos/src/FreeRTOSCommonHooks.c
  
-/bin/make --no-print-directory post-build
-Performing post-build steps
-arm-none-eabi-size "freertos_blinky.axf"; # arm-none-eabi-objcopy -v -O binary "freertos_blinky.axf" "freertos_blinky.bin" ; # checksum -p LPC1549 -d "freertos_blinky.bin";
-   text	   data	    bss	    dec	    hex	filename
-  18888	      8	    664	  19560	   4c68	freertos_blinky.axf
+Building file: ../freertos/src/croutine.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -D__REDLIB__ -DCORE_M3 -I"C:\Users\cheri\Desktop\OBD-II\src\Test\lpc_chip_15xx\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Test\lpc_board_nxp_lpcxpresso_1549\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Test\freertos_blinky\example\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Test\freertos_blinky\freertos\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"freertos/src/croutine.d" -MT"freertos/src/croutine.o" -MT"freertos/src/croutine.d" -o "freertos/src/croutine.o" "../freertos/src/croutine.c"
+Finished building: ../freertos/src/croutine.c
  
+Building file: ../freertos/src/event_groups.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -D__REDLIB__ -DCORE_M3 -I"C:\Users\cheri\Desktop\OBD-II\src\Test\lpc_chip_15xx\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Test\lpc_board_nxp_lpcxpresso_1549\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Test\freertos_blinky\example\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Test\freertos_blinky\freertos\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"freertos/src/event_groups.d" -MT"freertos/src/event_groups.o" -MT"freertos/src/event_groups.d" -o "freertos/src/event_groups.o" "../freertos/src/event_groups.c"
+Finished building: ../freertos/src/event_groups.c
+ 
+Building file: ../freertos/src/heap_3.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -D__REDLIB__ -DCORE_M3 -I"C:\Users\cheri\Desktop\OBD-II\src\Test\lpc_chip_15xx\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Test\lpc_board_nxp_lpcxpresso_1549\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Test\freertos_blinky\example\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Test\freertos_blinky\freertos\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"freertos/src/heap_3.d" -MT"freertos/src/heap_3.o" -MT"freertos/src/heap_3.d" -o "freertos/src/heap_3.o" "../freertos/src/heap_3.c"
+Finished building: ../freertos/src/heap_3.c
+ 
+Building file: ../freertos/src/list.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -D__REDLIB__ -DCORE_M3 -I"C:\Users\cheri\Desktop\OBD-II\src\Test\lpc_chip_15xx\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Test\lpc_board_nxp_lpcxpresso_1549\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Test\freertos_blinky\example\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Test\freertos_blinky\freertos\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"freertos/src/list.d" -MT"freertos/src/list.o" -MT"freertos/src/list.d" -o "freertos/src/list.o" "../freertos/src/list.c"
+Finished building: ../freertos/src/list.c
+ 
+Building file: ../freertos/src/port.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -D__REDLIB__ -DCORE_M3 -I"C:\Users\cheri\Desktop\OBD-II\src\Test\lpc_chip_15xx\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Test\lpc_board_nxp_lpcxpresso_1549\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Test\freertos_blinky\example\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Test\freertos_blinky\freertos\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"freertos/src/port.d" -MT"freertos/src/port.o" -MT"freertos/src/port.d" -o "freertos/src/port.o" "../freertos/src/port.c"
+Finished building: ../freertos/src/port.c
+ 
+Building file: ../freertos/src/queue.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -D__REDLIB__ -DCORE_M3 -I"C:\Users\cheri\Desktop\OBD-II\src\Test\lpc_chip_15xx\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Test\lpc_board_nxp_lpcxpresso_1549\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Test\freertos_blinky\example\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Test\freertos_blinky\freertos\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"freertos/src/queue.d" -MT"freertos/src/queue.o" -MT"freertos/src/queue.d" -o "freertos/src/queue.o" "../freertos/src/queue.c"
+Command canceled
 
-21:35:44 Build Finished (took 2s.786ms)
+23:13:09 Build Cancelled (took 2s.380ms)
 

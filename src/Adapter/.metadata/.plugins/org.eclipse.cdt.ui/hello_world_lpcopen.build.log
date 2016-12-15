@@ -1,0 +1,6 @@
+20:26:14 **** Incremental Build of configuration Debug for project hello_world_lpcopen ****
+make -r all 
+make: Nothing to be done for `all'.
+
+20:26:14 Build Finished (took 94ms)
+

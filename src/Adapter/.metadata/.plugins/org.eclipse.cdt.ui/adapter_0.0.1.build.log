@@ -1,0 +1,36 @@
+14:58:15 **** Incremental Build of configuration Debug for project adapter_0.0.1 ****
+make -r all 
+Building file: ../src/drv/lpc15xx/AdcLPC15xx.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -std=gnu++11 -D__NEWLIB__ -DDEBUG -D__CODE_RED -DCORE_M3 -D__USE_LPCOPEN -DCPP_USE_HEAP -D__LPC15XX__ -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\adapter_0.0.1\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\lpc_board_nxp_lpcxpresso_1549\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\lpc_chip_15xx\inc" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/drv/lpc15xx/AdcLPC15xx.d" -MT"src/drv/lpc15xx/AdcLPC15xx.o" -MT"src/drv/lpc15xx/AdcLPC15xx.d" -o "src/drv/lpc15xx/AdcLPC15xx.o" "../src/drv/lpc15xx/AdcLPC15xx.cpp"
+In file included from C:\Users\cheri\Desktop\OBD-II\src\Adapter\lpc_chip_15xx\inc/chip.h:169:0,
+                 from ../src/drv/lpc15xx/AdcLPC15xx.cpp:8:
+C:\Users\cheri\Desktop\OBD-II\src\Adapter\lpc_chip_15xx\inc/adc_15xx.h:87:34: error: expected unqualified-id before numeric constant
+ #define ADC_INSEL_ADC0          (0x0 << 0)    /*!< Select ADCn_0 for channel 0 */
+                                  ^
+../src/drv/lpc15xx/AdcLPC15xx.cpp:16:16: note: in expansion of macro 'ADC_INSEL_ADC0'
+ const uint32_t ADC_INSEL_ADC0 = (0x0 << 0); // Select ADCn_0 for channel 0
+                ^
+C:\Users\cheri\Desktop\OBD-II\src\Adapter\lpc_chip_15xx\inc/adc_15xx.h:87:34: error: expected ')' before numeric constant
+ #define ADC_INSEL_ADC0          (0x0 << 0)    /*!< Select ADCn_0 for channel 0 */
+                                  ^
+../src/drv/lpc15xx/AdcLPC15xx.cpp:16:16: note: in expansion of macro 'ADC_INSEL_ADC0'
+ const uint32_t ADC_INSEL_ADC0 = (0x0 << 0); // Select ADCn_0 for channel 0
+                ^
+../src/drv/lpc15xx/AdcLPC15xx.cpp: In static member function 'static void AdcDriver::configure()':
+../src/drv/lpc15xx/AdcLPC15xx.cpp:28:17: error: 'struct LPC_SYSCTL_T' has no member named 'SYSAHBCLKCTRL0'
+     LPC_SYSCON->SYSAHBCLKCTRL0 |= (1 << 27);
+                 ^
+../src/drv/lpc15xx/AdcLPC15xx.cpp:29:17: error: 'struct LPC_SYSCTL_T' has no member named 'PRESETCTRL0'
+     LPC_SYSCON->PRESETCTRL0 |=  (1 << 27);   // Assert peripheral reset, p46
+                 ^
+../src/drv/lpc15xx/AdcLPC15xx.cpp:30:17: error: 'struct LPC_SYSCTL_T' has no member named 'PRESETCTRL0'
+     LPC_SYSCON->PRESETCTRL0 &= ~(1 << 27);   // De-assert
+                 ^
+../src/drv/lpc15xx/AdcLPC15xx.cpp:33:14: error: 'struct LPC_SWM_T' has no member named 'PINENABLE0'
+     LPC_SWM->PINENABLE0 &= ~(1 << ADC_CH);
+              ^
+make: *** [src/drv/lpc15xx/AdcLPC15xx.o] Error 1
+
+14:58:16 Build Finished (took 292ms)
+

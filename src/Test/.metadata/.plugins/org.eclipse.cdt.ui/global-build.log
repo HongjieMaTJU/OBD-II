@@ -1,49 +1,139 @@
-19:16:56 **** Incremental Build of configuration Debug for project allpro-master ****
+10:57:11 **** Incremental Build of configuration Debug for project hehe ****
 make -r all 
-make: *** No rule to make target `all'.  Stop.
-12:36:08 **** Build of configuration Debug for project periph_blinky ****
-make -r all 
-Building target: periph_blinky.axf
-Invoking: MCU Linker
-arm-none-eabi-gcc -nostdlib -L"C:\Users\cheri\Desktop\OBD-II\src\Test\lpc_chip_15xx\Debug" -L"C:\Users\cheri\Desktop\OBD-II\src\Test\lpc_board_nxp_lpcxpresso_1549\Debug" -Xlinker -Map="periph_blinky.map" -Xlinker --gc-sections -mcpu=cortex-m3 -mthumb -T "periph_blinky_Debug.ld" -o "periph_blinky.axf"  ./example/src/cr_startup_lpc15xx.o ./example/src/sysinit.o ./example/src/systick.o   -llpc_board_nxp_lpcxpresso_1549 -llpc_chip_15xx
-Finished building target: periph_blinky.axf
+Building target: hehe.axf
+Invoking: MCU C++ Linker
+arm-none-eabi-c++ -nostdlib -L"C:\Users\cheri\Desktop\OBD-II\src\Test\lpc_chip_15xx\Debug" -Xlinker -Map="hehe.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -mcpu=cortex-m3 -mthumb -T "hehe_Debug.ld" -o "hehe.axf"  ./src/cr_cpp_config.o ./src/cr_startup_lpc15xx.o ./src/crp.o ./src/hehe.o   -llpc_chip_15xx
+Memory region         Used Size  Region Size  %age Used
+       MFlash256:         988 B       256 KB      0.38%
+         Ram0_16:          32 B        16 KB      0.20%
+         Ram1_16:          0 GB        16 KB      0.00%
+          Ram2_4:          0 GB         4 KB      0.00%
+Finished building target: hehe.axf
  
 /bin/make --no-print-directory post-build
 Performing post-build steps
-arm-none-eabi-size "periph_blinky.axf"; # arm-none-eabi-objcopy -v -O binary "periph_blinky.axf" "periph_blinky.bin" ; # checksum -p LPC1549 -d "periph_blinky.bin";
+arm-none-eabi-size "hehe.axf"; # arm-none-eabi-objcopy -v -O binary "hehe.axf" "hehe.bin" ; # checksum -p LPC1549 -d "hehe.bin";
    text	   data	    bss	    dec	    hex	filename
-   6964	      0	    340	   7304	   1c88	periph_blinky.axf
+    988	      0	     32	   1020	    3fc	hehe.axf
  
-12:36:14 **** Build of configuration Debug for project hello world ****
-make all 
-Cannot run program "make": Launching failed
-
-Error: Program "make" not found in PATH
-PATH=[\bin;D:/nxp/LPCXpresso_8.2.2_650/lpcxpresso/jre/bin/client;D:/nxp/LPCXpresso_8.2.2_650/lpcxpresso/jre/bin;D:/nxp/LPCXpresso_8.2.2_650/lpcxpresso/jre/lib/i386;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\dotnet\;C:\Program Files\MySQL\MySQL Utilities 1.6\;C:\Program Files\Git\cmd;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\cheri\AppData\Local\Microsoft\WindowsApps;D:\Python27;D:\Program Files\Java\jdk1.8.0_111\bin\;d:\nxp\LPCXpresso_8.2.2_650\lpcxpresso]
-12:36:15 **** Incremental Build of configuration Debug for project hello world ****
-make all 
-Cannot run program "make": Launching failed
-
-Error: Program "make" not found in PATH
-PATH=[\bin;D:/nxp/LPCXpresso_8.2.2_650/lpcxpresso/jre/bin/client;D:/nxp/LPCXpresso_8.2.2_650/lpcxpresso/jre/bin;D:/nxp/LPCXpresso_8.2.2_650/lpcxpresso/jre/lib/i386;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\dotnet\;C:\Program Files\MySQL\MySQL Utilities 1.6\;C:\Program Files\Git\cmd;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\cheri\AppData\Local\Microsoft\WindowsApps;D:\Python27;D:\Program Files\Java\jdk1.8.0_111\bin\;d:\nxp\LPCXpresso_8.2.2_650\lpcxpresso]
-12:36:40 **** Incremental Build of configuration Debug for project hello world ****
-make all 
-Cannot run program "make": Launching failed
-
-Error: Program "make" not found in PATH
-PATH=[\bin;D:/nxp/LPCXpresso_8.2.2_650/lpcxpresso/jre/bin/client;D:/nxp/LPCXpresso_8.2.2_650/lpcxpresso/jre/bin;D:/nxp/LPCXpresso_8.2.2_650/lpcxpresso/jre/lib/i386;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\dotnet\;C:\Program Files\MySQL\MySQL Utilities 1.6\;C:\Program Files\Git\cmd;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\cheri\AppData\Local\Microsoft\WindowsApps;D:\Python27;D:\Program Files\Java\jdk1.8.0_111\bin\;d:\nxp\LPCXpresso_8.2.2_650\lpcxpresso]
-12:36:41 **** Incremental Build of configuration Debug for project hello world ****
-make all 
-Cannot run program "make": Launching failed
-
-Error: Program "make" not found in PATH
-PATH=[\bin;D:/nxp/LPCXpresso_8.2.2_650/lpcxpresso/jre/bin/client;D:/nxp/LPCXpresso_8.2.2_650/lpcxpresso/jre/bin;D:/nxp/LPCXpresso_8.2.2_650/lpcxpresso/jre/lib/i386;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\dotnet\;C:\Program Files\MySQL\MySQL Utilities 1.6\;C:\Program Files\Git\cmd;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\cheri\AppData\Local\Microsoft\WindowsApps;D:\Python27;D:\Program Files\Java\jdk1.8.0_111\bin\;d:\nxp\LPCXpresso_8.2.2_650\lpcxpresso]
-12:37:21 **** Incremental Build of configuration Debug for project hello world ****
-make all 
-Cannot run program "make": Launching failed
-
-Error: Program "make" not found in PATH
-PATH=[\bin;D:/nxp/LPCXpresso_8.2.2_650/lpcxpresso/jre/bin/client;D:/nxp/LPCXpresso_8.2.2_650/lpcxpresso/jre/bin;D:/nxp/LPCXpresso_8.2.2_650/lpcxpresso/jre/lib/i386;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\dotnet\;C:\Program Files\MySQL\MySQL Utilities 1.6\;C:\Program Files\Git\cmd;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\cheri\AppData\Local\Microsoft\WindowsApps;D:\Python27;D:\Program Files\Java\jdk1.8.0_111\bin\;d:\nxp\LPCXpresso_8.2.2_650\lpcxpresso]
-14:33:47 **** Incremental Build of configuration Debug for project periph_blinky ****
+11:09:28 **** Incremental Build of configuration Debug for project hehe ****
+make -r all 
+Building target: hehe.axf
+Invoking: MCU C++ Linker
+arm-none-eabi-c++ -nostdlib -L"C:\Users\cheri\Desktop\OBD-II\src\Test\lpc_chip_15xx\Debug" -Xlinker -Map="hehe.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -mcpu=cortex-m3 -mthumb -T "hehe_Debug.ld" -o "hehe.axf"  ./src/cr_cpp_config.o ./src/cr_startup_lpc15xx.o ./src/crp.o ./src/hehe.o   -llpc_chip_15xx
+Memory region         Used Size  Region Size  %age Used
+       MFlash256:         988 B       256 KB      0.38%
+         Ram0_16:          32 B        16 KB      0.20%
+         Ram1_16:          0 GB        16 KB      0.00%
+          Ram2_4:          0 GB         4 KB      0.00%
+Finished building target: hehe.axf
+ 
+/bin/make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "hehe.axf"; # arm-none-eabi-objcopy -v -O binary "hehe.axf" "hehe.bin" ; # checksum -p LPC1549 -d "hehe.bin";
+   text	   data	    bss	    dec	    hex	filename
+    988	      0	     32	   1020	    3fc	hehe.axf
+ 
+11:09:46 **** Incremental Build of configuration Debug for project hehe ****
+make -r all 
+make: Nothing to be done for `all'.
+11:18:55 **** Incremental Build of configuration Debug for project hehe ****
+make -r all 
+make: Nothing to be done for `all'.
+11:19:49 **** Incremental Build of configuration Debug for project hehe ****
+make -r all 
+make: Nothing to be done for `all'.
+11:25:10 **** Incremental Build of configuration Debug for project hehe ****
+make -r all 
+make: Nothing to be done for `all'.
+11:25:33 **** Build of configuration Debug for project lpc_board_nxp_lpcxpresso_1549 ****
+make -r all 
+make: Nothing to be done for `all'.
+11:25:33 **** Build of configuration Debug for project lpc_chip_15xx ****
+make -r all 
+make: Nothing to be done for `all'.
+11:25:34 **** Build of configuration Debug for project exp001 ****
+make -r all 
+Building target: exp001.axf
+Invoking: MCU C++ Linker
+arm-none-eabi-c++ -nostdlib -L"C:\Users\cheri\Desktop\OBD-II\src\Test\lpc_board_nxp_lpcxpresso_1549\Debug" -L"C:\Users\cheri\Desktop\OBD-II\src\Test\lpc_chip_15xx\Debug" -Xlinker -Map="exp001.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -mcpu=cortex-m3 -mthumb -T "exp001_Debug.ld" -o "exp001.axf"  ./src/cr_cpp_config.o ./src/cr_startup_lpc15xx.o ./src/crp.o ./src/exp001.o ./src/sysinit.o   -llpc_board_nxp_lpcxpresso_1549 -llpc_chip_15xx
+Memory region         Used Size  Region Size  %age Used
+       MFlash256:        5236 B       256 KB      2.00%
+         Ram0_16:          36 B        16 KB      0.22%
+         Ram1_16:          0 GB        16 KB      0.00%
+          Ram2_4:          0 GB         4 KB      0.00%
+Finished building target: exp001.axf
+ 
+/bin/make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "exp001.axf"; # arm-none-eabi-objcopy -v -O binary "exp001.axf" "exp001.bin" ; # checksum -p LPC1549 -d "exp001.bin";
+   text	   data	    bss	    dec	    hex	filename
+   5236	      0	     36	   5272	   1498	exp001.axf
+ 
+11:25:36 **** Incremental Build of configuration Debug for project exp001 ****
+make -r all 
+make: Nothing to be done for `all'.
+12:36:07 **** Incremental Build of configuration Debug for project lpc_chip_15xx ****
+make -r all 
+make: Nothing to be done for `all'.
+12:36:08 **** Build of configuration Debug for project exp002 ****
+make -r all 
+Building file: ../src/cr_cpp_config.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -D__NEWLIB__ -DDEBUG -D__CODE_RED -DCORE_M3 -D__USE_LPCOPEN -DNO_BOARD_LIB -DCPP_USE_HEAP -D__LPC15XX__ -I"C:\Users\cheri\Desktop\OBD-II\src\Test\exp002\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Test\lpc_chip_15xx\inc" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/cr_cpp_config.d" -MT"src/cr_cpp_config.o" -MT"src/cr_cpp_config.d" -o "src/cr_cpp_config.o" "../src/cr_cpp_config.cpp"
+Finished building: ../src/cr_cpp_config.cpp
+ 
+Building file: ../src/cr_startup_lpc15xx.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -D__NEWLIB__ -DDEBUG -D__CODE_RED -DCORE_M3 -D__USE_LPCOPEN -DNO_BOARD_LIB -DCPP_USE_HEAP -D__LPC15XX__ -I"C:\Users\cheri\Desktop\OBD-II\src\Test\exp002\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Test\lpc_chip_15xx\inc" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/cr_startup_lpc15xx.d" -MT"src/cr_startup_lpc15xx.o" -MT"src/cr_startup_lpc15xx.d" -o "src/cr_startup_lpc15xx.o" "../src/cr_startup_lpc15xx.cpp"
+Finished building: ../src/cr_startup_lpc15xx.cpp
+ 
+Building file: ../src/crp.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__NEWLIB__ -DDEBUG -D__CODE_RED -DCORE_M3 -D__USE_LPCOPEN -DNO_BOARD_LIB -DCPP_USE_HEAP -D__LPC15XX__ -I"C:\Users\cheri\Desktop\OBD-II\src\Test\exp002\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Test\lpc_chip_15xx\inc" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/crp.d" -MT"src/crp.o" -MT"src/crp.d" -o "src/crp.o" "../src/crp.c"
+Finished building: ../src/crp.c
+ 
+Building file: ../src/exp002.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -D__NEWLIB__ -DDEBUG -D__CODE_RED -DCORE_M3 -D__USE_LPCOPEN -DNO_BOARD_LIB -DCPP_USE_HEAP -D__LPC15XX__ -I"C:\Users\cheri\Desktop\OBD-II\src\Test\exp002\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Test\lpc_chip_15xx\inc" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/exp002.d" -MT"src/exp002.o" -MT"src/exp002.d" -o "src/exp002.o" "../src/exp002.cpp"
+Finished building: ../src/exp002.cpp
+ 
+Building file: ../src/sysinit.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__NEWLIB__ -DDEBUG -D__CODE_RED -DCORE_M3 -D__USE_LPCOPEN -DNO_BOARD_LIB -DCPP_USE_HEAP -D__LPC15XX__ -I"C:\Users\cheri\Desktop\OBD-II\src\Test\exp002\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Test\lpc_chip_15xx\inc" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/sysinit.d" -MT"src/sysinit.o" -MT"src/sysinit.d" -o "src/sysinit.o" "../src/sysinit.c"
+Finished building: ../src/sysinit.c
+ 
+Building target: exp002.axf
+Invoking: MCU C++ Linker
+arm-none-eabi-c++ -nostdlib -L"C:\Users\cheri\Desktop\OBD-II\src\Test\lpc_chip_15xx\Debug" -Xlinker -Map="exp002.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -mcpu=cortex-m3 -mthumb -T "exp002_Debug.ld" -o "exp002.axf"  ./src/cr_cpp_config.o ./src/cr_startup_lpc15xx.o ./src/crp.o ./src/exp002.o ./src/sysinit.o   -llpc_chip_15xx
+Memory region         Used Size  Region Size  %age Used
+       MFlash256:        2112 B       256 KB      0.81%
+         Ram0_16:          36 B        16 KB      0.22%
+         Ram1_16:          0 GB        16 KB      0.00%
+          Ram2_4:          0 GB         4 KB      0.00%
+Finished building target: exp002.axf
+ 
+/bin/make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "exp002.axf"; # arm-none-eabi-objcopy -v -O binary "exp002.axf" "exp002.bin" ; # checksum -p LPC1549 -d "exp002.bin";
+   text	   data	    bss	    dec	    hex	filename
+   2112	      0	     36	   2148	    864	exp002.axf
+ 
+12:36:28 **** Incremental Build of configuration Debug for project lpc_chip_15xx ****
+make -r all 
+make: Nothing to be done for `all'.
+12:36:29 **** Incremental Build of configuration Debug for project exp002 ****
+make -r all 
+make: Nothing to be done for `all'.
+12:36:30 **** Incremental Build of configuration Debug for project exp002 ****
+make -r all 
+make: Nothing to be done for `all'.
+12:37:21 **** Incremental Build of configuration Debug for project lpc_chip_15xx ****
+make -r all 
+make: Nothing to be done for `all'.
+12:37:21 **** Incremental Build of configuration Debug for project exp002 ****
+make -r all 
+make: Nothing to be done for `all'.
+12:37:23 **** Incremental Build of configuration Debug for project exp002 ****
 make -r all 
 make: Nothing to be done for `all'.
