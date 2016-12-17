@@ -1,0 +1,130 @@
+/**@brief C_CAN driver
+ * c_can0_15xx.h
+ *
+ *  Created on: 2016年12月15日
+ *      Author: Topon.Edison
+ */
+
+
+
+/*@brief introduction to the c_can funtion of the LPC15xx
+ *
+ * Controller Area Network (CAN) is the definition of a high performance communication
+protocol for serial data communication. The C_CAN controller is designed to provide a full
+implementation of the CAN protocol according to the CAN Specification Version 2.0B. The
+C_CAN controller allows to build powerful local networks with low-cost multiplex wiring by
+supporting distributed real-time control with a very high level of security.
+The CAN controller consists of a CAN core, message RAM, a message handler, control
+registers, and the APB interface.
+ *
+ * For communication on a CAN network, individual Message Objects are configured. The
+Message Objects and Identifier Masks for acceptance filtering of received messages are
+stored in the Message RAM.
+ *
+ * All functions concerning the handling of messages are implemented in the Message
+Handler. Those functions are the acceptance filtering, the transfer of messages between
+the CAN Core and the Message RAM, and the handling of transmission requests as well
+as the generation of the module interrupt.
+The register set of the CAN controller can be accessed directly by an external CPU via the
+APB bus. These registers are used to control/configure the CAN Core and the Message
+Handler and to access the Message RAM.
+ *
+ */
+
+#ifndef CHIP_15XX_INC_C_CAN_15XX_H_
+#define CHIP_15XX_INC_C_CAN_15XX_H_
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+/**
+ * @groupdef of LPC15xx C_CAN Driver(C_CAN0)
+ * ingroup CHIP_15XX_Drivers
+ */
+
+
+/**
+ *  @brief LPC15XX Controller Area NetWork C_CAN0  block structure
+ */
+
+typedef struct                         /*!< CCAN Structure */
+{
+	__IO uint32_t CNTL;                /*!< CAN control */
+	__IO uint32_t STAT;                /*!< status register */
+    __I  uint32_t EC;                  /*!< error counter */
+    __IO uint32_t BT;                  /*!< bit timing register */
+    __I  uint32_t INT;                 /*!< interrupt register */
+    __IO uint32_t TEST;                /*!< Test register */
+    __IO uint32_t BRPE;                /*!< Baud rate prescaler extension register */
+    __I uint32_t RESERVED0;            /*!< Reserved */
+
+    __IO uint32_t IF1_CMDREQ;          /*!< Message interface 1 command request register */
+
+    union {
+    	__IO uint32_t IF1_CMDMSK_W;    /*!< Message interface 1 command mask(write direction) */
+    	__IO uint32_t IF1_CMDMSK_R;     /*!< Message interface 1 command mask(read direction) */
+    };
+
+    __IO uint32_t IF1_MSK1;            /*!< Message interface 1 mask 1 */
+    __IO uint32_t IF1_MSK2;            /*!< Message interface 1 mask 2 */
+    __IO uint32_t IF1_ARB1;            /*!< Message interface 1 arbitration 1 */
+    __IO uint32_t IF1_ARB2;            /*!< Message interface 1 arbitration 2 */
+    __IO uint32_t IF1_MCTRL;           /*!< Message interface 1 message control */
+    __IO uint32_t IF1_DA1;             /*!< Message interface 1 data A1 */
+    __IO uint32_t IF1_DA2;             /*!< Message interface 1 data A2 */
+    __IO uint32_t IF1_DB1;             /*!< Message interface 1 data B1 */
+    __IO uint32_t IF1_DB2;             /*!< Message interface 1 data B2 */
+    __I uint32_t RESERVED1[13];        /*!< Reserved */
+
+    __IO uint32_t IF2_CMDREQ;          /*!< Message interface 2 command request register */
+
+    union
+	{
+    	__IO uint32_t IF2_CMDMSK_W;    /*!< Message interface 2 command mask(write direction) */
+    	__IO uint32_t IF2_CMDMSK_R;    /*!< Message interface 2 command mask(read direction) */
+	};
+
+
+    __IO uint32_t IF2_MSK1;            /*!< Message interface 2 mask 1 */
+    __IO uint32_t IF2_MSK2;            /*!< Message interface 2 mask 2 */
+    __IO uint32_t IF2_ARB1;            /*!< Message interface 2 arbitration 1 */
+    __IO uint32_t IF2_ARB2;            /*!< Message interface 2 arbitration 2 */
+    __IO uint32_t IF2_MCTRL;           /*!< Message interface 2 message control */
+    __IO uint32_t IF2_DA1;             /*!< Message interface 2 data A1 */
+    __IO uint32_t IF2_DA2;             /*!< Message interface 2 data A2 */
+    __IO uint32_t IF2_DB1;             /*!< Message interface 2 data B1 */
+    __IO uint32_t IF2_DB2;             /*!< Message interface 2 data B2 */
+    __I uint32_t RESERVED2[21];        /*!< Reserved */
+
+    __I uint32_t TXREQ1;               /*!< Transmission request 1 */
+    __I uint32_t TXREQ2;               /*!< Transmission request 2 */
+    __I uint32_t RESERVED3[6];         /*!< Reserved */
+    __I uint32_t ND1;                  /*!< New data 1 */
+    __I uint32_t ND2;                  /*!< New data 2 */
+    __I uint32_t RESERVED4[6];         /*!< Reserved */
+    __I uint32_t IR1;                  /*!< Interrupt pending 1 */
+    __I uint32_t IR2;                  /*!< Interrupt pending 2 */
+    __I uint32_t RESERVED5[6];         /*!< Reserved */
+    __I uint32_t MSGV1;                /*!< Message valid 1 */
+    __I uint32_t MSGV2;                /*!< Message valid 2 */
+    __I uint32_t RESERVED6[6];         /*!< Reserved */
+    __IO uint32_t CLKDIV;              /*!< CAN clock divider register */
+
+
+}LPC_C_CAN_T;
+
+
+/*
+ * @brief C_CAN control register definitons
+ */
+
+
+
+
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif /* CHIP_15XX_INC_C_CAN_15XX_H_ */
