@@ -1,21 +1,8 @@
 /**@brief C_CAN driver
  * c_can0_15xx.h
  *
- *
- *
- *
- *
- *
- *
  *  Created on: 2016年12月15日
  *      Author: Topon.Edison
- *
- *
- *
- *
- *
- *
- *
  */
 
 
@@ -72,16 +59,15 @@ typedef struct                         /*!< CCAN Structure */
     __IO uint32_t BRPE;                /*!< Baud rate prescaler extension register */
     __I uint32_t RESERVED0;            /*!< Reserved */
 
-    __IO uint32_t IF1_CMDREQ;          /*!< Message interface 1 command request register  for transmit
-                                            Message */
+    __IO uint32_t IF1_CMDREQ;          /*!< Message interface 1 command request register */
 
-    union {                            /*!<to define the bits or bit need be ignored in Message Object or Interface Register */
+    union {
     	__IO uint32_t IF1_CMDMSK_W;    /*!< Message interface 1 command mask(write direction) */
     	__IO uint32_t IF1_CMDMSK_R;     /*!< Message interface 1 command mask(read direction) */
     };
 
-    __IO uint32_t IF1_MSK1;            /*!< Message interface 1 mask 1 to mask the arbitration bit*/
-    __IO uint32_t IF1_MSK2;            /*!< Message interface 1 mask 2 to mask the arbitration bit*/
+    __IO uint32_t IF1_MSK1;            /*!< Message interface 1 mask 1 */
+    __IO uint32_t IF1_MSK2;            /*!< Message interface 1 mask 2 */
     __IO uint32_t IF1_ARB1;            /*!< Message interface 1 arbitration 1 */
     __IO uint32_t IF1_ARB2;            /*!< Message interface 1 arbitration 2 */
     __IO uint32_t IF1_MCTRL;           /*!< Message interface 1 message control */
@@ -91,7 +77,7 @@ typedef struct                         /*!< CCAN Structure */
     __IO uint32_t IF1_DB2;             /*!< Message interface 1 data B2 */
     __I uint32_t RESERVED1[13];        /*!< Reserved */
 
-    __IO uint32_t IF2_CMDREQ;          /*!< Message interface 2 command request register  for */
+    __IO uint32_t IF2_CMDREQ;          /*!< Message interface 2 command request register */
 
     union
 	{
@@ -130,7 +116,7 @@ typedef struct                         /*!< CCAN Structure */
 
 
 /**
- * @brief C_CAN control register definitions
+ * @brief C_CAN control register definitons
  */
 #define CANCTL_INIT_NORMAL               (0x00 << 0)          /*!< Normal operation */
 #define CANCTL_INIT_STARTED              (0x01 << 0)          /*!< Started initialization */
@@ -152,17 +138,15 @@ typedef struct                         /*!< CCAN Structure */
 
 
 /**
- *
- * @brief CAN status register definitions
+ * @brief CAN status register
  *
  */
-#define  CAN_STAT_LEC_MASK                (0x00000007)        /*!< For the use of reading the last error code */
-#define CAN_STAT_LEC_NO_ERROR             (0x00 << 0)         /*!< No error occur */
+#define CAN_STAT_LEC_NO_ERROR             (0x00 << 0)         /*!< No error occure */
 #define CAN_STAT_LEC_STUFF_ERROR          (0x01 << 0)         /*!< Stuff error */
-#define CAN_STAT_LEC_FORM_ERROR           (0x01 << 1)         /*!< Form error */
+#define CAN_STAT_LEC_FORM_ERROR           (0x01 << 1)         /*!< Form errro */
 #define CAN_STAT_LEC_ACK_ERROR            (0x03 << 0)         /*!< Ack error */
-#define CAN_STAT_LEC_BIT1_ERROR           (0x01 << 2)         /*!< Bit1 error, sending 1 (recessive bit) but monitored  0(dominant bit) */
-#define CAN_STAT_LEC_BIT0_ERROR           (0x05 << 0)         /*!< Bit0 error, sending 0 (recessive bit) but monitored  0(dominant bit) */
+#define CAN_STAT_LEC_BIT1_ERROR           (0x01 << 2)         /*!< Bit1 error */
+#define CAN_STAT_LEC_BIT0_ERROR           (0x05 << 0)         /*!< Bit0 error */
 #define CAN_STAT_LEC_CRC_ERROR            (0x06 << 0)         /*!< CRC error */
 #define CAN_STAT_LEC_UNUSED_ERROR         (0x07 << 0)         /*!< No CAN bus event was detected */
 #define CAN_STAT_TXOK_NO                  (0x00 << 3)         /*!< No transmit */
@@ -177,71 +161,9 @@ typedef struct                         /*!< CCAN Structure */
 #define CAN_STAT_BOFF_BUS_CONNECTED       (0x00 << 7)         /*!< Bus connected */
 #define CAN_STAT_BOFF_BUS_OFF             (0x01 << 7)         /*!< Bus is in busoff state */
 
-/**
- *
- * @brief CAN error counter register definitions
- *
- */
 
 
 
-
-#define CAN_EC_TEC7_0_MASK                (0x000000ff)        /*!< For EC & CAN_EC_TEC7_0_MASK = the num of the transmit errors */
-#define CAN_EC_REC6_0_MASK                (0x00007f00)        /*!< For EC & CAN_EC_REC7_0_MASK = the num of the receive errors */
-#define CAN_EC_RP_MASK                    (0x00008000)        /*!< The RP mask */
-
-
-/**
- *
- *@brief CAN Interrupt register definitions
- *
- */
-#define CAN_INTERRUPT_SOURCE_MASK         (0x0000ffff)        /*!< For the use of reading the INTID */
-#define CAN_STATUS_INTERRUPT              (0x00008000)        /*!< The interrupt source is status change in the status register */
-
-
-/**
- *
- * @brief CAN message interface command request register
- *
- */
-#define IFx_CMDREQ_MN_MASK                (0x0000003f)        /*!< For the use of r/w MN in register */
-#define IFx_CMDREQ_BUSY_MASK              (0x00008000)        /*!< For the use of reading the BUSY */
-
-
-/*
- *
- * @brief CAN message interface command mask register
- *
- */
-#define IFx_CMDMSK_DATA_B_TRANSFER        (0x01 << 0)         /*!< Transfer data bytes 4-7 between message object and interface register*/
-#define IFx_CMDMSK_DATA_A_TRANSFER        (0x01 << 1)         /*!< Transfer data bytes 0-3 between message object and interface register*/
-#define IFx_CMDMSK_TXRQST_TRAN_REQ        (0x01 << 2)         /*!< Request a transmission */
-#define IFx_CMDMSK_CTRL_TRANSFER          (0x01 << 4)         /*!< Transfer control bits between message object and interface register */
-#define IFx_CMDMSK_ARB_TRANSFER           (0x01 << 5)         /*!< Transfer arbitration bits identifier,DIR,XTD,MSGVAL between the message object buffer and interface register */
-#define IFx_CMDMSK_MASK_TRANSFER          (0x01 << 6)         /*!< Transfer identifier MSK + MDIR + MXTD between message object and interface register */
-#define IFx_CMDMSK_WR_RD_WRITE            (0x01 << 7)         /*!< Transfer to message object */
-
-/**
- *
- * @brief CAN interface mask register
- *
- */
-
-
-/**
- *  @brief   Initialize the CAN
- *  @param   Pointer to the selected peripheral
- *  @return  Nothing
- */
-void Chip_CAN_Init(LPC_C_CAN_T * pCAN);
-
-
-/**
- * @brief   Configure the CAN clock
- * @param
- * @return
- */
 
 #ifdef __cplusplus
 }

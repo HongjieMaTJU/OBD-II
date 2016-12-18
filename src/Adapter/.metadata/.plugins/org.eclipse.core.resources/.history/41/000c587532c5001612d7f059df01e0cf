@@ -161,8 +161,8 @@ typedef struct                         /*!< CCAN Structure */
 #define CAN_STAT_LEC_STUFF_ERROR          (0x01 << 0)         /*!< Stuff error */
 #define CAN_STAT_LEC_FORM_ERROR           (0x01 << 1)         /*!< Form error */
 #define CAN_STAT_LEC_ACK_ERROR            (0x03 << 0)         /*!< Ack error */
-#define CAN_STAT_LEC_BIT1_ERROR           (0x01 << 2)         /*!< Bit1 error, sending 1 (recessive bit) but monitored  0(dominant bit) */
-#define CAN_STAT_LEC_BIT0_ERROR           (0x05 << 0)         /*!< Bit0 error, sending 0 (recessive bit) but monitored  0(dominant bit) */
+#define CAN_STAT_LEC_BIT1_ERROR           (0x01 << 2)         /*!< Bit1 error */
+#define CAN_STAT_LEC_BIT0_ERROR           (0x05 << 0)         /*!< Bit0 error */
 #define CAN_STAT_LEC_CRC_ERROR            (0x06 << 0)         /*!< CRC error */
 #define CAN_STAT_LEC_UNUSED_ERROR         (0x07 << 0)         /*!< No CAN bus event was detected */
 #define CAN_STAT_TXOK_NO                  (0x00 << 3)         /*!< No transmit */
@@ -218,30 +218,10 @@ typedef struct                         /*!< CCAN Structure */
 #define IFx_CMDMSK_DATA_A_TRANSFER        (0x01 << 1)         /*!< Transfer data bytes 0-3 between message object and interface register*/
 #define IFx_CMDMSK_TXRQST_TRAN_REQ        (0x01 << 2)         /*!< Request a transmission */
 #define IFx_CMDMSK_CTRL_TRANSFER          (0x01 << 4)         /*!< Transfer control bits between message object and interface register */
-#define IFx_CMDMSK_ARB_TRANSFER           (0x01 << 5)         /*!< Transfer arbitration bits identifier,DIR,XTD,MSGVAL between the message object buffer and interface register */
-#define IFx_CMDMSK_MASK_TRANSFER          (0x01 << 6)         /*!< Transfer identifier MSK + MDIR + MXTD between message object and interface register */
-#define IFx_CMDMSK_WR_RD_WRITE            (0x01 << 7)         /*!< Transfer to message object */
-
-/**
- *
- * @brief CAN interface mask register
- *
- */
 
 
-/**
- *  @brief   Initialize the CAN
- *  @param   Pointer to the selected peripheral
- *  @return  Nothing
- */
-void Chip_CAN_Init(LPC_C_CAN_T * pCAN);
+//void Init_CAN
 
-
-/**
- * @brief   Configure the CAN clock
- * @param
- * @return
- */
 
 #ifdef __cplusplus
 }

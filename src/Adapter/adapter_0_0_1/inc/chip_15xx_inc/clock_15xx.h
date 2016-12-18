@@ -42,7 +42,7 @@ extern "C" {
  */
 
 /** Internal oscillator frequency */
-#define SYSCTL_IRC_FREQ (12000000)
+#define SYSCTL_IRC_FREQ (32768)
 
 /** Internal watchdog oscillator frequency */
 #define SYSCTL_WDTOSC_FREQ (503000)
