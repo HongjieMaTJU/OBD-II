@@ -96,7 +96,7 @@ extern "C" {
 #define LPC_USART0                ((LPC_USART_T            *) LPC_USART0_BASE)
 #define LPC_USART1                ((LPC_USART_T            *) LPC_USART1_BASE)
 #define LPC_USART2                ((LPC_USART_T            *) LPC_USART2_BASE)
-#define LPC_CAN                   ((LCP_C_CAN_T            *) LPC_C_CAN0_BASE)  // Added by Topon.Edison in 2016/12/16
+#define LPC_CAN                   ((LCP_C_CAN_Type            *) LPC_C_CAN0_BASE)  // Added by Topon.Edison in 2016/12/16
 #define LPC_I2C0                  ((LPC_I2C_T              *) LPC_I2C_BASE)
 #define LPC_I2C                   ((LPC_I2C_T              *) LPC_I2C_BASE) /* Alias for I2C0 */
 #define LPC_USB                   ((LPC_USB_T              *) LPC_USB0_BASE)

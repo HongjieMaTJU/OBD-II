@@ -1,0 +1,19 @@
+/*
+ * board.cpp
+ *
+ *  Created on: 2016年12月20日
+ *      Author: cheri
+ */
+
+
+
+#include "board.h"
+
+
+/**
+ *
+ * @brief frequency of the different clock sources of the board
+ *
+ */
+const uint32_t OscRateIn = 12000000;      /*!< The frequency of the external crystal 12MHZ */
+const uint32_t RTCOscRateIn = 32768;      /*!< The frequency of the RTC internal oscillator 32.76KHZ */

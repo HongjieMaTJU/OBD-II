@@ -147,7 +147,7 @@ static void CAN_rx(uint8_t msgNumber)
 	msg_obj.msgobj = msgNumber;
 
 	/* Now load up the msg_obj structure with the CAN message */
-	LPC_CAND_API->hwCAN_MsgReceive(pCanHandle, &msg_obj);
+	LPC_CAND_API ->hwCAN_MsgReceive(pCanHandle, &msg_obj);
 	if (msgNumber == 1) {
 		/* Simply transmit CAN frame (echo) with with ID +0x100 via buffer 2 */
 		msg_obj.msgobj = 2;
@@ -264,6 +264,7 @@ int main(void)
 	/* Send a simple one time CAN message */
 	msg_obj.msgobj  = 0;
 	msg_obj.mode_id = 0x700+0x20;
+
 	msg_obj.mask    = 0x0;
 	msg_obj.dlc     = 4;
 	msg_obj.data[0] = 'T';	/* 0x54 */
@@ -273,10 +274,27 @@ int main(void)
 	
 	LPC_CAND_API->hwCAN_MsgTransmit(pCanHandle, &msg_obj);
 
+	/* Send a simple one time CAN message */
+	msg_obj.msgobj  = 1;
+	msg_obj.mode_id = 0x0001+0x00;
+	msg_obj.mask    = 0x0;
+	msg_obj.dlc     = 4;
+	msg_obj.data[0] = 'T';	/* 0x54 */
+	msg_obj.data[1] = 'A';	/* 0x45 */
+	msg_obj.data[2] = 'O';	/* 0x53 */
+	msg_obj.data[3] = 'P';	/* 0x54 */
+
+	LPC_CAND_API->hwCAN_MsgTransmit(pCanHandle, &msg_obj);
+
 	/* Configure message object 1 to receive all 11-bit messages 0x400-0x4FF */
-	msg_obj.msgobj = 1;
+	msg_obj.msgobj = 3;
 	msg_obj.mode_id = 0x400;
 	msg_obj.mask = 0x700;
+	LPC_CAND_API->hwCAN_ConfigRxmsgobj(pCanHandle, &msg_obj);
+
+	msg_obj.msgobj = 2;
+	msg_obj.mode_id = 0x0001;
+	msg_obj.mask = 0xffff;
 	LPC_CAND_API->hwCAN_ConfigRxmsgobj(pCanHandle, &msg_obj);
 
 	while (1) {

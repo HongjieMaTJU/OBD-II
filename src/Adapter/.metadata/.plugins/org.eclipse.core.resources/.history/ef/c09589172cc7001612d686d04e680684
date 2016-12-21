@@ -1,0 +1,64 @@
+/*
+ * board.cpp
+ *
+ *  Created on: 2016年12月20日
+ *      Author: cheri
+ */
+
+
+
+#include "board.h"
+
+
+/**
+ *
+ * @brief frequency of the different clock sources of the board
+ *
+ */
+const uint32_t OscRateIn = 12000000;      /*!< The frequency of the external crystal 12MHZ */
+const uint32_t RTCOscRateIn = 32768;      /*!< The frequency of the RTC internal oscillator 32.76KHZ */
+
+
+
+
+/*****************************************************************************
+ * Private functions
+ ****************************************************************************/
+/* Set up the main clock */
+void Board_Configure_Main_Clock()
+{
+
+}
+
+
+
+/* Set up the system PLL */
+void Board_Configure_USB_PLL()
+{
+	Chip_SYSCTL_PowerDown(SYSCTL_POWERDOWN_SYSOSC_PD); /*!< Power down the system oscillator to configure it */
+
+	LPC_SYSCTL->SYSOSCCTRL
+
+	Chip_SYSCTL_PowerUp(SYSCTL_POWERDOWN_SYSOSC_PD);   /*!< Power up the system oscillator */
+
+
+}
+
+
+
+/*****************************************************************************
+ * Public functions
+ ****************************************************************************/
+
+/* Initialize the board */
+void Board_Init()
+{
+	Board_Configure_Main_Clock();
+	Board_Configure_IO_Clock();
+	Board_Configure_USART_Clock();
+	Board_Configure_CAN_Clock();
+	Board_Configure_IO();
+}
+
+
+

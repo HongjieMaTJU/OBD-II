@@ -1,6 +1,7 @@
-15:09:34 **** Incremental Build of configuration Debug for project helloworld ****
+21:49:22 **** Build of configuration Debug for project helloworld ****
 make -r all 
 make: Nothing to be done for `all'.
+Command canceled
 
-15:09:35 Build Finished (took 153ms)
+21:49:22 Build Cancelled (took 152ms)
 

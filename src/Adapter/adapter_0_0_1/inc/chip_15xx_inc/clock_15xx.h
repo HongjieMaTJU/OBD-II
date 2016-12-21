@@ -675,7 +675,7 @@ STATIC INLINE uint32_t Chip_Clock_GetWDTOSCRate(void)
  * used if an external clock that is not an oscillator is attached
  * to the XTALIN pin.
  */
-void Chip_Clock_SetPLLBypass(bool bypass, bool highfr);
+void Chip_Clock_Set_SYSOSCCTRL(bool bypass, bool highfr);
 
 /**
  * @}
