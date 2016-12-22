@@ -1,6 +1,6 @@
-23:14:29 **** Incremental Build of configuration Debug for project periph_blinky ****
+22:28:55 **** Incremental Build of configuration Debug for project periph_blinky ****
 make -r all 
 make: Nothing to be done for `all'.
 
-23:14:29 Build Finished (took 114ms)
+22:28:55 Build Finished (took 110ms)
 

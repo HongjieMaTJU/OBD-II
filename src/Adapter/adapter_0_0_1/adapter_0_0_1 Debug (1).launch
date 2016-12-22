@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <launchConfiguration type="com.crt.dsfdebug.crtmcu.launchType">
-<stringAttribute key="InstructionTraceInfo" value="eJzFVtuOm0gQfY+Uf0C8Z8cYwzhSvFG7acco3NTdzER5aTF2j0OCwcslm/37LW6+Mh5LWWn9YNHNqVNVp6qL/vDx1zZRfsq8iLN0pmp/jFRFpqtsHaebmRryxbup+vHPt28+yHIryydLllGcFPUGj/KNLBcyKqtcFoobfc/yh54HWNw4Pd1oDYDUY2EQ+JQTS62JCHfnUSEVtF4DUTFT3xm6aY4m5v1YVQLYkilY6epdDbYe+SV4appTzTwCl3klW7w9RD69H73XxoN4wudDwYyM+2P+5ygpOgP33EDXDWMy0cejF/Ag4t/lmY+xOZ3omm6+YMPzaCUXVZrK5DQw4705mY4GEwEnOMslizff4GG7y1IAKLXfQelw4WSrHzPVq5KkfVYVoKByw0qggQL+bz+1q/tz32p1EifRd4AVpBnlEcRbKF61fZL5TJ20arBqt8vyUq4VvN25Ubn61mml4H9WicRZlZY1vNmrDWrJumZXrKiM6nVfE8WJ0x/afuVGv9yoAO00Q937HbV+h2lazx1Luxgk0a6R3B7L+L+h6U7g3V7Lrs2CPHuOE5gXnYpFVw6BOXWUhyip5F6Pu5fwd0cF7oGX/duc0HJ7S2P3A6Rv7McsX+8bWz5VGyr/2ucLnKyM8hJ6fdfMKlglyf51s3LkT5m0gyzeyqKMjtRrDig6WHRjbXGU0KEDbWumwkvboiKghBGPn/dojeAUYSIYR5TDvx9cwy4REwt74S9Cxxl6jxxOqIe4/UDEnCIPL0WA8Gcy7HgZunOhj0U3pQcxtksgNDewvU/CdgOHuBAazPNrWAERhMgRxMO+BYZDYEqsEBNLYD8EPiq0IRBGnggZEcSdA9QGmR4Rx8vAtz3OhgwsxJFAFgiO/ToOn4vDJ2hQL0dQ8slmEAKDJ2ShuUO6Dj6ra9PEZxVu9upz19b6S6O+I2wvCC8D7MCjA9izIK1TK8GIQzD36SvmTaZ1koii19HYB5G/8BsMJl10teLWheg3Z9Yk5If8ClrrQ2sa4BXOANm0KSxh7Pa0bY9xGrpQWOaHFJOX4OMu6/poCYsEfHmd13UtAq0Nbfs7lZ6HTDD7a99uh/5qBl8zMZV4vVcI9MrlulrJdf8pyWWSRbAyDUM3+qYdGprN/ei2adrfmAam6fkN5YJODvD1F5eBa0dzqBhfnH85rrtoISdX0mbr9Nr6Ly8tS5cAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=="/>
 <stringAttribute key="com.crt.ctrlcenter.OFSemuDetails" value="LinkServer"/>
 <booleanAttribute key="com.crt.ctrlcenter.crtInit" value="true"/>
 <stringAttribute key="com.crt.ctrlcenter.currentWireType" value="SWD"/>
@@ -17,7 +16,7 @@
 <stringAttribute key="org.eclipse.cdt.launch.DEBUGGER_STOP_AT_MAIN_SYMBOL" value="main"/>
 <stringAttribute key="org.eclipse.cdt.launch.PROGRAM_NAME" value="Debug\adapter_0_0_1.axf"/>
 <stringAttribute key="org.eclipse.cdt.launch.PROJECT_ATTR" value="adapter_0_0_1"/>
-<stringAttribute key="org.eclipse.cdt.launch.PROJECT_BUILD_CONFIG_ID_ATTR" value="com.crt.advproject.config.exe.debug.318821859"/>
+<stringAttribute key="org.eclipse.cdt.launch.PROJECT_BUILD_CONFIG_ID_ATTR" value="com.crt.advproject.config.exe.debug.1229850871"/>
 <booleanAttribute key="org.eclipse.cdt.launch.use_terminal" value="false"/>
 <stringAttribute key="org.eclipse.dsf.launch.MEMORY_BLOCKS" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;memoryBlockExpressionList context=&quot;reserved-for-future-use&quot;/&gt;&#13;&#10;"/>
 <stringAttribute key="process_factory_id" value="org.eclipse.cdt.dsf.gdb.GdbProcessFactory"/>

@@ -1,6 +1,6 @@
-23:33:18 **** Incremental Build of configuration Debug for project adapter_0_0_1 ****
+22:47:22 **** Incremental Build of configuration Debug for project adapter_0_0_1 ****
 make -r all 
 make: Nothing to be done for `all'.
 
-23:33:18 Build Finished (took 145ms)
+22:47:22 Build Finished (took 150ms)
 

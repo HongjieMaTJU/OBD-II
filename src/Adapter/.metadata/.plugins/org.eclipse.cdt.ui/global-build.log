@@ -1,3 +1,99 @@
-23:33:18 **** Incremental Build of configuration Debug for project adapter_0_0_1 ****
+22:57:39 **** Incremental Build of configuration Debug for project ecu_simulator_0_0_1 ****
+make -r all 
+Building file: ../src/drivers_src/board.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -D__NEWLIB__ -DDEBUG -D__CODE_RED -DCORE_M3 -DCPP_USE_HEAP -D__LPC15XX__ -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\chip_15xx_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\chip_15xx_inc\usbd" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\drivers_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\ecu_simulator_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\obd_protocol_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\utilities_inc" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/drivers_src/board.d" -MT"src/drivers_src/board.o" -MT"src/drivers_src/board.d" -o "src/drivers_src/board.o" "../src/drivers_src/board.cpp"
+Finished building: ../src/drivers_src/board.cpp
+ 
+Building file: ../src/drivers_src/led.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -D__NEWLIB__ -DDEBUG -D__CODE_RED -DCORE_M3 -DCPP_USE_HEAP -D__LPC15XX__ -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\chip_15xx_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\chip_15xx_inc\usbd" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\drivers_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\ecu_simulator_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\obd_protocol_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\utilities_inc" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/drivers_src/led.d" -MT"src/drivers_src/led.o" -MT"src/drivers_src/led.d" -o "src/drivers_src/led.o" "../src/drivers_src/led.cpp"
+Finished building: ../src/drivers_src/led.cpp
+ 
+Building file: ../src/Ecu_Simulator_0_0_1.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -D__NEWLIB__ -DDEBUG -D__CODE_RED -DCORE_M3 -DCPP_USE_HEAP -D__LPC15XX__ -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\chip_15xx_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\chip_15xx_inc\usbd" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\drivers_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\ecu_simulator_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\obd_protocol_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\utilities_inc" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/Ecu_Simulator_0_0_1.d" -MT"src/Ecu_Simulator_0_0_1.o" -MT"src/Ecu_Simulator_0_0_1.d" -o "src/Ecu_Simulator_0_0_1.o" "../src/Ecu_Simulator_0_0_1.cpp"
+../src/Ecu_Simulator_0_0_1.cpp:26:13: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  int real = 0;
+             ^
+../src/Ecu_Simulator_0_0_1.cpp:27:13: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  int image =0;
+             ^
+Finished building: ../src/Ecu_Simulator_0_0_1.cpp
+ 
+Building file: ../src/sysinit.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__NEWLIB__ -DDEBUG -D__CODE_RED -DCORE_M3 -DCPP_USE_HEAP -D__LPC15XX__ -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\chip_15xx_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\chip_15xx_inc\usbd" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\drivers_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\ecu_simulator_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\obd_protocol_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\utilities_inc" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/sysinit.d" -MT"src/sysinit.o" -MT"src/sysinit.d" -o "src/sysinit.o" "../src/sysinit.c"
+../src/sysinit.c: In function 'SystemInit':
+../src/sysinit.c:67:2: warning: implicit declaration of function 'Board_SystemInit' [-Wimplicit-function-declaration]
+  Board_SystemInit();
+  ^
+Finished building: ../src/sysinit.c
+ 
+Building target: ecu_simulator_0_0_1.axf
+Invoking: MCU C++ Linker
+arm-none-eabi-c++ -nostdlib -Xlinker -Map="ecu_simulator_0_0_1.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -mcpu=cortex-m3 -mthumb -T "Ecu_Simulator_0_0_1_Debug.ld" -o "ecu_simulator_0_0_1.axf"  ./src/drivers_src/bluetooth_usart.o ./src/drivers_src/board.o ./src/drivers_src/can_controllor.o ./src/drivers_src/kwp_usart.o ./src/drivers_src/led.o ./src/drivers_src/timer.o  ./src/chip_15xx_src/acmp_15xx.o ./src/chip_15xx_src/adc_15xx.o ./src/chip_15xx_src/chip_15xx.o ./src/chip_15xx_src/clock_15xx.o ./src/chip_15xx_src/crc_15xx.o ./src/chip_15xx_src/dac_15xx.o ./src/chip_15xx_src/dma_15xx.o ./src/chip_15xx_src/eeprom.o ./src/chip_15xx_src/gpio_15xx.o ./src/chip_15xx_src/i2c_common_15xx.o ./src/chip_15xx_src/i2cm_15xx.o ./src/chip_15xx_src/i2cs_15xx.o ./src/chip_15xx_src/iap.o ./src/chip_15xx_src/iocon_15xx.o ./src/chip_15xx_src/pinint_15xx.o ./src/chip_15xx_src/pmu_15xx.o ./src/chip_15xx_src/ring_buffer.o ./src/chip_15xx_src/ritimer_15xx.o ./src/chip_15xx_src/rtc_15xx.o ./src/chip_15xx_src/sct_15xx.o ./src/chip_15xx_src/sct_pwm_15xx.o ./src/chip_15xx_src/sctipu_15xx.o ./src/chip_15xx_src/spi_15xx.o ./src/chip_15xx_src/stopwatch_15xx.o ./src/chip_15xx_src/swm_15xx.o ./src/chip_15xx_src/sysctl_15xx.o ./src/chip_15xx_src/sysinit_15xx.o ./src/chip_15xx_src/uart_15xx.o ./src/chip_15xx_src/wwdt_15xx.o  ./src/Ecu_Simulator_0_0_1.o ./src/cr_cpp_config.o ./src/cr_startup_lpc15xx.o ./src/crp.o ./src/sysinit.o   
+Memory region         Used Size  Region Size  %age Used
+       MFlash256:       19712 B       256 KB      7.52%
+         Ram0_16:        2256 B        16 KB     13.77%
+         Ram1_16:          0 GB        16 KB      0.00%
+          Ram2_4:          0 GB         4 KB      0.00%
+Finished building target: ecu_simulator_0_0_1.axf
+ 
+/bin/make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "ecu_simulator_0_0_1.axf"; # arm-none-eabi-objcopy -v -O binary "ecu_simulator_0_0_1.axf" "ecu_simulator_0_0_1.bin" ; # checksum -p LPC1549 -d "ecu_simulator_0_0_1.bin";
+   text	   data	    bss	    dec	    hex	filename
+  17592	   2120	    136	  19848	   4d88	ecu_simulator_0_0_1.axf
+ 
+22:58:00 **** Incremental Build of configuration Debug for project ecu_simulator_0_0_1 ****
+make -r all 
+Building file: ../src/drivers_src/board.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -D__NEWLIB__ -DDEBUG -D__CODE_RED -DCORE_M3 -DCPP_USE_HEAP -D__LPC15XX__ -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\chip_15xx_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\chip_15xx_inc\usbd" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\drivers_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\ecu_simulator_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\obd_protocol_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\utilities_inc" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/drivers_src/board.d" -MT"src/drivers_src/board.o" -MT"src/drivers_src/board.d" -o "src/drivers_src/board.o" "../src/drivers_src/board.cpp"
+Finished building: ../src/drivers_src/board.cpp
+ 
+Building file: ../src/drivers_src/led.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -D__NEWLIB__ -DDEBUG -D__CODE_RED -DCORE_M3 -DCPP_USE_HEAP -D__LPC15XX__ -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\chip_15xx_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\chip_15xx_inc\usbd" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\drivers_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\ecu_simulator_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\obd_protocol_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\utilities_inc" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/drivers_src/led.d" -MT"src/drivers_src/led.o" -MT"src/drivers_src/led.d" -o "src/drivers_src/led.o" "../src/drivers_src/led.cpp"
+Finished building: ../src/drivers_src/led.cpp
+ 
+Building file: ../src/Ecu_Simulator_0_0_1.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -D__NEWLIB__ -DDEBUG -D__CODE_RED -DCORE_M3 -DCPP_USE_HEAP -D__LPC15XX__ -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\chip_15xx_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\chip_15xx_inc\usbd" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\drivers_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\ecu_simulator_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\obd_protocol_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\utilities_inc" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/Ecu_Simulator_0_0_1.d" -MT"src/Ecu_Simulator_0_0_1.o" -MT"src/Ecu_Simulator_0_0_1.d" -o "src/Ecu_Simulator_0_0_1.o" "../src/Ecu_Simulator_0_0_1.cpp"
+../src/Ecu_Simulator_0_0_1.cpp:26:13: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  int real = 0;
+             ^
+../src/Ecu_Simulator_0_0_1.cpp:27:13: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  int image =0;
+             ^
+Finished building: ../src/Ecu_Simulator_0_0_1.cpp
+ 
+Building file: ../src/sysinit.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__NEWLIB__ -DDEBUG -D__CODE_RED -DCORE_M3 -DCPP_USE_HEAP -D__LPC15XX__ -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\chip_15xx_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\chip_15xx_inc\usbd" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\drivers_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\ecu_simulator_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\obd_protocol_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\utilities_inc" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/sysinit.d" -MT"src/sysinit.o" -MT"src/sysinit.d" -o "src/sysinit.o" "../src/sysinit.c"
+../src/sysinit.c: In function 'SystemInit':
+../src/sysinit.c:67:2: warning: implicit declaration of function 'Board_SystemInit' [-Wimplicit-function-declaration]
+  Board_SystemInit();
+  ^
+Finished building: ../src/sysinit.c
+ 
+Building target: ecu_simulator_0_0_1.axf
+Invoking: MCU C++ Linker
+arm-none-eabi-c++ -nostdlib -Xlinker -Map="ecu_simulator_0_0_1.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -mcpu=cortex-m3 -mthumb -T "Ecu_Simulator_0_0_1_Debug.ld" -o "ecu_simulator_0_0_1.axf"  ./src/drivers_src/bluetooth_usart.o ./src/drivers_src/board.o ./src/drivers_src/can_controllor.o ./src/drivers_src/kwp_usart.o ./src/drivers_src/led.o ./src/drivers_src/timer.o  ./src/chip_15xx_src/acmp_15xx.o ./src/chip_15xx_src/adc_15xx.o ./src/chip_15xx_src/chip_15xx.o ./src/chip_15xx_src/clock_15xx.o ./src/chip_15xx_src/crc_15xx.o ./src/chip_15xx_src/dac_15xx.o ./src/chip_15xx_src/dma_15xx.o ./src/chip_15xx_src/eeprom.o ./src/chip_15xx_src/gpio_15xx.o ./src/chip_15xx_src/i2c_common_15xx.o ./src/chip_15xx_src/i2cm_15xx.o ./src/chip_15xx_src/i2cs_15xx.o ./src/chip_15xx_src/iap.o ./src/chip_15xx_src/iocon_15xx.o ./src/chip_15xx_src/pinint_15xx.o ./src/chip_15xx_src/pmu_15xx.o ./src/chip_15xx_src/ring_buffer.o ./src/chip_15xx_src/ritimer_15xx.o ./src/chip_15xx_src/rtc_15xx.o ./src/chip_15xx_src/sct_15xx.o ./src/chip_15xx_src/sct_pwm_15xx.o ./src/chip_15xx_src/sctipu_15xx.o ./src/chip_15xx_src/spi_15xx.o ./src/chip_15xx_src/stopwatch_15xx.o ./src/chip_15xx_src/swm_15xx.o ./src/chip_15xx_src/sysctl_15xx.o ./src/chip_15xx_src/sysinit_15xx.o ./src/chip_15xx_src/uart_15xx.o ./src/chip_15xx_src/wwdt_15xx.o  ./src/Ecu_Simulator_0_0_1.o ./src/cr_cpp_config.o ./src/cr_startup_lpc15xx.o ./src/crp.o ./src/sysinit.o   
+Memory region         Used Size  Region Size  %age Used
+       MFlash256:       19712 B       256 KB      7.52%
+         Ram0_16:        2256 B        16 KB     13.77%
+         Ram1_16:          0 GB        16 KB      0.00%
+          Ram2_4:          0 GB         4 KB      0.00%
+Finished building target: ecu_simulator_0_0_1.axf
+ 
+/bin/make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "ecu_simulator_0_0_1.axf"; # arm-none-eabi-objcopy -v -O binary "ecu_simulator_0_0_1.axf" "ecu_simulator_0_0_1.bin" ; # checksum -p LPC1549 -d "ecu_simulator_0_0_1.bin";
+   text	   data	    bss	    dec	    hex	filename
+  17592	   2120	    136	  19848	   4d88	ecu_simulator_0_0_1.axf
+ 
+22:58:04 **** Incremental Build of configuration Debug for project ecu_simulator_0_0_1 ****
 make -r all 
 make: Nothing to be done for `all'.

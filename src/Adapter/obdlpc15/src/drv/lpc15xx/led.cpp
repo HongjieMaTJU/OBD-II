@@ -37,7 +37,7 @@ void AdptLED::configure()
 AdptLED* AdptLED::instance()
 {
     static AdptLED instance;
-    return &instance;;
+    return &instance;
 }
 
 /**
