@@ -7,48 +7,70 @@
 
 
 
-#include <chip.h>
-#include "board.h"
+#include "ecu_board.h"
 #include "led.h"
 
 
 using namespace std;
 
-AdapterLed* AdapterLed::instance()
-{
-	static AdapterLed ins;
-	return (AdapterLed *)(&ins);
-}
 
-AdapterLed::AdapterLed():tx_count(0),rx_count(0)
+/* Factory of the Led */
+Led* Led::instance()
 {
-
-}
-void AdapterLed::Blink_Led_TX()
-{
-	Chip_GPIO_SetPinOutHigh(LPC_GPIO,TX_LED_PORT,TX_LED_PIN);
+	static Led ins;
+	return (&ins);
 }
 
 
-void AdapterLed::Blink_Led_RX()
+
+/* Lighten the led indicating TX signal */
+void Led::Lighten_Led_TX()
 {
-	Chip_GPIO_SetPinOutHigh(LPC_GPIO,RX_LED_PORT,RX_LED_PIN);
+	Board_Lighten_TX_LED();
+}
+
+/* Lighten the led indicating RX signal */
+void Led::Lighten_Led_RX()
+{
+	Board_Lighten_RX_LED();
+}
+
+/* Off the led indicating TX signal */
+void Led::Off_Led_TX()
+{
+	Board_Off_TX_LED();
+}
+
+/* Off the led indicating RX signal */
+void Led::Off_Led_RX()
+{
+	Board_Off_RX_LED();
 }
 
 
-void AdapterLed::Toggle_Led_TX()
+
+/* Toggle the led indicating TX signal */
+void Led::Toggle_Led_TX()
 {
-	Chip_GPIO_SetPinToggle(LPC_GPIO,TX_LED_PORT,TX_LED_PIN);
+	Board_Toggle_TX_LED();
+}
+
+/* Toggle the led indicating RX signal */
+void Led::Toggle_Led_RX()
+{
+	Board_Toggle_RX_LED();
 }
 
 
-void AdapterLed::Toggle_Led_RX()
+
+/* Constructor */
+Led::Led():tx_count(0),rx_count(0)
 {
-	Chip_GPIO_SetPinToggle(LPC_GPIO,RX_LED_PORT,RX_LED_PIN);
+
 }
 
-
-AdapterLed::~AdapterLed()
+/* Destructor */
+Led::~Led()
 {
 
 }

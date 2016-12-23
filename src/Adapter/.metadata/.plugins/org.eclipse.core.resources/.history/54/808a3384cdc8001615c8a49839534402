@@ -1,0 +1,79 @@
+/*
+ * led.cpp
+ *
+ *  Created on: 2016年12月22日
+ *      Author: cheri
+ */
+
+
+#include "chip.h"
+#include "ecu_board.h"
+#include "led.h"
+
+
+using namespace std;
+
+
+/* Factory of the AdapterLed */
+AdapterLed* AdapterLed::instance()
+{
+	static AdapterLed ins;
+	return (&ins);
+}
+
+
+
+/* Lighten the led indicating TX signal */
+void AdapterLed::Lighten_Led_TX()
+{
+	Board_Lighten_TX_LED();
+}
+
+/* Lighten the led indicating RX signal */
+void AdapterLed::Lighten_Led_RX()
+{
+	Board_Lighten_RX_LED();
+}
+
+/* Off the led indicating TX signal */
+void AdapterLed::Off_Led_TX()
+{
+	Board_Off_TX_LED();
+}
+
+/* Off the led indicating RX signal */
+void AdapterLed::Off_Led_RX()
+{
+	Board_Off_RX_LED();
+}
+
+
+
+/* Toggle the led indicating TX signal */
+void AdapterLed::Toggle_Led_TX()
+{
+	Board_Toggle_TX_LED();
+}
+
+/* Toggle the led indicating RX signal */
+void AdapterLed::Toggle_Led_RX()
+{
+	Board_Toggle_RX_LED();
+}
+
+
+
+/* Constructor */
+AdapterLed::AdapterLed():tx_count(0),rx_count(0)
+{
+
+}
+
+/* Destructor */
+AdapterLed::~AdapterLed()
+{
+
+}
+
+
+

@@ -16,20 +16,22 @@
 
 #ifndef DRIVERS_INC_LED_H_
 #define DRIVERS_INC_LED_H_
-#include <stdint.h>
+
 
 using namespace std;
 
-class AdapterLed
+class Led
 {
 public:
-	AdapterLed();
-	static AdapterLed* instance();
-    void Blink_Led_TX();
-	void Blink_Led_RX();
+	Led();
+	static Led* instance();
+    void Lighten_Led_TX();
+    void Lighten_Led_RX();
+	void Off_Led_TX();
+	void Off_Led_RX();
 	void Toggle_Led_TX();
 	void Toggle_Led_RX();
-	~AdapterLed();
+	~Led();
 private:
 
 	int tx_count;

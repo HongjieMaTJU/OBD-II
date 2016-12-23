@@ -43,8 +43,9 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/adapter_0_0_1/inc/drivers_inc}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/adapter_0_0_1/inc/obd_protocol_inc}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/adapter_0_0_1/inc/utilities_inc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/adapter_0_0_1/inc/board_inc}&quot;"/>
 								</option>
-								<option id="com.crt.advproject.cpp.misc.dialect.2130678823" superClass="com.crt.advproject.cpp.misc.dialect" value="com.crt.advproject.misc.dialect.gnupp11" valueType="enumerated"/>
+								<option id="com.crt.advproject.cpp.misc.dialect.2130678823" name="Language standard" superClass="com.crt.advproject.cpp.misc.dialect" value="com.crt.advproject.misc.dialect.gnupp11" valueType="enumerated"/>
 								<inputType id="com.crt.advproject.compiler.cpp.input.668865397" superClass="com.crt.advproject.compiler.cpp.input"/>
 							</tool>
 							<tool id="com.crt.advproject.gcc.exe.debug.7199871" name="MCU C Compiler" superClass="com.crt.advproject.gcc.exe.debug">

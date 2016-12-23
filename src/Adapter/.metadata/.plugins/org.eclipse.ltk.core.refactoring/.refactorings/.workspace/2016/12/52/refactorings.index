@@ -8,3 +8,6 @@
 1482417789529	Delete resource 'adapter_0_0_1/src/obd'
 1482418327076	Rename resource 'Ecu_Simulator_0_0_1'
 1482418657311	Delete resource 'ecu_simulator_0_0_1/src/adapter_0_0_1.cpp'
+1482465572938	Delete resource 'ecu_simulator_0_0_1/src/sysinit.c'
+1482466047061	Delete resource 'adapter_0_0_1/src/sysinit.c'
+1482467101533	Delete resource 'ecu_simulator_0_0_1/inc/board_inc/board.h'

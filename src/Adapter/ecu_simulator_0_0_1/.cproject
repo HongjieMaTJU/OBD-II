@@ -43,7 +43,9 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ecu_simulator_0_0_1/inc/ecu_simulator_inc}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ecu_simulator_0_0_1/inc/obd_protocol_inc}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ecu_simulator_0_0_1/inc/utilities_inc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ecu_simulator_0_0_1/inc/board_inc}&quot;"/>
 								</option>
+								<option id="com.crt.advproject.cpp.misc.dialect.386628587" name="Language standard" superClass="com.crt.advproject.cpp.misc.dialect" value="com.crt.advproject.misc.dialect.gnupp11" valueType="enumerated"/>
 								<inputType id="com.crt.advproject.compiler.cpp.input.1707719298" superClass="com.crt.advproject.compiler.cpp.input"/>
 							</tool>
 							<tool id="com.crt.advproject.gcc.exe.debug.684464463" name="MCU C Compiler" superClass="com.crt.advproject.gcc.exe.debug">
@@ -69,6 +71,7 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ecu_simulator_0_0_1/inc/ecu_simulator_inc}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ecu_simulator_0_0_1/inc/obd_protocol_inc}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ecu_simulator_0_0_1/inc/utilities_inc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ecu_simulator_0_0_1/inc/board_inc}&quot;"/>
 								</option>
 								<inputType id="com.crt.advproject.compiler.input.96560163" superClass="com.crt.advproject.compiler.input"/>
 							</tool>
@@ -86,6 +89,7 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ecu_simulator_0_0_1/inc/ecu_simulator_inc}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ecu_simulator_0_0_1/inc/obd_protocol_inc}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ecu_simulator_0_0_1/inc/utilities_inc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ecu_simulator_0_0_1/inc/board_inc}&quot;"/>
 								</option>
 								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.2096197975" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
 								<inputType id="com.crt.advproject.assembler.input.2003718252" name="Additional Assembly Source Files" superClass="com.crt.advproject.assembler.input"/>

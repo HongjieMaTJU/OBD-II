@@ -33,6 +33,67 @@
 						<entry kind="macro" name="__LPC15XX__" value=""/>
 						<entry kind="macro" name="__NEWLIB__" value=""/>
 					</resource>
+					<resource project-relative-path="src/board_src/board_configure.cpp">
+						<entry kind="includePath" name="/${ProjName}/inc">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/inc/adapter_inc">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/inc/chip_15xx_inc/usbd">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/inc/chip_15xx_inc">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/inc/drivers_inc">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/inc/obd_protocol_inc">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/inc/utilities_inc">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/inc/board_inc">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="macro" name="CORE_M3" value=""/>
+						<entry kind="macro" name="CPP_USE_HEAP" value=""/>
+						<entry kind="macro" name="DEBUG" value=""/>
+						<entry kind="macro" name="__CODE_RED" value=""/>
+						<entry kind="macro" name="__LPC15XX__" value=""/>
+						<entry kind="macro" name="__NEWLIB__" value=""/>
+					</resource>
+					<resource project-relative-path="src/drivers_src/adpapter_board.cpp">
+						<entry kind="includePath" name="/${ProjName}/inc">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/inc/adapter_inc">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/inc/chip_15xx_inc/usbd">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/inc/chip_15xx_inc">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/inc/drivers_inc">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/inc/obd_protocol_inc">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/inc/utilities_inc">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="macro" name="CORE_M3" value=""/>
+						<entry kind="macro" name="CPP_USE_HEAP" value=""/>
+						<entry kind="macro" name="DEBUG" value=""/>
+						<entry kind="macro" name="__CODE_RED" value=""/>
+						<entry kind="macro" name="__LPC15XX__" value=""/>
+						<entry kind="macro" name="__NEWLIB__" value=""/>
+					</resource>
 					<resource project-relative-path="src/cr_cpp_config.cpp">
 						<entry kind="includePath" name="/${ProjName}/inc">
 							<flag value="VALUE_WORKSPACE_PATH"/>
@@ -53,6 +114,41 @@
 							<flag value="VALUE_WORKSPACE_PATH"/>
 						</entry>
 						<entry kind="includePath" name="/${ProjName}/inc/utilities_inc">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/inc/board_inc">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="macro" name="CORE_M3" value=""/>
+						<entry kind="macro" name="CPP_USE_HEAP" value=""/>
+						<entry kind="macro" name="DEBUG" value=""/>
+						<entry kind="macro" name="__CODE_RED" value=""/>
+						<entry kind="macro" name="__LPC15XX__" value=""/>
+						<entry kind="macro" name="__NEWLIB__" value=""/>
+					</resource>
+					<resource project-relative-path="src/board_src/adpapter_board.cpp">
+						<entry kind="includePath" name="/${ProjName}/inc">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/inc/adapter_inc">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/inc/chip_15xx_inc/usbd">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/inc/chip_15xx_inc">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/inc/drivers_inc">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/inc/obd_protocol_inc">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/inc/utilities_inc">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/inc/board_inc">
 							<flag value="VALUE_WORKSPACE_PATH"/>
 						</entry>
 						<entry kind="macro" name="CORE_M3" value=""/>
@@ -207,6 +303,35 @@
 						<entry kind="macro" name="__LPC15XX__" value=""/>
 						<entry kind="macro" name="__NEWLIB__" value=""/>
 					</resource>
+					<resource project-relative-path="src/drivers_src/adapter_configure.cpp">
+						<entry kind="includePath" name="/${ProjName}/inc">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/inc/adapter_inc">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/inc/chip_15xx_inc/usbd">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/inc/chip_15xx_inc">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/inc/drivers_inc">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/inc/obd_protocol_inc">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/inc/utilities_inc">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="macro" name="CORE_M3" value=""/>
+						<entry kind="macro" name="CPP_USE_HEAP" value=""/>
+						<entry kind="macro" name="DEBUG" value=""/>
+						<entry kind="macro" name="__CODE_RED" value=""/>
+						<entry kind="macro" name="__LPC15XX__" value=""/>
+						<entry kind="macro" name="__NEWLIB__" value=""/>
+					</resource>
 					<resource project-relative-path="src/adapter_0_0_1.cpp">
 						<entry kind="includePath" name="/${ProjName}/inc">
 							<flag value="VALUE_WORKSPACE_PATH"/>
@@ -227,6 +352,9 @@
 							<flag value="VALUE_WORKSPACE_PATH"/>
 						</entry>
 						<entry kind="includePath" name="/${ProjName}/inc/utilities_inc">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/inc/board_inc">
 							<flag value="VALUE_WORKSPACE_PATH"/>
 						</entry>
 						<entry kind="macro" name="CORE_M3" value=""/>
@@ -256,6 +384,9 @@
 							<flag value="VALUE_WORKSPACE_PATH"/>
 						</entry>
 						<entry kind="includePath" name="/${ProjName}/inc/utilities_inc">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/inc/board_inc">
 							<flag value="VALUE_WORKSPACE_PATH"/>
 						</entry>
 						<entry kind="macro" name="CORE_M3" value=""/>
@@ -316,6 +447,9 @@
 						<entry kind="includePath" name="/${ProjName}/inc/utilities_inc">
 							<flag value="VALUE_WORKSPACE_PATH"/>
 						</entry>
+						<entry kind="includePath" name="/${ProjName}/inc/board_inc">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
 						<entry kind="macro" name="CORE_M3" value=""/>
 						<entry kind="macro" name="CPP_USE_HEAP" value=""/>
 						<entry kind="macro" name="DEBUG" value=""/>
@@ -343,6 +477,9 @@
 							<flag value="VALUE_WORKSPACE_PATH"/>
 						</entry>
 						<entry kind="includePath" name="/${ProjName}/inc/utilities_inc">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/inc/board_inc">
 							<flag value="VALUE_WORKSPACE_PATH"/>
 						</entry>
 						<entry kind="macro" name="CORE_M3" value=""/>
@@ -374,6 +511,9 @@
 						<entry kind="includePath" name="/${ProjName}/inc/utilities_inc">
 							<flag value="VALUE_WORKSPACE_PATH"/>
 						</entry>
+						<entry kind="includePath" name="/${ProjName}/inc/board_inc">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
 						<entry kind="macro" name="CORE_M3" value=""/>
 						<entry kind="macro" name="CPP_USE_HEAP" value=""/>
 						<entry kind="macro" name="DEBUG" value=""/>
@@ -401,6 +541,9 @@
 							<flag value="VALUE_WORKSPACE_PATH"/>
 						</entry>
 						<entry kind="includePath" name="/${ProjName}/inc/utilities_inc">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/inc/board_inc">
 							<flag value="VALUE_WORKSPACE_PATH"/>
 						</entry>
 						<entry kind="macro" name="CORE_M3" value=""/>
@@ -459,6 +602,9 @@
 							<flag value="VALUE_WORKSPACE_PATH"/>
 						</entry>
 						<entry kind="includePath" name="/${ProjName}/inc/utilities_inc">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/inc/board_inc">
 							<flag value="VALUE_WORKSPACE_PATH"/>
 						</entry>
 						<entry kind="macro" name="CORE_M3" value=""/>

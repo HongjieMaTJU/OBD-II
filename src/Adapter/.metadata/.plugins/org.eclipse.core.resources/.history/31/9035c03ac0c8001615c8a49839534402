@@ -1,0 +1,46 @@
+/*
+ * ecu_configure.cpp
+ *
+ *  Created on: 2016年12月23日
+ *      Author: Topon-Edison
+ *
+ */
+#include "board.h"
+#include "ecu_configure.h"
+
+
+bool Ecu_Configure::IsConfigured = false;
+
+/* Constructor */
+Ecu_Configure::Ecu_Configure()
+{
+
+}
+
+/* Factory of the Ecu_Configure, and only return the instance when not configure */
+Ecu_Configure * Ecu_Configure::instance()
+{
+	static Ecu_Configure ins;
+	if(!IsConfigured)
+	{
+		return &ins;
+	}
+	return 0;
+}
+
+/* The configure function */
+void Ecu_Configure::Board_Configure()
+{
+	Board_Init();
+	IsConfigured = true;
+}
+
+
+Ecu_Configure::~Ecu_Configure()
+{
+	Board_Deinit();
+	IsConfigured = false;
+}
+
+
+

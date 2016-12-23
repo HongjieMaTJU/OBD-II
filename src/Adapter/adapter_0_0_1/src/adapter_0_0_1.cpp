@@ -8,64 +8,50 @@
 ===============================================================================
 */
 
-#include <cr_section_macros.h>
-#include "chip.h"
-#include "board.h"
-#include "led.h"
-// TODO: insert other include files here
 
-//#define TX_LED_PORT 0
-//#define RX_LED_PORT 0
-//#define TX_LED_PIN 3
-//#define RX_LED_PIN 25
+#include <cr_section_macros.h>
+#include <cstdint>
+
+// TODO: insert other include files here
+#include "board_configure.h"
+#include "led.h"
+
 
 // TODO: insert other definitions and declarations here
-class complex
-{
-public:
-	int real = 0;
-	int image =0;
-	complex():real(0),image(0)
-	{
 
-	}
-	~complex();
-};
+
+
 
 int main(void)
 {
 
     // TODO: insert code here
-	SystemCoreClockUpdate();
-	//Chip_SystemInit();
-	//Chip_SetupXtalClocking();
-	//Board_Configure_Main_Clock();
 
-	Board_Init();
+	//Board_Init();
+    Board_Configure::instance()->Configure();
 
-    AdapterLed::instance()->Blink_Led_TX();
-    AdapterLed::instance()->Blink_Led_RX();
-    AdapterLed::instance()->Toggle_Led_TX();
-    AdapterLed::instance()->Toggle_Led_RX();
-	/*Chip_GPIO_Init(LPC_GPIO);
-	Chip_GPIO_SetPinDIROutput(LPC_GPIO,TX_LED_PORT,3);
-	Chip_GPIO_SetPinDIROutput(LPC_GPIO,RX_LED_PORT,RX_LED_PIN);
+    Led::instance()->Lighten_Led_TX();
+    Led::instance()->Lighten_Led_RX();
 
-	Chip_GPIO_SetPinOutHigh(LPC_GPIO,TX_LED_PORT,3);
-	Chip_GPIO_SetPinOutHigh(LPC_GPIO,RX_LED_PORT,RX_LED_PIN);
+    Led::instance()->Off_Led_TX();
+    //Led::instance()->Off_Led_RX();
+
+    Led::instance()->Toggle_Led_TX();
+    Led::instance()->Toggle_Led_RX();
+
     // Force the counter to be placed into memory*/
-
-	volatile static int i = 0 ;
-
-    complex compx;
-
+	volatile static uint32_t i = 0 ;
 
     // Enter an infinite loop, just incrementing a counter
 
     while(1)
     {
-    	AdapterLed::instance()->Toggle_Led_TX();
-    	AdapterLed::instance()->Toggle_Led_RX();
+    	if(i == 3600000)
+    	{
+    		i = 0;
+    		Led::instance()->Toggle_Led_TX();
+    		Led::instance()->Toggle_Led_RX();
+    	}
     	//Chip_GPIO_SetPinToggle(LPC_GPIO,TX_LED_PORT,3);
     	//Chip_GPIO_SetPinToggle(LPC_GPIO,RX_LED_PORT,RX_LED_PIN);
         i++ ;
