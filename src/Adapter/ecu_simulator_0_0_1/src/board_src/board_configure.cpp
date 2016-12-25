@@ -7,6 +7,7 @@
  */
 #include <board_configure.h>
 #include <ecu_board.h>
+#include "chip.h"
 
 
 bool Board_Configure::IsConfigured = false;
@@ -45,5 +46,10 @@ Board_Configure::~Board_Configure()
 	IsConfigured = false;
 }
 
+/* Get the main clock rate */
+uint32_t Board_Configure::Get_MainClockRate()
+{
+	return Chip_Clock_GetSystemClockRate();
+}
 
 

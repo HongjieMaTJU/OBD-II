@@ -50,7 +50,7 @@ extern "C" {
 /**
  * @brief MRT register block structure
  */
-typedef struct {
+typedef struct LPC_MRT_CH_T {
 	__IO uint32_t INTVAL;	/*!< Timer interval register */
 	__O  uint32_t TIMER;	/*!< Timer register */
 	__IO uint32_t CTRL;		/*!< Timer control register */
@@ -162,6 +162,26 @@ STATIC INLINE void Chip_MRT_SetInterval(LPC_MRT_CH_T *pMRT, uint32_t interval)
 {
 	pMRT->INTVAL = interval;
 }
+
+
+
+/**
+ * @brief	Sets the timer time interval value and force load the value immediately
+ * @param	pMRT	 : Pointer to selected MRT Channel
+ * @param   interval : The interval timeout (31-bits)
+ * @return	Nothing
+ * @note	Setting bit 31 in timer time interval register causes the time interval value
+ * to load immediately, otherwise the time interval value will be loaded in
+ * next timer cycle.<br>
+ * Example: Chip_MRT_SetInterval(pMRT, 0x500 | MRT_INTVAL_LOAD); // Will load timer interval immediately<br>
+ * Example: Chip_MRT_SetInterval(pMRT, 0x500); // Will load timer interval after internal expires
+ */
+// add by Topon-Edison
+STATIC INLINE void Chip_MRT_SetInterval_Immediately(LPC_MRT_CH_T *pMRT, uint32_t interval)
+{
+		pMRT->INTVAL = (interval | MRT_INTVAL_LOAD);
+}
+
 
 /**
  * @brief	Returns the current timer value

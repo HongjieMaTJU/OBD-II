@@ -1,16 +1,379 @@
-16:17:46 **** Incremental Build of configuration Debug for project ecu_simulator_0_0_1 ****
+20:34:41 **** Incremental Build of configuration Debug for project ecu_simulator_0_0_1 ****
 make -r all 
+Building file: ../src/drivers_src/timer.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -std=gnu++11 -D__NEWLIB__ -DDEBUG -D__CODE_RED -DCORE_M3 -DCPP_USE_HEAP -D__LPC15XX__ -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\chip_15xx_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\chip_15xx_inc\usbd" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\drivers_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\ecu_simulator_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\obd_protocol_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\utilities_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\board_inc" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/drivers_src/timer.d" -MT"src/drivers_src/timer.o" -MT"src/drivers_src/timer.d" -o "src/drivers_src/timer.o" "../src/drivers_src/timer.cpp"
+Finished building: ../src/drivers_src/timer.cpp
+ 
+Building file: ../src/chip_15xx_src/acmp_15xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__NEWLIB__ -DDEBUG -D__CODE_RED -DCORE_M3 -DCPP_USE_HEAP -D__LPC15XX__ -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\chip_15xx_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\chip_15xx_inc\usbd" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\drivers_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\ecu_simulator_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\obd_protocol_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\utilities_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\board_inc" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/chip_15xx_src/acmp_15xx.d" -MT"src/chip_15xx_src/acmp_15xx.o" -MT"src/chip_15xx_src/acmp_15xx.d" -o "src/chip_15xx_src/acmp_15xx.o" "../src/chip_15xx_src/acmp_15xx.c"
+Finished building: ../src/chip_15xx_src/acmp_15xx.c
+ 
+Building file: ../src/chip_15xx_src/adc_15xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__NEWLIB__ -DDEBUG -D__CODE_RED -DCORE_M3 -DCPP_USE_HEAP -D__LPC15XX__ -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\chip_15xx_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\chip_15xx_inc\usbd" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\drivers_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\ecu_simulator_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\obd_protocol_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\utilities_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\board_inc" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/chip_15xx_src/adc_15xx.d" -MT"src/chip_15xx_src/adc_15xx.o" -MT"src/chip_15xx_src/adc_15xx.d" -o "src/chip_15xx_src/adc_15xx.o" "../src/chip_15xx_src/adc_15xx.c"
+Finished building: ../src/chip_15xx_src/adc_15xx.c
+ 
+Building file: ../src/chip_15xx_src/chip_15xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__NEWLIB__ -DDEBUG -D__CODE_RED -DCORE_M3 -DCPP_USE_HEAP -D__LPC15XX__ -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\chip_15xx_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\chip_15xx_inc\usbd" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\drivers_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\ecu_simulator_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\obd_protocol_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\utilities_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\board_inc" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/chip_15xx_src/chip_15xx.d" -MT"src/chip_15xx_src/chip_15xx.o" -MT"src/chip_15xx_src/chip_15xx.d" -o "src/chip_15xx_src/chip_15xx.o" "../src/chip_15xx_src/chip_15xx.c"
+Finished building: ../src/chip_15xx_src/chip_15xx.c
+ 
+Building file: ../src/chip_15xx_src/clock_15xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__NEWLIB__ -DDEBUG -D__CODE_RED -DCORE_M3 -DCPP_USE_HEAP -D__LPC15XX__ -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\chip_15xx_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\chip_15xx_inc\usbd" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\drivers_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\ecu_simulator_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\obd_protocol_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\utilities_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\board_inc" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/chip_15xx_src/clock_15xx.d" -MT"src/chip_15xx_src/clock_15xx.o" -MT"src/chip_15xx_src/clock_15xx.d" -o "src/chip_15xx_src/clock_15xx.o" "../src/chip_15xx_src/clock_15xx.c"
+Finished building: ../src/chip_15xx_src/clock_15xx.c
+ 
+Building file: ../src/chip_15xx_src/crc_15xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__NEWLIB__ -DDEBUG -D__CODE_RED -DCORE_M3 -DCPP_USE_HEAP -D__LPC15XX__ -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\chip_15xx_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\chip_15xx_inc\usbd" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\drivers_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\ecu_simulator_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\obd_protocol_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\utilities_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\board_inc" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/chip_15xx_src/crc_15xx.d" -MT"src/chip_15xx_src/crc_15xx.o" -MT"src/chip_15xx_src/crc_15xx.d" -o "src/chip_15xx_src/crc_15xx.o" "../src/chip_15xx_src/crc_15xx.c"
+Finished building: ../src/chip_15xx_src/crc_15xx.c
+ 
+Building file: ../src/chip_15xx_src/dac_15xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__NEWLIB__ -DDEBUG -D__CODE_RED -DCORE_M3 -DCPP_USE_HEAP -D__LPC15XX__ -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\chip_15xx_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\chip_15xx_inc\usbd" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\drivers_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\ecu_simulator_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\obd_protocol_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\utilities_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\board_inc" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/chip_15xx_src/dac_15xx.d" -MT"src/chip_15xx_src/dac_15xx.o" -MT"src/chip_15xx_src/dac_15xx.d" -o "src/chip_15xx_src/dac_15xx.o" "../src/chip_15xx_src/dac_15xx.c"
+Finished building: ../src/chip_15xx_src/dac_15xx.c
+ 
+Building file: ../src/chip_15xx_src/dma_15xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__NEWLIB__ -DDEBUG -D__CODE_RED -DCORE_M3 -DCPP_USE_HEAP -D__LPC15XX__ -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\chip_15xx_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\chip_15xx_inc\usbd" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\drivers_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\ecu_simulator_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\obd_protocol_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\utilities_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\board_inc" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/chip_15xx_src/dma_15xx.d" -MT"src/chip_15xx_src/dma_15xx.o" -MT"src/chip_15xx_src/dma_15xx.d" -o "src/chip_15xx_src/dma_15xx.o" "../src/chip_15xx_src/dma_15xx.c"
+Finished building: ../src/chip_15xx_src/dma_15xx.c
+ 
+Building file: ../src/chip_15xx_src/eeprom.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__NEWLIB__ -DDEBUG -D__CODE_RED -DCORE_M3 -DCPP_USE_HEAP -D__LPC15XX__ -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\chip_15xx_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\chip_15xx_inc\usbd" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\drivers_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\ecu_simulator_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\obd_protocol_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\utilities_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\board_inc" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/chip_15xx_src/eeprom.d" -MT"src/chip_15xx_src/eeprom.o" -MT"src/chip_15xx_src/eeprom.d" -o "src/chip_15xx_src/eeprom.o" "../src/chip_15xx_src/eeprom.c"
+../src/chip_15xx_src/eeprom.c: In function 'Chip_EEPROM_Write':
+../src/chip_15xx_src/eeprom.c:61:12: warning: passing argument 1 of 'iap_entry' from incompatible pointer type [-Wincompatible-pointer-types]
+  iap_entry(command, result);
+            ^
+In file included from C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\chip_15xx_inc/chip.h:158:0,
+                 from ../src/chip_15xx_src/eeprom.c:32:
+C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\chip_15xx_inc/romapi_15xx.h:102:20: note: expected 'unsigned int *' but argument is of type 'uint32_t * {aka long unsigned int *}'
+ static INLINE void iap_entry(unsigned int cmd_param[5], unsigned int status_result[4])
+                    ^
+../src/chip_15xx_src/eeprom.c:61:21: warning: passing argument 2 of 'iap_entry' from incompatible pointer type [-Wincompatible-pointer-types]
+  iap_entry(command, result);
+                     ^
+In file included from C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\chip_15xx_inc/chip.h:158:0,
+                 from ../src/chip_15xx_src/eeprom.c:32:
+C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\chip_15xx_inc/romapi_15xx.h:102:20: note: expected 'unsigned int *' but argument is of type 'uint32_t * {aka long unsigned int *}'
+ static INLINE void iap_entry(unsigned int cmd_param[5], unsigned int status_result[4])
+                    ^
+../src/chip_15xx_src/eeprom.c: In function 'Chip_EEPROM_Read':
+../src/chip_15xx_src/eeprom.c:76:12: warning: passing argument 1 of 'iap_entry' from incompatible pointer type [-Wincompatible-pointer-types]
+  iap_entry(command, result);
+            ^
+In file included from C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\chip_15xx_inc/chip.h:158:0,
+                 from ../src/chip_15xx_src/eeprom.c:32:
+C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\chip_15xx_inc/romapi_15xx.h:102:20: note: expected 'unsigned int *' but argument is of type 'uint32_t * {aka long unsigned int *}'
+ static INLINE void iap_entry(unsigned int cmd_param[5], unsigned int status_result[4])
+                    ^
+../src/chip_15xx_src/eeprom.c:76:21: warning: passing argument 2 of 'iap_entry' from incompatible pointer type [-Wincompatible-pointer-types]
+  iap_entry(command, result);
+                     ^
+In file included from C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\chip_15xx_inc/chip.h:158:0,
+                 from ../src/chip_15xx_src/eeprom.c:32:
+C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\chip_15xx_inc/romapi_15xx.h:102:20: note: expected 'unsigned int *' but argument is of type 'uint32_t * {aka long unsigned int *}'
+ static INLINE void iap_entry(unsigned int cmd_param[5], unsigned int status_result[4])
+                    ^
+Finished building: ../src/chip_15xx_src/eeprom.c
+ 
+Building file: ../src/chip_15xx_src/gpio_15xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__NEWLIB__ -DDEBUG -D__CODE_RED -DCORE_M3 -DCPP_USE_HEAP -D__LPC15XX__ -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\chip_15xx_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\chip_15xx_inc\usbd" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\drivers_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\ecu_simulator_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\obd_protocol_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\utilities_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\board_inc" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/chip_15xx_src/gpio_15xx.d" -MT"src/chip_15xx_src/gpio_15xx.o" -MT"src/chip_15xx_src/gpio_15xx.d" -o "src/chip_15xx_src/gpio_15xx.o" "../src/chip_15xx_src/gpio_15xx.c"
+Finished building: ../src/chip_15xx_src/gpio_15xx.c
+ 
+Building file: ../src/chip_15xx_src/i2c_common_15xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__NEWLIB__ -DDEBUG -D__CODE_RED -DCORE_M3 -DCPP_USE_HEAP -D__LPC15XX__ -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\chip_15xx_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\chip_15xx_inc\usbd" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\drivers_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\ecu_simulator_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\obd_protocol_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\utilities_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\board_inc" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/chip_15xx_src/i2c_common_15xx.d" -MT"src/chip_15xx_src/i2c_common_15xx.o" -MT"src/chip_15xx_src/i2c_common_15xx.d" -o "src/chip_15xx_src/i2c_common_15xx.o" "../src/chip_15xx_src/i2c_common_15xx.c"
+Finished building: ../src/chip_15xx_src/i2c_common_15xx.c
+ 
+Building file: ../src/chip_15xx_src/i2cm_15xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__NEWLIB__ -DDEBUG -D__CODE_RED -DCORE_M3 -DCPP_USE_HEAP -D__LPC15XX__ -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\chip_15xx_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\chip_15xx_inc\usbd" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\drivers_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\ecu_simulator_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\obd_protocol_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\utilities_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\board_inc" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/chip_15xx_src/i2cm_15xx.d" -MT"src/chip_15xx_src/i2cm_15xx.o" -MT"src/chip_15xx_src/i2cm_15xx.d" -o "src/chip_15xx_src/i2cm_15xx.o" "../src/chip_15xx_src/i2cm_15xx.c"
+Finished building: ../src/chip_15xx_src/i2cm_15xx.c
+ 
+Building file: ../src/chip_15xx_src/i2cs_15xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__NEWLIB__ -DDEBUG -D__CODE_RED -DCORE_M3 -DCPP_USE_HEAP -D__LPC15XX__ -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\chip_15xx_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\chip_15xx_inc\usbd" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\drivers_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\ecu_simulator_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\obd_protocol_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\utilities_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\board_inc" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/chip_15xx_src/i2cs_15xx.d" -MT"src/chip_15xx_src/i2cs_15xx.o" -MT"src/chip_15xx_src/i2cs_15xx.d" -o "src/chip_15xx_src/i2cs_15xx.o" "../src/chip_15xx_src/i2cs_15xx.c"
+Finished building: ../src/chip_15xx_src/i2cs_15xx.c
+ 
+Building file: ../src/chip_15xx_src/iap.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__NEWLIB__ -DDEBUG -D__CODE_RED -DCORE_M3 -DCPP_USE_HEAP -D__LPC15XX__ -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\chip_15xx_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\chip_15xx_inc\usbd" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\drivers_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\ecu_simulator_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\obd_protocol_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\utilities_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\board_inc" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/chip_15xx_src/iap.d" -MT"src/chip_15xx_src/iap.o" -MT"src/chip_15xx_src/iap.d" -o "src/chip_15xx_src/iap.o" "../src/chip_15xx_src/iap.c"
+../src/chip_15xx_src/iap.c: In function 'Chip_IAP_PreSectorForReadWrite':
+../src/chip_15xx_src/iap.c:58:12: warning: passing argument 1 of 'iap_entry' from incompatible pointer type [-Wincompatible-pointer-types]
+  iap_entry(command, result);
+            ^
+In file included from C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\chip_15xx_inc/chip.h:158:0,
+                 from ../src/chip_15xx_src/iap.c:32:
+C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\chip_15xx_inc/romapi_15xx.h:102:20: note: expected 'unsigned int *' but argument is of type 'uint32_t * {aka long unsigned int *}'
+ static INLINE void iap_entry(unsigned int cmd_param[5], unsigned int status_result[4])
+                    ^
+../src/chip_15xx_src/iap.c:58:21: warning: passing argument 2 of 'iap_entry' from incompatible pointer type [-Wincompatible-pointer-types]
+  iap_entry(command, result);
+                     ^
+In file included from C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\chip_15xx_inc/chip.h:158:0,
+                 from ../src/chip_15xx_src/iap.c:32:
+C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\chip_15xx_inc/romapi_15xx.h:102:20: note: expected 'unsigned int *' but argument is of type 'uint32_t * {aka long unsigned int *}'
+ static INLINE void iap_entry(unsigned int cmd_param[5], unsigned int status_result[4])
+                    ^
+../src/chip_15xx_src/iap.c: In function 'Chip_IAP_CopyRamToFlash':
+../src/chip_15xx_src/iap.c:73:12: warning: passing argument 1 of 'iap_entry' from incompatible pointer type [-Wincompatible-pointer-types]
+  iap_entry(command, result);
+            ^
+In file included from C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\chip_15xx_inc/chip.h:158:0,
+                 from ../src/chip_15xx_src/iap.c:32:
+C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\chip_15xx_inc/romapi_15xx.h:102:20: note: expected 'unsigned int *' but argument is of type 'uint32_t * {aka long unsigned int *}'
+ static INLINE void iap_entry(unsigned int cmd_param[5], unsigned int status_result[4])
+                    ^
+../src/chip_15xx_src/iap.c:73:21: warning: passing argument 2 of 'iap_entry' from incompatible pointer type [-Wincompatible-pointer-types]
+  iap_entry(command, result);
+                     ^
+In file included from C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\chip_15xx_inc/chip.h:158:0,
+                 from ../src/chip_15xx_src/iap.c:32:
+C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\chip_15xx_inc/romapi_15xx.h:102:20: note: expected 'unsigned int *' but argument is of type 'uint32_t * {aka long unsigned int *}'
+ static INLINE void iap_entry(unsigned int cmd_param[5], unsigned int status_result[4])
+                    ^
+../src/chip_15xx_src/iap.c: In function 'Chip_IAP_EraseSector':
+../src/chip_15xx_src/iap.c:87:12: warning: passing argument 1 of 'iap_entry' from incompatible pointer type [-Wincompatible-pointer-types]
+  iap_entry(command, result);
+            ^
+In file included from C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\chip_15xx_inc/chip.h:158:0,
+                 from ../src/chip_15xx_src/iap.c:32:
+C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\chip_15xx_inc/romapi_15xx.h:102:20: note: expected 'unsigned int *' but argument is of type 'uint32_t * {aka long unsigned int *}'
+ static INLINE void iap_entry(unsigned int cmd_param[5], unsigned int status_result[4])
+                    ^
+../src/chip_15xx_src/iap.c:87:21: warning: passing argument 2 of 'iap_entry' from incompatible pointer type [-Wincompatible-pointer-types]
+  iap_entry(command, result);
+                     ^
+In file included from C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\chip_15xx_inc/chip.h:158:0,
+                 from ../src/chip_15xx_src/iap.c:32:
+C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\chip_15xx_inc/romapi_15xx.h:102:20: note: expected 'unsigned int *' but argument is of type 'uint32_t * {aka long unsigned int *}'
+ static INLINE void iap_entry(unsigned int cmd_param[5], unsigned int status_result[4])
+                    ^
+../src/chip_15xx_src/iap.c: In function 'Chip_IAP_BlankCheckSector':
+../src/chip_15xx_src/iap.c:100:12: warning: passing argument 1 of 'iap_entry' from incompatible pointer type [-Wincompatible-pointer-types]
+  iap_entry(command, result);
+            ^
+In file included from C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\chip_15xx_inc/chip.h:158:0,
+                 from ../src/chip_15xx_src/iap.c:32:
+C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\chip_15xx_inc/romapi_15xx.h:102:20: note: expected 'unsigned int *' but argument is of type 'uint32_t * {aka long unsigned int *}'
+ static INLINE void iap_entry(unsigned int cmd_param[5], unsigned int status_result[4])
+                    ^
+../src/chip_15xx_src/iap.c:100:21: warning: passing argument 2 of 'iap_entry' from incompatible pointer type [-Wincompatible-pointer-types]
+  iap_entry(command, result);
+                     ^
+In file included from C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\chip_15xx_inc/chip.h:158:0,
+                 from ../src/chip_15xx_src/iap.c:32:
+C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\chip_15xx_inc/romapi_15xx.h:102:20: note: expected 'unsigned int *' but argument is of type 'uint32_t * {aka long unsigned int *}'
+ static INLINE void iap_entry(unsigned int cmd_param[5], unsigned int status_result[4])
+                    ^
+../src/chip_15xx_src/iap.c: In function 'Chip_IAP_ReadPID':
+../src/chip_15xx_src/iap.c:111:12: warning: passing argument 1 of 'iap_entry' from incompatible pointer type [-Wincompatible-pointer-types]
+  iap_entry(command, result);
+            ^
+In file included from C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\chip_15xx_inc/chip.h:158:0,
+                 from ../src/chip_15xx_src/iap.c:32:
+C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\chip_15xx_inc/romapi_15xx.h:102:20: note: expected 'unsigned int *' but argument is of type 'uint32_t * {aka long unsigned int *}'
+ static INLINE void iap_entry(unsigned int cmd_param[5], unsigned int status_result[4])
+                    ^
+../src/chip_15xx_src/iap.c:111:21: warning: passing argument 2 of 'iap_entry' from incompatible pointer type [-Wincompatible-pointer-types]
+  iap_entry(command, result);
+                     ^
+In file included from C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\chip_15xx_inc/chip.h:158:0,
+                 from ../src/chip_15xx_src/iap.c:32:
+C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\chip_15xx_inc/romapi_15xx.h:102:20: note: expected 'unsigned int *' but argument is of type 'uint32_t * {aka long unsigned int *}'
+ static INLINE void iap_entry(unsigned int cmd_param[5], unsigned int status_result[4])
+                    ^
+../src/chip_15xx_src/iap.c: In function 'Chip_IAP_ReadBootCode':
+../src/chip_15xx_src/iap.c:122:12: warning: passing argument 1 of 'iap_entry' from incompatible pointer type [-Wincompatible-pointer-types]
+  iap_entry(command, result);
+            ^
+In file included from C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\chip_15xx_inc/chip.h:158:0,
+                 from ../src/chip_15xx_src/iap.c:32:
+C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\chip_15xx_inc/romapi_15xx.h:102:20: note: expected 'unsigned int *' but argument is of type 'uint32_t * {aka long unsigned int *}'
+ static INLINE void iap_entry(unsigned int cmd_param[5], unsigned int status_result[4])
+                    ^
+../src/chip_15xx_src/iap.c:122:21: warning: passing argument 2 of 'iap_entry' from incompatible pointer type [-Wincompatible-pointer-types]
+  iap_entry(command, result);
+                     ^
+In file included from C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\chip_15xx_inc/chip.h:158:0,
+                 from ../src/chip_15xx_src/iap.c:32:
+C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\chip_15xx_inc/romapi_15xx.h:102:20: note: expected 'unsigned int *' but argument is of type 'uint32_t * {aka long unsigned int *}'
+ static INLINE void iap_entry(unsigned int cmd_param[5], unsigned int status_result[4])
+                    ^
+../src/chip_15xx_src/iap.c: In function 'Chip_IAP_Compare':
+../src/chip_15xx_src/iap.c:136:12: warning: passing argument 1 of 'iap_entry' from incompatible pointer type [-Wincompatible-pointer-types]
+  iap_entry(command, result);
+            ^
+In file included from C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\chip_15xx_inc/chip.h:158:0,
+                 from ../src/chip_15xx_src/iap.c:32:
+C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\chip_15xx_inc/romapi_15xx.h:102:20: note: expected 'unsigned int *' but argument is of type 'uint32_t * {aka long unsigned int *}'
+ static INLINE void iap_entry(unsigned int cmd_param[5], unsigned int status_result[4])
+                    ^
+../src/chip_15xx_src/iap.c:136:21: warning: passing argument 2 of 'iap_entry' from incompatible pointer type [-Wincompatible-pointer-types]
+  iap_entry(command, result);
+                     ^
+In file included from C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\chip_15xx_inc/chip.h:158:0,
+                 from ../src/chip_15xx_src/iap.c:32:
+C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\chip_15xx_inc/romapi_15xx.h:102:20: note: expected 'unsigned int *' but argument is of type 'uint32_t * {aka long unsigned int *}'
+ static INLINE void iap_entry(unsigned int cmd_param[5], unsigned int status_result[4])
+                    ^
+../src/chip_15xx_src/iap.c: In function 'Chip_IAP_ReinvokeISP':
+../src/chip_15xx_src/iap.c:147:12: warning: passing argument 1 of 'iap_entry' from incompatible pointer type [-Wincompatible-pointer-types]
+  iap_entry(command, result);
+            ^
+In file included from C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\chip_15xx_inc/chip.h:158:0,
+                 from ../src/chip_15xx_src/iap.c:32:
+C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\chip_15xx_inc/romapi_15xx.h:102:20: note: expected 'unsigned int *' but argument is of type 'uint32_t * {aka long unsigned int *}'
+ static INLINE void iap_entry(unsigned int cmd_param[5], unsigned int status_result[4])
+                    ^
+../src/chip_15xx_src/iap.c:147:21: warning: passing argument 2 of 'iap_entry' from incompatible pointer type [-Wincompatible-pointer-types]
+  iap_entry(command, result);
+                     ^
+In file included from C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\chip_15xx_inc/chip.h:158:0,
+                 from ../src/chip_15xx_src/iap.c:32:
+C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\chip_15xx_inc/romapi_15xx.h:102:20: note: expected 'unsigned int *' but argument is of type 'uint32_t * {aka long unsigned int *}'
+ static INLINE void iap_entry(unsigned int cmd_param[5], unsigned int status_result[4])
+                    ^
+../src/chip_15xx_src/iap.c: In function 'Chip_IAP_ReadUID':
+../src/chip_15xx_src/iap.c:159:12: warning: passing argument 1 of 'iap_entry' from incompatible pointer type [-Wincompatible-pointer-types]
+  iap_entry(command, result);
+            ^
+In file included from C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\chip_15xx_inc/chip.h:158:0,
+                 from ../src/chip_15xx_src/iap.c:32:
+C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\chip_15xx_inc/romapi_15xx.h:102:20: note: expected 'unsigned int *' but argument is of type 'uint32_t * {aka long unsigned int *}'
+ static INLINE void iap_entry(unsigned int cmd_param[5], unsigned int status_result[4])
+                    ^
+../src/chip_15xx_src/iap.c:159:21: warning: passing argument 2 of 'iap_entry' from incompatible pointer type [-Wincompatible-pointer-types]
+  iap_entry(command, result);
+                     ^
+In file included from C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\chip_15xx_inc/chip.h:158:0,
+                 from ../src/chip_15xx_src/iap.c:32:
+C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\chip_15xx_inc/romapi_15xx.h:102:20: note: expected 'unsigned int *' but argument is of type 'uint32_t * {aka long unsigned int *}'
+ static INLINE void iap_entry(unsigned int cmd_param[5], unsigned int status_result[4])
+                    ^
+../src/chip_15xx_src/iap.c: In function 'Chip_IAP_ErasePage':
+../src/chip_15xx_src/iap.c:176:12: warning: passing argument 1 of 'iap_entry' from incompatible pointer type [-Wincompatible-pointer-types]
+  iap_entry(command, result);
+            ^
+In file included from C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\chip_15xx_inc/chip.h:158:0,
+                 from ../src/chip_15xx_src/iap.c:32:
+C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\chip_15xx_inc/romapi_15xx.h:102:20: note: expected 'unsigned int *' but argument is of type 'uint32_t * {aka long unsigned int *}'
+ static INLINE void iap_entry(unsigned int cmd_param[5], unsigned int status_result[4])
+                    ^
+../src/chip_15xx_src/iap.c:176:21: warning: passing argument 2 of 'iap_entry' from incompatible pointer type [-Wincompatible-pointer-types]
+  iap_entry(command, result);
+                     ^
+In file included from C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\chip_15xx_inc/chip.h:158:0,
+                 from ../src/chip_15xx_src/iap.c:32:
+C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\chip_15xx_inc/romapi_15xx.h:102:20: note: expected 'unsigned int *' but argument is of type 'uint32_t * {aka long unsigned int *}'
+ static INLINE void iap_entry(unsigned int cmd_param[5], unsigned int status_result[4])
+                    ^
+Finished building: ../src/chip_15xx_src/iap.c
+ 
+Building file: ../src/chip_15xx_src/iocon_15xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__NEWLIB__ -DDEBUG -D__CODE_RED -DCORE_M3 -DCPP_USE_HEAP -D__LPC15XX__ -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\chip_15xx_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\chip_15xx_inc\usbd" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\drivers_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\ecu_simulator_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\obd_protocol_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\utilities_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\board_inc" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/chip_15xx_src/iocon_15xx.d" -MT"src/chip_15xx_src/iocon_15xx.o" -MT"src/chip_15xx_src/iocon_15xx.d" -o "src/chip_15xx_src/iocon_15xx.o" "../src/chip_15xx_src/iocon_15xx.c"
+Finished building: ../src/chip_15xx_src/iocon_15xx.c
+ 
+Building file: ../src/chip_15xx_src/pinint_15xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__NEWLIB__ -DDEBUG -D__CODE_RED -DCORE_M3 -DCPP_USE_HEAP -D__LPC15XX__ -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\chip_15xx_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\chip_15xx_inc\usbd" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\drivers_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\ecu_simulator_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\obd_protocol_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\utilities_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\board_inc" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/chip_15xx_src/pinint_15xx.d" -MT"src/chip_15xx_src/pinint_15xx.o" -MT"src/chip_15xx_src/pinint_15xx.d" -o "src/chip_15xx_src/pinint_15xx.o" "../src/chip_15xx_src/pinint_15xx.c"
+Finished building: ../src/chip_15xx_src/pinint_15xx.c
+ 
+Building file: ../src/chip_15xx_src/pmu_15xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__NEWLIB__ -DDEBUG -D__CODE_RED -DCORE_M3 -DCPP_USE_HEAP -D__LPC15XX__ -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\chip_15xx_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\chip_15xx_inc\usbd" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\drivers_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\ecu_simulator_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\obd_protocol_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\utilities_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\board_inc" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/chip_15xx_src/pmu_15xx.d" -MT"src/chip_15xx_src/pmu_15xx.o" -MT"src/chip_15xx_src/pmu_15xx.d" -o "src/chip_15xx_src/pmu_15xx.o" "../src/chip_15xx_src/pmu_15xx.c"
+Finished building: ../src/chip_15xx_src/pmu_15xx.c
+ 
+Building file: ../src/chip_15xx_src/ritimer_15xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__NEWLIB__ -DDEBUG -D__CODE_RED -DCORE_M3 -DCPP_USE_HEAP -D__LPC15XX__ -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\chip_15xx_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\chip_15xx_inc\usbd" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\drivers_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\ecu_simulator_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\obd_protocol_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\utilities_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\board_inc" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/chip_15xx_src/ritimer_15xx.d" -MT"src/chip_15xx_src/ritimer_15xx.o" -MT"src/chip_15xx_src/ritimer_15xx.d" -o "src/chip_15xx_src/ritimer_15xx.o" "../src/chip_15xx_src/ritimer_15xx.c"
+Finished building: ../src/chip_15xx_src/ritimer_15xx.c
+ 
+Building file: ../src/chip_15xx_src/rtc_15xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__NEWLIB__ -DDEBUG -D__CODE_RED -DCORE_M3 -DCPP_USE_HEAP -D__LPC15XX__ -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\chip_15xx_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\chip_15xx_inc\usbd" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\drivers_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\ecu_simulator_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\obd_protocol_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\utilities_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\board_inc" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/chip_15xx_src/rtc_15xx.d" -MT"src/chip_15xx_src/rtc_15xx.o" -MT"src/chip_15xx_src/rtc_15xx.d" -o "src/chip_15xx_src/rtc_15xx.o" "../src/chip_15xx_src/rtc_15xx.c"
+Finished building: ../src/chip_15xx_src/rtc_15xx.c
+ 
+Building file: ../src/chip_15xx_src/sct_15xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__NEWLIB__ -DDEBUG -D__CODE_RED -DCORE_M3 -DCPP_USE_HEAP -D__LPC15XX__ -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\chip_15xx_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\chip_15xx_inc\usbd" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\drivers_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\ecu_simulator_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\obd_protocol_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\utilities_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\board_inc" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/chip_15xx_src/sct_15xx.d" -MT"src/chip_15xx_src/sct_15xx.o" -MT"src/chip_15xx_src/sct_15xx.d" -o "src/chip_15xx_src/sct_15xx.o" "../src/chip_15xx_src/sct_15xx.c"
+Finished building: ../src/chip_15xx_src/sct_15xx.c
+ 
+Building file: ../src/chip_15xx_src/sct_pwm_15xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__NEWLIB__ -DDEBUG -D__CODE_RED -DCORE_M3 -DCPP_USE_HEAP -D__LPC15XX__ -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\chip_15xx_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\chip_15xx_inc\usbd" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\drivers_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\ecu_simulator_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\obd_protocol_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\utilities_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\board_inc" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/chip_15xx_src/sct_pwm_15xx.d" -MT"src/chip_15xx_src/sct_pwm_15xx.o" -MT"src/chip_15xx_src/sct_pwm_15xx.d" -o "src/chip_15xx_src/sct_pwm_15xx.o" "../src/chip_15xx_src/sct_pwm_15xx.c"
+Finished building: ../src/chip_15xx_src/sct_pwm_15xx.c
+ 
+Building file: ../src/chip_15xx_src/sctipu_15xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__NEWLIB__ -DDEBUG -D__CODE_RED -DCORE_M3 -DCPP_USE_HEAP -D__LPC15XX__ -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\chip_15xx_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\chip_15xx_inc\usbd" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\drivers_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\ecu_simulator_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\obd_protocol_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\utilities_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\board_inc" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/chip_15xx_src/sctipu_15xx.d" -MT"src/chip_15xx_src/sctipu_15xx.o" -MT"src/chip_15xx_src/sctipu_15xx.d" -o "src/chip_15xx_src/sctipu_15xx.o" "../src/chip_15xx_src/sctipu_15xx.c"
+Finished building: ../src/chip_15xx_src/sctipu_15xx.c
+ 
+Building file: ../src/chip_15xx_src/spi_15xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__NEWLIB__ -DDEBUG -D__CODE_RED -DCORE_M3 -DCPP_USE_HEAP -D__LPC15XX__ -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\chip_15xx_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\chip_15xx_inc\usbd" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\drivers_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\ecu_simulator_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\obd_protocol_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\utilities_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\board_inc" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/chip_15xx_src/spi_15xx.d" -MT"src/chip_15xx_src/spi_15xx.o" -MT"src/chip_15xx_src/spi_15xx.d" -o "src/chip_15xx_src/spi_15xx.o" "../src/chip_15xx_src/spi_15xx.c"
+Finished building: ../src/chip_15xx_src/spi_15xx.c
+ 
+Building file: ../src/chip_15xx_src/stopwatch_15xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__NEWLIB__ -DDEBUG -D__CODE_RED -DCORE_M3 -DCPP_USE_HEAP -D__LPC15XX__ -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\chip_15xx_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\chip_15xx_inc\usbd" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\drivers_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\ecu_simulator_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\obd_protocol_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\utilities_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\board_inc" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/chip_15xx_src/stopwatch_15xx.d" -MT"src/chip_15xx_src/stopwatch_15xx.o" -MT"src/chip_15xx_src/stopwatch_15xx.d" -o "src/chip_15xx_src/stopwatch_15xx.o" "../src/chip_15xx_src/stopwatch_15xx.c"
+Finished building: ../src/chip_15xx_src/stopwatch_15xx.c
+ 
+Building file: ../src/chip_15xx_src/swm_15xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__NEWLIB__ -DDEBUG -D__CODE_RED -DCORE_M3 -DCPP_USE_HEAP -D__LPC15XX__ -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\chip_15xx_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\chip_15xx_inc\usbd" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\drivers_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\ecu_simulator_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\obd_protocol_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\utilities_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\board_inc" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/chip_15xx_src/swm_15xx.d" -MT"src/chip_15xx_src/swm_15xx.o" -MT"src/chip_15xx_src/swm_15xx.d" -o "src/chip_15xx_src/swm_15xx.o" "../src/chip_15xx_src/swm_15xx.c"
+Finished building: ../src/chip_15xx_src/swm_15xx.c
+ 
+Building file: ../src/chip_15xx_src/sysctl_15xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__NEWLIB__ -DDEBUG -D__CODE_RED -DCORE_M3 -DCPP_USE_HEAP -D__LPC15XX__ -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\chip_15xx_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\chip_15xx_inc\usbd" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\drivers_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\ecu_simulator_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\obd_protocol_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\utilities_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\board_inc" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/chip_15xx_src/sysctl_15xx.d" -MT"src/chip_15xx_src/sysctl_15xx.o" -MT"src/chip_15xx_src/sysctl_15xx.d" -o "src/chip_15xx_src/sysctl_15xx.o" "../src/chip_15xx_src/sysctl_15xx.c"
+Finished building: ../src/chip_15xx_src/sysctl_15xx.c
+ 
+Building file: ../src/chip_15xx_src/sysinit_15xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__NEWLIB__ -DDEBUG -D__CODE_RED -DCORE_M3 -DCPP_USE_HEAP -D__LPC15XX__ -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\chip_15xx_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\chip_15xx_inc\usbd" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\drivers_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\ecu_simulator_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\obd_protocol_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\utilities_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\board_inc" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/chip_15xx_src/sysinit_15xx.d" -MT"src/chip_15xx_src/sysinit_15xx.o" -MT"src/chip_15xx_src/sysinit_15xx.d" -o "src/chip_15xx_src/sysinit_15xx.o" "../src/chip_15xx_src/sysinit_15xx.c"
+Finished building: ../src/chip_15xx_src/sysinit_15xx.c
+ 
+Building file: ../src/chip_15xx_src/uart_15xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__NEWLIB__ -DDEBUG -D__CODE_RED -DCORE_M3 -DCPP_USE_HEAP -D__LPC15XX__ -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\chip_15xx_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\chip_15xx_inc\usbd" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\drivers_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\ecu_simulator_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\obd_protocol_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\utilities_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\board_inc" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/chip_15xx_src/uart_15xx.d" -MT"src/chip_15xx_src/uart_15xx.o" -MT"src/chip_15xx_src/uart_15xx.d" -o "src/chip_15xx_src/uart_15xx.o" "../src/chip_15xx_src/uart_15xx.c"
+Finished building: ../src/chip_15xx_src/uart_15xx.c
+ 
+Building file: ../src/chip_15xx_src/wwdt_15xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__NEWLIB__ -DDEBUG -D__CODE_RED -DCORE_M3 -DCPP_USE_HEAP -D__LPC15XX__ -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\chip_15xx_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\chip_15xx_inc\usbd" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\drivers_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\ecu_simulator_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\obd_protocol_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\utilities_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\board_inc" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/chip_15xx_src/wwdt_15xx.d" -MT"src/chip_15xx_src/wwdt_15xx.o" -MT"src/chip_15xx_src/wwdt_15xx.d" -o "src/chip_15xx_src/wwdt_15xx.o" "../src/chip_15xx_src/wwdt_15xx.c"
+Finished building: ../src/chip_15xx_src/wwdt_15xx.c
+ 
+Building file: ../src/board_src/board_configure.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -std=gnu++11 -D__NEWLIB__ -DDEBUG -D__CODE_RED -DCORE_M3 -DCPP_USE_HEAP -D__LPC15XX__ -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\chip_15xx_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\chip_15xx_inc\usbd" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\drivers_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\ecu_simulator_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\obd_protocol_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\utilities_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\board_inc" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/board_src/board_configure.d" -MT"src/board_src/board_configure.o" -MT"src/board_src/board_configure.d" -o "src/board_src/board_configure.o" "../src/board_src/board_configure.cpp"
+Finished building: ../src/board_src/board_configure.cpp
+ 
+Building file: ../src/board_src/ecu_board.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -std=gnu++11 -D__NEWLIB__ -DDEBUG -D__CODE_RED -DCORE_M3 -DCPP_USE_HEAP -D__LPC15XX__ -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\chip_15xx_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\chip_15xx_inc\usbd" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\drivers_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\ecu_simulator_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\obd_protocol_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\utilities_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\board_inc" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/board_src/ecu_board.d" -MT"src/board_src/ecu_board.o" -MT"src/board_src/ecu_board.d" -o "src/board_src/ecu_board.o" "../src/board_src/ecu_board.cpp"
+Finished building: ../src/board_src/ecu_board.cpp
+ 
 Building file: ../src/ecu_simulator_0_0_1.cpp
 Invoking: MCU C++ Compiler
 arm-none-eabi-c++ -std=gnu++11 -D__NEWLIB__ -DDEBUG -D__CODE_RED -DCORE_M3 -DCPP_USE_HEAP -D__LPC15XX__ -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\chip_15xx_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\chip_15xx_inc\usbd" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\drivers_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\ecu_simulator_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\obd_protocol_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\utilities_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\inc\board_inc" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/ecu_simulator_0_0_1.d" -MT"src/ecu_simulator_0_0_1.o" -MT"src/ecu_simulator_0_0_1.d" -o "src/ecu_simulator_0_0_1.o" "../src/ecu_simulator_0_0_1.cpp"
+../src/ecu_simulator_0_0_1.cpp: In function 'int main()':
+../src/ecu_simulator_0_0_1.cpp:32:15: warning: unused variable 'MianClock' [-Wunused-variable]
+      uint32_t MianClock = Board_Configure::instance()->Get_MainClockRate();
+               ^
 Finished building: ../src/ecu_simulator_0_0_1.cpp
  
 Building target: ecu_simulator_0_0_1.axf
 Invoking: MCU C++ Linker
 arm-none-eabi-c++ -nostdlib -Xlinker -Map="ecu_simulator_0_0_1.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -mcpu=cortex-m3 -mthumb -T "Ecu_Simulator_0_0_1_Debug.ld" -o "ecu_simulator_0_0_1.axf"  ./src/drivers_src/bluetooth_usart.o ./src/drivers_src/can_controllor.o ./src/drivers_src/kwp_usart.o ./src/drivers_src/led.o ./src/drivers_src/timer.o  ./src/chip_15xx_src/acmp_15xx.o ./src/chip_15xx_src/adc_15xx.o ./src/chip_15xx_src/chip_15xx.o ./src/chip_15xx_src/clock_15xx.o ./src/chip_15xx_src/crc_15xx.o ./src/chip_15xx_src/dac_15xx.o ./src/chip_15xx_src/dma_15xx.o ./src/chip_15xx_src/eeprom.o ./src/chip_15xx_src/gpio_15xx.o ./src/chip_15xx_src/i2c_common_15xx.o ./src/chip_15xx_src/i2cm_15xx.o ./src/chip_15xx_src/i2cs_15xx.o ./src/chip_15xx_src/iap.o ./src/chip_15xx_src/iocon_15xx.o ./src/chip_15xx_src/pinint_15xx.o ./src/chip_15xx_src/pmu_15xx.o ./src/chip_15xx_src/ring_buffer.o ./src/chip_15xx_src/ritimer_15xx.o ./src/chip_15xx_src/rtc_15xx.o ./src/chip_15xx_src/sct_15xx.o ./src/chip_15xx_src/sct_pwm_15xx.o ./src/chip_15xx_src/sctipu_15xx.o ./src/chip_15xx_src/spi_15xx.o ./src/chip_15xx_src/stopwatch_15xx.o ./src/chip_15xx_src/swm_15xx.o ./src/chip_15xx_src/sysctl_15xx.o ./src/chip_15xx_src/sysinit_15xx.o ./src/chip_15xx_src/uart_15xx.o ./src/chip_15xx_src/wwdt_15xx.o  ./src/board_src/board_configure.o ./src/board_src/ecu_board.o  ./src/cr_cpp_config.o ./src/cr_startup_lpc15xx.o ./src/crp.o ./src/ecu_simulator_0_0_1.o   
 Memory region         Used Size  Region Size  %age Used
-       MFlash256:       20104 B       256 KB      7.67%
-         Ram0_16:        2268 B        16 KB     13.84%
+       MFlash256:       20780 B       256 KB      7.93%
+         Ram0_16:        2328 B        16 KB     14.21%
          Ram1_16:          0 GB        16 KB      0.00%
           Ram2_4:          0 GB         4 KB      0.00%
 Finished building target: ecu_simulator_0_0_1.axf
@@ -19,8 +382,8 @@ Finished building target: ecu_simulator_0_0_1.axf
 Performing post-build steps
 arm-none-eabi-size "ecu_simulator_0_0_1.axf"; # arm-none-eabi-objcopy -v -O binary "ecu_simulator_0_0_1.axf" "ecu_simulator_0_0_1.bin" ; # checksum -p LPC1549 -d "ecu_simulator_0_0_1.bin";
    text	   data	    bss	    dec	    hex	filename
-  17984	   2120	    148	  20252	   4f1c	ecu_simulator_0_0_1.axf
+  18660	   2120	    208	  20988	   51fc	ecu_simulator_0_0_1.axf
  
 
-16:17:47 Build Finished (took 1s.486ms)
+20:34:52 Build Finished (took 10s.399ms)
 

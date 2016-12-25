@@ -44,7 +44,7 @@ extern "C" {
 /**
  * @brief LPC15xx Pin Interrupt and Pattern Match register block structure
  */
-typedef struct {			/*!< RTC */
+typedef struct LPC_RTC_T{			/*!< RTC */
 	__IO uint32_t CTRL;		/*!< RTC control register */
 	__IO uint32_t MATCH;	/*!< PRTC match (alarm) register */
 	__IO uint32_t COUNT;	/*!< RTC counter register */

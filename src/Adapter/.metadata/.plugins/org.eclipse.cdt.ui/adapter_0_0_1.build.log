@@ -1,6 +1,40 @@
-16:20:21 **** Incremental Build of configuration Debug for project adapter_0_0_1 ****
+23:38:38 **** Incremental Build of configuration Debug for project adapter_0_0_1 ****
 make -r all 
-make: Nothing to be done for `all'.
+Building file: ../src/drivers_src/timer.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -std=gnu++11 -D__NEWLIB__ -DDEBUG -D__CODE_RED -DCORE_M3 -DCPP_USE_HEAP -D__LPC15XX__ -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\adapter_0_0_1\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\adapter_0_0_1\inc\adapter_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\adapter_0_0_1\inc\chip_15xx_inc\usbd" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\adapter_0_0_1\inc\chip_15xx_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\adapter_0_0_1\inc\drivers_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\adapter_0_0_1\inc\obd_protocol_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\adapter_0_0_1\inc\utilities_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\adapter_0_0_1\inc\board_inc" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/drivers_src/timer.d" -MT"src/drivers_src/timer.o" -MT"src/drivers_src/timer.d" -o "src/drivers_src/timer.o" "../src/drivers_src/timer.cpp"
+Finished building: ../src/drivers_src/timer.cpp
+ 
+Building file: ../src/chip_15xx_src/ritimer_15xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__NEWLIB__ -DDEBUG -D__CODE_RED -DCORE_M3 -DCPP_USE_HEAP -D__LPC15XX__ -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\adapter_0_0_1\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\adapter_0_0_1\inc\adapter_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\adapter_0_0_1\inc\chip_15xx_inc\usbd" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\adapter_0_0_1\inc\chip_15xx_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\adapter_0_0_1\inc\drivers_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\adapter_0_0_1\inc\obd_protocol_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\adapter_0_0_1\inc\utilities_inc" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/chip_15xx_src/ritimer_15xx.d" -MT"src/chip_15xx_src/ritimer_15xx.o" -MT"src/chip_15xx_src/ritimer_15xx.d" -o "src/chip_15xx_src/ritimer_15xx.o" "../src/chip_15xx_src/ritimer_15xx.c"
+Finished building: ../src/chip_15xx_src/ritimer_15xx.c
+ 
+Building file: ../src/adapter_0_0_1.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -std=gnu++11 -D__NEWLIB__ -DDEBUG -D__CODE_RED -DCORE_M3 -DCPP_USE_HEAP -D__LPC15XX__ -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\adapter_0_0_1\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\adapter_0_0_1\inc\adapter_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\adapter_0_0_1\inc\chip_15xx_inc\usbd" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\adapter_0_0_1\inc\chip_15xx_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\adapter_0_0_1\inc\drivers_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\adapter_0_0_1\inc\obd_protocol_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\adapter_0_0_1\inc\utilities_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\adapter_0_0_1\inc\board_inc" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/adapter_0_0_1.d" -MT"src/adapter_0_0_1.o" -MT"src/adapter_0_0_1.d" -o "src/adapter_0_0_1.o" "../src/adapter_0_0_1.cpp"
+../src/adapter_0_0_1.cpp: In function 'int main()':
+../src/adapter_0_0_1.cpp:33:14: warning: unused variable 'MianClock' [-Wunused-variable]
+     uint32_t MianClock = Board_Configure::instance()->Get_MainClockRate();
+              ^
+Finished building: ../src/adapter_0_0_1.cpp
+ 
+Building target: adapter_0_0_1.axf
+Invoking: MCU C++ Linker
+arm-none-eabi-c++ -nostdlib -Xlinker -Map="adapter_0_0_1.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -mcpu=cortex-m3 -mthumb -T "adapter_0_0_1_Debug.ld" -o "adapter_0_0_1.axf"  ./src/drivers_src/bluetooth_usart.o ./src/drivers_src/can_controllor.o ./src/drivers_src/kwp_usart.o ./src/drivers_src/led.o ./src/drivers_src/timer.o  ./src/chip_15xx_src/acmp_15xx.o ./src/chip_15xx_src/adc_15xx.o ./src/chip_15xx_src/chip_15xx.o ./src/chip_15xx_src/clock_15xx.o ./src/chip_15xx_src/crc_15xx.o ./src/chip_15xx_src/dac_15xx.o ./src/chip_15xx_src/dma_15xx.o ./src/chip_15xx_src/eeprom.o ./src/chip_15xx_src/gpio_15xx.o ./src/chip_15xx_src/i2c_common_15xx.o ./src/chip_15xx_src/i2cm_15xx.o ./src/chip_15xx_src/i2cs_15xx.o ./src/chip_15xx_src/iap.o ./src/chip_15xx_src/iocon_15xx.o ./src/chip_15xx_src/pinint_15xx.o ./src/chip_15xx_src/pmu_15xx.o ./src/chip_15xx_src/ring_buffer.o ./src/chip_15xx_src/ritimer_15xx.o ./src/chip_15xx_src/rtc_15xx.o ./src/chip_15xx_src/sct_15xx.o ./src/chip_15xx_src/sct_pwm_15xx.o ./src/chip_15xx_src/sctipu_15xx.o ./src/chip_15xx_src/spi_15xx.o ./src/chip_15xx_src/stopwatch_15xx.o ./src/chip_15xx_src/swm_15xx.o ./src/chip_15xx_src/sysctl_15xx.o ./src/chip_15xx_src/sysinit_15xx.o ./src/chip_15xx_src/uart_15xx.o ./src/chip_15xx_src/wwdt_15xx.o  ./src/board_src/adpapter_board.o ./src/board_src/board_configure.o  ./src/adapter_0_0_1.o ./src/cr_cpp_config.o ./src/cr_startup_lpc15xx.o ./src/crp.o   
+Memory region         Used Size  Region Size  %age Used
+       MFlash256:       21016 B       256 KB      8.02%
+         Ram0_16:        2348 B        16 KB     14.33%
+         Ram1_16:          0 GB        16 KB      0.00%
+          Ram2_4:          0 GB         4 KB      0.00%
+Finished building target: adapter_0_0_1.axf
+ 
+/bin/make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "adapter_0_0_1.axf"; # arm-none-eabi-objcopy -v -O binary "adapter_0_0_1.axf" "adapter_0_0_1.bin" ; # checksum -p LPC1549 -d "adapter_0_0_1.bin";
+   text	   data	    bss	    dec	    hex	filename
+  18896	   2120	    228	  21244	   52fc	adapter_0_0_1.axf
+ 
 
-16:20:21 Build Finished (took 167ms)
+23:38:40 Build Finished (took 1s.622ms)
 

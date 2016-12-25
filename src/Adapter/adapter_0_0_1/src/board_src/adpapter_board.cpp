@@ -396,6 +396,7 @@ void Board_Init()
 
 	/* Configure the pin for the peripheral device */
 	Board_Configure_IO();
+
 }
 
 /*Deinitialize the board */
@@ -452,3 +453,6 @@ void Board_Toggle_RX_LED()
 {
 	Chip_GPIO_SetPinToggle(LPC_GPIO,RX_LED_PORT,RX_LED_PIN);
 }
+
+
+

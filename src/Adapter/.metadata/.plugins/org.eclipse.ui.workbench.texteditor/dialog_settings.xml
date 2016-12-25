@@ -2,16 +2,21 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="LPC_RITIMER " key="selection"/>
-		<item value="false" key="casesensitive"/>
+		<item value="Led" key="selection"/>
+		<item value="true" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="AdapterLed"/>
+			<item value="AdapterLed::AdapterLed():tx_count(0),rx_count(0)"/>
+			<item value="Ecu"/>
 			<item value="LPC_RIT"/>
 			<item value="LPC_MRT_CH_T"/>
 		</list>
 		<list key="replacehistory">
+			<item value="Led"/>
+			<item value="Board"/>
 			<item value="LPC_RITIMER "/>
 			<item value="LPC_MRT_CH_Type"/>
 		</list>

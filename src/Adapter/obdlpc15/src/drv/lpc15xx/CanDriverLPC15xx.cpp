@@ -51,6 +51,7 @@ extern "C" {
 
     void CAN_error(uint32_t errorInfo)
     {
+
     }
 }
 

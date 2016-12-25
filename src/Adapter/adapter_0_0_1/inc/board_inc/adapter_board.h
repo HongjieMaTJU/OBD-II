@@ -21,8 +21,7 @@
 
 #ifndef DRIVERS_INC_ADAPTER_BOARD_H_
 #define DRIVERS_INC_ADAPTER_BOARD_H_
-
-
+#include <cstdint>
 /**
  *
  * @brief definitions of the USARTS for driver's layer
@@ -269,6 +268,14 @@ void Board_Toggle_TX_LED();
  * @return none
  */
 void Board_Toggle_RX_LED();
+
+
+/**
+ * @brief  Get the board main clock rate
+ * @return the clock rate in HZ
+ * @param  none
+ */
+
 
 
 

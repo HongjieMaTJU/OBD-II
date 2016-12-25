@@ -44,7 +44,7 @@ extern "C" {
 /**
  * @brief Repetitive Interrupt Timer register block structure
  */
-typedef struct {				/*!< RITIMER Structure      */
+typedef struct LPC_RITIMER_T{				/*!< RITIMER Structure      */
 	__IO uint32_t  COMPVAL;		/*!< Compare register       */
 	__IO uint32_t  MASK;		/*!< Mask register. This register holds the 32-bit mask value. A 1 written to any bit will force a compare on the corresponding bit of the counter and compare register. */
 	__IO uint32_t  CTRL;		/*!< Control register       */

@@ -64,7 +64,7 @@ void Led::Toggle_Led_RX()
 
 
 /* Constructor */
-Led::Led():tx_count(0),rx_count(0)
+Led::Led():tx_count_(0),rx_count_(0)
 {
 
 }
