@@ -19,7 +19,7 @@
 
 // TODO: insert other definitions and declarations here
 
-
+void LongTimer_Callback();
 
 
 int main(void)
@@ -32,18 +32,18 @@ int main(void)
 
     uint32_t MianClock = Board_Configure::instance()->Get_MainClockRate();
 
-    Timer * led_blink_timer = Timer::Instance(Timer0);
-    Led * led = Led::instance();
+    Timer * pled_blink_timer = Timer::Instance(Timer0);
+    Led * pled = Led::instance();
+    LongTimer * plongtimer = LongTimer::Instance(LongTimer_Callback);
+    //LongTimer * longtimer = LongTimer::Instance(0);
 
+    pled->Lighten_Led_TX();
+    pled->Lighten_Led_RX();
 
-    led->Lighten_Led_TX();
-    led->Lighten_Led_RX();
-
-    led->Off_Led_TX();
+    pled->Off_Led_TX();
     //Led::instance()->Off_Led_RX();
-
-    led->Toggle_Led_TX();
-    led->Toggle_Led_RX();
+    pled->Toggle_Led_TX();
+    pled->Toggle_Led_RX();
 
     // Force the counter to be placed into memory*/
 	volatile static uint32_t i = 0 ;
@@ -51,11 +51,13 @@ int main(void)
     // Enter an infinite loop, just incrementing a counter
 
 	/* the MRT timer can maximum delay the timer for 233ms */
-	led_blink_timer->Start_Millisecond(200);
+	//led_blink_timer->Start_Millisecond(200);
+
+	plongtimer->Start_Millisecond(1000);
     while(1)
     {
 
-    	if(led_blink_timer->IsExpired())
+    	/*if(led_blink_timer->IsExpired())
     	{
     		i++ ;
     		led_blink_timer->Start_Millisecond(200);
@@ -65,7 +67,23 @@ int main(void)
     		i = 0;
     		led->Toggle_Led_TX();
     		led->Toggle_Led_RX();
+    	}*/
+    	if(plongtimer->IsExpired())
+    	{
+    		//LongTimer_Callback();
+    		plongtimer->Start_Millisecond(1000);
+    		pled->Blink_Led_RX();
+    		pled->Blink_Led_TX();
     	}
+    	i++;
     }
     return 0 ;
+}
+
+
+void LongTimer_Callback()
+{
+	Led * led = Led::instance();
+	led->Toggle_Led_TX();
+	led->Toggle_Led_RX();
 }

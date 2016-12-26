@@ -62,21 +62,30 @@ void Chip_RIT_DeInit(LPC_RITIMER_T *pRITimer)
 	Chip_Clock_DisablePeriphClock(SYSCTL_CLOCK_RIT);
 }
 
-/* Safely sets CTRL register bits */
+/* Safely sets CTRL register bits except the RITINT bit*/
 void Chip_RIT_SetCTRL(LPC_RITIMER_T *pRITimer, uint32_t val)
 {
 	uint32_t reg;
 
 	reg = pRITimer->CTRL & 0xF;
+
+	reg &= ~RIT_CTRL_INT;                // clear the RITINT bit in order to avoid clearing the bit
+		                                 // when write 1 (the bit already is 1). add by Topon-Edison
 	pRITimer->CTRL = reg | val;
 }
 
-/* Safely clears CTRL register bits */
+
+
+/* Safely clears CTRL register bits except RITINT */
 void Chip_RIT_ClearCTRL(LPC_RITIMER_T *pRITimer, uint32_t val)
 {
 	uint32_t reg;
 
-	reg = pRITimer->CTRL & 0xF;
+	reg = pRITimer->CTRL & 0xF;          // read the register
+	reg &= ~val;                         // clear the bit
+	reg &= ~RIT_CTRL_INT;                // clear the RITINT bit in order to avoid clearing the bit
+	                                     // when write 1 (the bit already is 1). add by Topon-Edison
+
 	pRITimer->CTRL = reg & ~val;
 }
 

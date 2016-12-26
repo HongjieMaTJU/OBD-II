@@ -46,6 +46,7 @@ Timer::Timer(Timer_T timer_t):timer_tick_ms_(Chip_Clock_GetMainClockRate() / 100
 	if(timer_)
 	{
 		Chip_MRT_SetMode(timer_,MRT_MODE_ONESHOT);
+		// disable the interrupt
 		Chip_MRT_SetDisabled(timer_);
 	}
 }
@@ -55,16 +56,22 @@ Timer::Timer(Timer_T timer_t):timer_tick_ms_(Chip_Clock_GetMainClockRate() / 100
  * the maximum interval is 233ms */
 void Timer::Start_Millisecond(uint32_t interval)
 {
-
 	/* Calculate the counter value*/
 	uint32_t val = timer_tick_ms_ * interval;
 	/* Clear the timer INTFLAG in STAT register */
 	Chip_MRT_IntClear(timer_);
-	/* Set the IVALUE in INVAL register and load the value to timer immidiately */
+	/* Set the IVALUE in INVAL register and load the value to timer immediately,
+	 * start the timer immediately whenever this circle is completed or not
+	 * */
 	Chip_MRT_SetInterval_Immediately(timer_,val);
 
 }
 
+// Stop the timer immediately
+void Timer::Stop()
+{
+	Chip_MRT_SetInterval_Immediately(timer_,0x00);
+}
 
 
 /* The timer STAT register's RUN bit is 1 for running state , 0 for idle state */
@@ -100,6 +107,7 @@ Timer * Timer::Instance(Timer_T timer_t)
 /********************************************************************
  * function of the LongTimer
  ********************************************************************/
+static RIT_CallBack_T  rit_callback = 0x00000;
 
 /* The RIT interrupt callback funtion */
 extern "C" void RIT_IRQHandler(void)
@@ -108,13 +116,17 @@ extern "C" void RIT_IRQHandler(void)
 	 * the timer to 0 when counter reach the condition, set 1 for RITINT to clear the
 	 * interrupt flag
 	 */
-    LPC_RITIMER->CTRL &= 0x07;
-    LongTimer::Instance()->SetExpired();
+	Chip_RIT_Disable(LPC_RITIMER);
+	Chip_RIT_ClearIntStatus(LPC_RITIMER);
+    if(rit_callback != 0)
+    {
+    	(*rit_callback)();
+    }
 }
 
 
 /* Constructor */
-LongTimer::LongTimer(): is_expired_(true),timer_(LPC_RITIMER),timer_tick_ms_(Chip_Clock_GetMainClockRate() / 1000)
+LongTimer::LongTimer():timer_(LPC_RITIMER),timer_tick_ms_(Chip_Clock_GetMainClockRate() / 1000)
 {
 	/**
 	 *  Clear the RITEN bit, and set the RITENBR bit, set the RITENCLR bit for clearing
@@ -143,8 +155,15 @@ void LongTimer::Start_Millisecond(uint64_t interval)
 {
 	interval = timer_tick_ms_* interval;
 
-	// disable the counting and clear the interrupt flage
-	timer_->CTRL = 0x07;
+	// disable the timer
+	Chip_RIT_Disable(timer_);
+
+	// clear the interrupt flag
+    Chip_RIT_ClearIntStatus(timer_);
+
+    //enable the debugging mode, when CPU is halted the timer stopping counting
+    Chip_RIT_EnableDebug(timer_);
+
 	//reload the counter to zero for a new counting circle
 	timer_->COUNTER = timer_->COUNTER_H = 0;
 
@@ -152,30 +171,92 @@ void LongTimer::Start_Millisecond(uint64_t interval)
 	timer_->COMPVAL = interval & 0xFFFFFFFF;
 	timer_->COMPVAL_H = interval >> 32;
 
+	// disable the debugging mode
+	Chip_RIT_DisableDebug(timer_);
+	// when counter value equals the compare value , clear the timer
+	Chip_RIT_EnableCompClear(timer_);
+	// clear the interrupt flag
+    Chip_RIT_ClearIntStatus(timer_);
 	// starting counting
-	timer_->CTRL = 0x0F;
+	Chip_RIT_Enable(timer_);
 
-	is_expired_ =  false;
-
-}
-
-
-void LongTimer::SetExpired()
-{
-	is_expired_ = true;
 }
 
 
 /* Is end of the counting */
 bool LongTimer::IsExpired()
 {
-	return is_expired_;
+	return !(LPC_RITIMER ->CTRL & 0x08);
 }
 
 
 /* The factory to implement the  singleton */
-LongTimer * LongTimer::Instance()
+LongTimer * LongTimer::Instance(RIT_CallBack_T  callback = 0x00)
 {
 	static LongTimer longtimer;
+	rit_callback = callback;
 	return &longtimer;
 }
+
+
+/********************************************************************
+ * function of the LedTimer
+ ********************************************************************/
+static MRT_CallBack_T isr_callback;
+
+extern "C" void MRT_IRQHandler()
+{
+	 uint32_t irqFlag = LPC_MRT->IRQ_FLAG;
+	    //LPC_MRT->IRQ_FLAG = irqFlag;
+
+	    if ((irqFlag & 0x08) && isr_callback)
+	    {
+	        LPC_MRT->IRQ_FLAG |= 0x08;
+	        (*isr_callback)();
+	    }
+}
+
+
+
+void LedTimer::Start_Millisecond(uint32_t interval)
+{
+	/* Calculate the counter value*/
+		uint32_t val = timer_tick_ms_;
+		val = timer_tick_ms_ * interval;
+		/* Clear the timer INTFLAG in STAT register */
+		Chip_MRT_IntClear(channel_);
+		/* Set the IVALUE in INVAL register and load the value to timer immidiately
+		 * */
+		Chip_MRT_SetInterval_Immediately(channel_,val);
+}
+
+
+// writ a 0x00000000 to register with the Load = 1,stop the timer immediately
+// and without interrupt.
+void LedTimer::Stop()
+{
+	   Chip_MRT_SetInterval_Immediately(channel_,0x00);
+}
+
+
+LedTimer::LedTimer():channel_(LPC_MRT_CH3),timer_tick_ms_(Chip_Clock_GetMainClockRate() / 1000)
+{
+	// set the MRT work on repeat mode
+	Chip_MRT_SetMode(channel_,MRT_MODE_REPEAT);
+
+	// enable LPC_MRT_CH3 timer interrupt
+	Chip_MRT_SetEnabled(channel_);
+
+	// enable the NVIC of the MRT
+	NVIC_EnableIRQ(MRT_IRQn);
+}
+
+
+LedTimer * LedTimer::Instance(MRT_CallBack_T callback)
+{
+	static LedTimer ledtimer;
+	isr_callback = callback;
+	return (&ledtimer);
+}
+
+

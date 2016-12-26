@@ -24,6 +24,11 @@ typedef enum TimerNum
 }Timer_T;
 
 
+
+/*************************************************************
+ * ************               Timer             **************
+ * ***********************************************************
+ */
 /**
  * @brief The Declaration of the MRT timer channel type
  *
@@ -40,7 +45,7 @@ class Timer
 public :
    static Timer* Instance(Timer_T );
    void Start_Millisecond(uint32_t interval);
-  // void Stop();
+   void Stop();
    bool IsExpired();
 
 private:
@@ -54,21 +59,34 @@ private:
 
 
 /**
+ *
  * @brief The Declaration of the  LPC_RITIMER_T
  *
  */
 struct LPC_RITIMER_T;
-//typedef void (*RIT_CallBack_T)(void);
+typedef void (*RIT_CallBack_T)();
+
+
+typedef void (*MRT_CallBack_T)();
+
+/*************************************************************
+ * ************              LongTimer          **************
+ * ***********************************************************
+ */
+
+
 /**
  * @brief The declaration of the RIT timer,which has 48 bit counter, can
  */
 class LongTimer
 {
 public:
-	static LongTimer* Instance(); // factory
+	//static LongTimer* Instance(); // factory
+	static LongTimer* Instance(RIT_CallBack_T  callback);// the callback is the callback function
+	                                                     // delivery to the LongTimer, if it's null,
+	                                                     // no function will be execute
 	void Start_Millisecond(uint64_t interval);// start the timer
 	void Stop_NextCircle(); // stop counting of the next counting circle
-	void SetExpired();       // when the timer is end, set the member
 	bool IsExpired();// query the status of the timer, is counting end
 private:
 	LongTimer();
@@ -78,7 +96,27 @@ private:
 };
 
 
+/*************************************************************
+ * ************               PeriodTimer             **************
+ * ***********************************************************
+ */
 
+
+/**
+ * @brief The timer is used for blink led, the base timer interval is 10ms
+ */
+class LedTimer
+{
+public:
+	static LedTimer *Instance(MRT_CallBack_T callback);
+	void Start_Millisecond(uint32_t interval);
+	void Stop();
+private:
+	LedTimer();
+	LPC_MRT_CH_T * channel_;
+	MRT_CallBack_T callback;
+    uint32_t timer_tick_ms_;
+};
 
 
 #endif /* DRIVERS_INC_TIMER_H_ */

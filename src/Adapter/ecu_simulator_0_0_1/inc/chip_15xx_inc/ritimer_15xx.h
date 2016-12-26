@@ -87,7 +87,9 @@ void Chip_RIT_DeInit(LPC_RITIMER_T *pRITimer);
  * @brief	Safely sets CTRL register bits
  * @param	pRITimer	: RITimer peripheral selected
  * @param	val			: RIT bits to be set, one or more RIT_CTRL_* values
- * @return	None
+ * @return
+ * !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+ * !!!!!!!!!!!!!!!the function only used for setting the bit except RININT!!!!!!!!!!!
  */
 void Chip_RIT_SetCTRL(LPC_RITIMER_T *pRITimer, uint32_t val);
 
@@ -95,9 +97,12 @@ void Chip_RIT_SetCTRL(LPC_RITIMER_T *pRITimer, uint32_t val);
  * @brief	Safely clears CTRL register bits
  * @param	pRITimer	: RITimer peripheral selected
  * @param	val			: RIT bits to be cleared, one or more RIT_CTRL_* values
- * @return	None
+ * @return
+ * !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+ *  !!!!!!!!!!the function only used for clearing the bit except RININT!!!!!!!!!!!!!!
  */
 void Chip_RIT_ClearCTRL(LPC_RITIMER_T *pRITimer, uint32_t val);
+
 
 /**
  * @brief	Enable Timer
@@ -106,17 +111,21 @@ void Chip_RIT_ClearCTRL(LPC_RITIMER_T *pRITimer, uint32_t val);
  */
 STATIC INLINE void Chip_RIT_Enable(LPC_RITIMER_T *pRITimer)
 {
-	Chip_RIT_SetCTRL(pRITimer, RIT_CTRL_TEN);
+
+	//Chip_RIT_SetCTRL(pRITimer, RIT_CTRL_TEN); // this function will clear the RITINT bit when the bit is 1, so we don't use the function
+	// edit by Topon-Edison
+	 Chip_RIT_SetCTRL(pRITimer,RIT_CTRL_TEN);
+
 }
 
 /**
  * @brief	Disable Timer
  * @param	pRITimer	: RITimer peripheral selected
- * @return	None
+ * @return	This funtion is edit by Topon-Edison to avoid changing the value in RITINT bit
  */
 STATIC INLINE void Chip_RIT_Disable(LPC_RITIMER_T *pRITimer)
 {
-	Chip_RIT_ClearCTRL(pRITimer, RIT_CTRL_TEN);
+	 Chip_RIT_ClearCTRL(pRITimer,RIT_CTRL_TEN);// the function only used for clearing the bit except RININT
 }
 
 /**
@@ -180,7 +189,8 @@ STATIC INLINE bool Chip_RIT_GetIntStatus(LPC_RITIMER_T *pRITimer)
  */
 STATIC INLINE void Chip_RIT_ClearIntStatus(LPC_RITIMER_T *pRITimer)
 {
-	Chip_RIT_SetCTRL(pRITimer, RIT_CTRL_INT);
+	//Chip_RIT_SetCTRL(pRITimer, RIT_CTRL_INT); this function can't be used to clear the RITINT
+	pRITimer->CTRL |= RIT_CTRL_INT;
 }
 
 /**
@@ -257,6 +267,8 @@ STATIC INLINE uint32_t Chip_RIT_GetBaseClock(LPC_RITIMER_T *pRITimer)
 /**
  * @}
  */
+
+
 
 #ifdef __cplusplus
 }

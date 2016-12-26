@@ -48,8 +48,8 @@ static void SetAllRegisters()
     EcuUart::configure();
     CanDriver::configure();
     AdptLED::configure();
-    PwmDriver::configure();
-    AdcDriver::configure();
+    //PwmDriver::configure();
+   // AdcDriver::configure();
 }
 
 /**

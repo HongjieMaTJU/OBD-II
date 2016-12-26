@@ -7,7 +7,7 @@
 
 #ifndef DRIVERS_INC_BLUETOOTH_USART_H_
 #define DRIVERS_INC_BLUETOOTH_USART_H_
-
+#include <cstdint>
 
 
 

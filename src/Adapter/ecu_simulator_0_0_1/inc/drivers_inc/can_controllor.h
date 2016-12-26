@@ -7,7 +7,7 @@
 
 #ifndef DRIVERS_INC_CAN_CONTROLLOR_H_
 #define DRIVERS_INC_CAN_CONTROLLOR_H_
-
+#include <cstdint>
 
 
 
