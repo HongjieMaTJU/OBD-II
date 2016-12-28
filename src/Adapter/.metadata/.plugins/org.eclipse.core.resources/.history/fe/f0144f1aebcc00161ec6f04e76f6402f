@@ -1,0 +1,82 @@
+/*
+ * bluetooth_usart.cpp
+ *
+ *  Created on: 2016年12月22日
+ *      Author: Topon-Edison
+ *
+ *
+ */
+
+#include "chip.h"
+#include "adapter_board.h"
+#include "usart.h"
+
+
+UART* UART::Instance(UART_TYPE uart_t)
+{
+	static UART bluetooth_uart(LPC_USART0);// set the uart0 for bluetooth uart
+	static UART kwp_uart(LPC_USART1);      // set the uart1 for kwp uart
+	static UART default_uart(LPC_USART2);  // set the uart2 for default uart
+
+
+	// according to the uart_t to return the instance
+	switch (uart_t)
+	{
+	case Bluetooth_UART:
+		return &bluetooth_uart;
+	case KWP_UART:
+		return &kwp_uart;
+	default:
+		return &default_uart;
+
+	}
+}
+
+
+// constructor
+UART::UART(LPC_USART_T* pUSARTn):uart_channel_(pUSARTn)
+{
+	// set the interrupt slot
+	if(uart_channel_ == LPC_USART0)
+		uart_irqn_ = UART0_IRQn;
+	if(uart_channel_ == LPC_USART1)
+		uart_irqn_ = UART1_IRQn;
+	if(uart_channel_ == LPC_USART2)
+		uart_irqn_ = UART2_IRQn;
+
+	/* Setup the USART and create the instance */
+	uart_handle_ = LPC_UARTD_API->uart_setup(reinterpret_cast<uint32_t>(uart_channel_), uart_mem_);
+
+	RingBuffer_Init()
+
+}
+
+
+void UART::Uart_Init(const UART_CONFIG_T * pUart_cfg)
+{
+
+
+  // disable the uart interrupt
+  NVIC_DisableIRQ(uart_irqn_);
+
+  // setup the uart_cfg_ for the uart API uart_init()
+  uart_cfg_.sys_clk_in_hz = 14976000; // the clock of the USART clock
+  uart_cfg_.baudrate_in_hz = pUart_cfg->baudrate_in_hz;
+  uart_cfg_.config = pUart_cfg->config;
+  uart_cfg_.sync_mod = pUart_cfg->sync_mod;
+  uart_cfg_.error_en = pUart_cfg->error_en;
+
+  // configure the uart basic property
+  LPC_UARTD_API->uart_init( uart_handle_, &uart_cfg_);
+
+
+
+  // enable the uart interrupt
+  NVIC_EnableIRQ(uart_irqn_);
+
+  // enable the uart RX interrupt
+  Chip_UART_IntEnable(uart_channel_, UART_INTEN_RXRDY);
+}
+
+
+

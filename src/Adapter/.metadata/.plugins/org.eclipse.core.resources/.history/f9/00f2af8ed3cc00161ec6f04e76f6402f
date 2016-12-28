@@ -1,0 +1,62 @@
+/*
+ * bluetooth_usart.h
+ *
+ *  Created on: 2016年12月22日
+ *      Author: Topon-Edison
+ */
+
+#ifndef DRIVERS_INC_BLUETOOTH_USART_H_
+#define DRIVERS_INC_BLUETOOTH_USART_H_
+#include <cstdint>
+
+struct  RINGBUFF_T;
+struct  LPC_USART_T;
+struct  UART_CONFIG_T;
+typedef void (*RX_CALLBACK_T)(char);
+
+const int TX_BUFFER_LEN = 100;
+const int
+
+enum UART_Type
+{
+	Bluetooth_UART = 0,
+	KWP_UART
+};
+
+class UART
+{
+public:
+	static UART * Instance(UART_Type uart_t);
+	void  Uart_Init(UART_CONFIG_T* uart_cfg_);
+	//void Send(uint8_t ch);
+	void Send(char * str,uint32_t lenght);
+	void Irq_Handle();
+	void Set_RX_Callback(RX_CALLBACK_T irq_callback);
+private:
+	UART(LPC_USART_T* USARTn);         // constructor
+	void rx_handler();                 // use for transfer
+	void tx_handler();                 // use for receive
+	LPC_USART_T* uart_channel_;        // the pointer to the uart
+	UART_CONFIG_T uart_cfg_;           // the configuration value of the uart
+	char tx_buffer_[TX_BUFFER_LEN];    // the buffer for ring buffer  data
+	RINGBUFF_T  tx_ring_buffer_;       // the ring buffer pointer.
+	RX_CALLBACK_T rx_callback_;
+	//bool tx_busy_;                   // if the the transmit is in processing or not
+	//uint32_t tx_index_;              // the index indicate the char will be transfered in tx_bufeer_
+	//uint32_t tx_len_;                // the length of the data need be transmit.
+
+
+
+
+
+
+
+
+
+
+
+};
+
+
+
+#endif /* DRIVERS_INC_BLUETOOTH_USART_H_ */

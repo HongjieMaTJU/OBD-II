@@ -36,7 +36,7 @@
  * Private types/enumerations/variables
  ****************************************************************************/
 
-#define RB_INDH(rb)                ((rb)->head & ((rb)->count - 1))
+#define RB_INDH(rb)                ((rb)->head & ((rb)->count - 1)) //  (rb->head) % (*rb->count);
 #define RB_INDT(rb)                ((rb)->tail & ((rb)->count - 1))
 
 /*****************************************************************************

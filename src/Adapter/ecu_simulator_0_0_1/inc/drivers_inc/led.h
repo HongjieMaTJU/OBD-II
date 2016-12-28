@@ -48,7 +48,7 @@ public:
 private:
 	Led();
 	static void Led_Callback(); // the callback function need be defined before the led_timer_
-	LedTimer * led_timer_;
+	LedTimer * led_timer_;     // reduce the
 	volatile static uint32_t tx_count_;
 	volatile static uint32_t rx_count_;
 	//friend void callback();

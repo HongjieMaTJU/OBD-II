@@ -1,0 +1,43 @@
+/*
+ * bluetooth_usart.h
+ *
+ *  Created on: 2016年12月22日
+ *      Author: Topon-Edison
+ */
+
+#ifndef DRIVERS_INC_BLUETOOTH_USART_H_
+#define DRIVERS_INC_BLUETOOTH_USART_H_
+#include <cstdint>
+
+struct  LPC_USART_T;
+struct  UART_CONFIG_T;
+
+enum UART_Type
+{
+	Bluetooth_UART = 0,
+	KWP_UART
+};
+
+class UART
+{
+public:
+	static UART * Instance(UART_Type uart_t,UART_CONFIG_T cfg);
+	void Set_Uart_Config();
+	void Send(uint8_t ch);
+	void Send(char * str);
+
+private:
+	UART(LPC_USART_T* USARTn, UART_CONFIG_T);
+	LPC_USART_T* uart_channel_;
+	UART_CONFIG_T* uart_cfg_;
+
+
+
+
+
+
+};
+
+
+
+#endif /* DRIVERS_INC_BLUETOOTH_USART_H_ */

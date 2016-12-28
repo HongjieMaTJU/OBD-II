@@ -13,14 +13,39 @@
 //#include <cstdint>
 
 // TODO: insert other include files here
+#include  "chip.h"
 #include "board_configure.h"
 #include "timer.h"
 #include "led.h"
+#include "usart.h"
 
 // TODO: insert other definitions and declarations here
 
+#define _8N1 0x01
+
 void LongTimer_Callback();
 
+static UART_CONFIG_T KWP_UART_CFG  =
+{
+  14976000, // uart common clock
+  10400,    // baud rate
+  _8N1,     // 8 data length, no parity, 1 stop
+  0,        // Asynchronous Mode
+  NO_ERR_EN // Enable No Errors
+};
+
+
+static UART_CONFIG_T BLUE_TOOTH__UART_CFG  =
+{
+  14976000, // uart common clock
+  115200,    // baud rate
+  _8N1,     // 8 data length, no parity, 1 stop
+  0,        // Asynchronous Mode
+  NO_ERR_EN // Enable No Errors
+};
+
+
+char str[8] = "taopeng";
 
 int main(void)
 {
@@ -32,18 +57,24 @@ int main(void)
 
     uint32_t MianClock = Board_Configure::instance()->Get_MainClockRate();
 
-    Timer * pled_blink_timer = Timer::Instance(Timer0);
-    Led * pled = Led::instance();
-    LongTimer * plongtimer = LongTimer::Instance(LongTimer_Callback);
+  //  Timer * pled_blink_timer = Timer::Instance(Timer0);
+    UART *pBluetoothUart = UART::Instance(LPC_UART0_CHANNEL);
+    pBluetoothUart->Uart_Init(&BLUE_TOOTH__UART_CFG);
+
+
+    Led * pLed = Led::instance();
+    LongTimer * pLongtimer = LongTimer::Instance(LongTimer_Callback);
     //LongTimer * longtimer = LongTimer::Instance(0);
 
-    pled->Lighten_Led_TX();
-    pled->Lighten_Led_RX();
 
-    pled->Off_Led_TX();
+
+    pLed->Lighten_Led_TX();
+    pLed->Lighten_Led_RX();
+
+    pLed->Off_Led_TX();
     //Led::instance()->Off_Led_RX();
-    pled->Toggle_Led_TX();
-    pled->Toggle_Led_RX();
+    pLed->Toggle_Led_TX();
+    pLed->Toggle_Led_RX();
 
     // Force the counter to be placed into memory*/
 	volatile static uint32_t i = 0 ;
@@ -53,7 +84,7 @@ int main(void)
 	/* the MRT timer can maximum delay the timer for 233ms */
 	//led_blink_timer->Start_Millisecond(200);
 
-	plongtimer->Start_Millisecond(1000);
+	pLongtimer->Start_Millisecond(1000);
     while(1)
     {
 
@@ -68,12 +99,13 @@ int main(void)
     		led->Toggle_Led_TX();
     		led->Toggle_Led_RX();
     	}*/
-    	if(plongtimer->IsExpired())
+    	if(pLongtimer->IsExpired())
     	{
+    		pBluetoothUart->Send(str,7);
     		//LongTimer_Callback();
-    		plongtimer->Start_Millisecond(1000);
-    		pled->Blink_Led_RX();
-    		pled->Blink_Led_TX();
+    		pLongtimer->Start_Millisecond(1000);
+    		pLed->Blink_Led_RX();
+    		pLed->Blink_Led_TX();
     	}
     	i++;
     }

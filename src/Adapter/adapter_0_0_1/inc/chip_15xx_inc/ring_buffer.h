@@ -42,10 +42,10 @@
 /**
  * @brief Ring buffer structure
  */
-typedef struct {
+typedef struct RINGBUFF_T{
 	void *data;
-	int count;
-	int itemSz;
+	int count;           // the count of the item
+	int itemSz;          // the whole memory of the ringbuff in bytes
 	uint32_t head;
 	uint32_t tail;
 } RINGBUFF_T;

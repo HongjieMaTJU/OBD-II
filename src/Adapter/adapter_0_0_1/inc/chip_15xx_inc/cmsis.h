@@ -75,7 +75,7 @@ extern "C" {
  * @{
  */
 
-typedef enum IRQn {
+typedef enum IRQn_T {
 	Reset_IRQn                    = -15,	/*!< Reset Vector, invoked on Power up and warm reset */
 	NonMaskableInt_IRQn           = -14,	/*!< Non maskable Interrupt, cannot be stopped or preempted */
 	HardFault_IRQn                = -13,	/*!< Hard Fault, all classes of Fault               */
