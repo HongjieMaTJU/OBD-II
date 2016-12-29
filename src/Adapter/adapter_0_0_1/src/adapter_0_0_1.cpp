@@ -21,10 +21,12 @@
 
 // TODO: insert other definitions and declarations here
 
-#define _8N1 0x01
 
-void LongTimer_Callback();
 
+#define _8N1 0x01                 // define uart configuration parameter
+
+
+/* Configuration parameter for KWP UART */
 static UART_CONFIG_T KWP_UART_CFG  =
 {
   14976000, // uart common clock
@@ -35,6 +37,7 @@ static UART_CONFIG_T KWP_UART_CFG  =
 };
 
 
+/* Configuration parameter for bluetooth UART */
 static UART_CONFIG_T BLUE_TOOTH__UART_CFG  =
 {
   14976000, // uart common clock
@@ -44,8 +47,22 @@ static UART_CONFIG_T BLUE_TOOTH__UART_CFG  =
   NO_ERR_EN // Enable No Errors
 };
 
+//static rx buffer values ;
+const int MAX_RX_LENGTH = 64;
+static char rx_buffer[MAX_RX_LENGTH];
+static int rx_index = 0;
+static bool rx_ready = false;
+static bool rx_message_too_long = false;
+static char str[] = "Message is too long, please resend in a shorter length!";
+static char end = '\n';
 
-char str[8] = "taopeng";
+/* bluetooth uart pointer */
+UART *pBluetoothUart = UART::Instance(LPC_UART0_CHANNEL);
+
+/* callback for bluetooth uart rx processing */
+void Bluetooth_Rx_Callback(char ch);
+/* callback for Longtimer */
+void LongTimer_Callback();
 
 int main(void)
 {
@@ -55,18 +72,22 @@ int main(void)
 	//Board_Init();
     Board_Configure::instance()->Configure();
 
+    /* for getting system main clock */
     uint32_t MianClock = Board_Configure::instance()->Get_MainClockRate();
 
-  //  Timer * pled_blink_timer = Timer::Instance(Timer0);
-    UART *pBluetoothUart = UART::Instance(LPC_UART0_CHANNEL);
+
+
+    /* configure and initialize bluetooth uart instance */
     pBluetoothUart->Uart_Init(&BLUE_TOOTH__UART_CFG);
+
+   // RingBuffer_Init(&ring_buffer,rx_buffer,1,64);
+    pBluetoothUart->Set_RX_Callback(Bluetooth_Rx_Callback);
+
+
 
 
     Led * pLed = Led::instance();
     LongTimer * pLongtimer = LongTimer::Instance(LongTimer_Callback);
-    //LongTimer * longtimer = LongTimer::Instance(0);
-
-
 
     pLed->Lighten_Led_TX();
     pLed->Lighten_Led_RX();
@@ -84,28 +105,31 @@ int main(void)
 	/* the MRT timer can maximum delay the timer for 233ms */
 	//led_blink_timer->Start_Millisecond(200);
 
+	/* start the LongTimer */
 	pLongtimer->Start_Millisecond(1000);
     while(1)
     {
+    	/*if(rx_message_too_long || rx_ready)
+    	{
+    		if(rx_message_too_long)
+    		{
+				rx_index = 0;
+				rx_message_too_long = false;
+    		}
+    		else
+    		{
 
-    	/*if(led_blink_timer->IsExpired())
-    	{
-    		i++ ;
-    		led_blink_timer->Start_Millisecond(200);
-    	}
-    	if(i == 5)// 1 second
-    	{
-    		i = 0;
-    		led->Toggle_Led_TX();
-    		led->Toggle_Led_RX();
+    		}
     	}*/
+
+    	//char ch = 0xf0;
     	if(pLongtimer->IsExpired())
     	{
-    		pBluetoothUart->Send(str,7);
-    		//LongTimer_Callback();
+    		pBluetoothUart->Send("Topon-Edison!\n",14);
+
     		pLongtimer->Start_Millisecond(1000);
-    		pLed->Blink_Led_RX();
-    		pLed->Blink_Led_TX();
+    		//pLed->Blink_Led_RX();
+    		//pLed->Blink_Led_TX();
     	}
     	i++;
     }
@@ -116,6 +140,26 @@ int main(void)
 void LongTimer_Callback()
 {
 	Led * led = Led::instance();
-	led->Toggle_Led_TX();
-	led->Toggle_Led_RX();
+	//led->Toggle_Led_TX();
+	//led->Toggle_Led_RX();
+}
+
+
+void Bluetooth_Rx_Callback(char ch)
+{
+	if(rx_index == MAX_RX_LENGTH)// received message is longer than rx_buffer length
+	{
+		//rx_message_too_long = true;
+		pBluetoothUart->Send("Message is too long, please resend in a shorter length!",55);
+		return;
+	}
+	rx_buffer[rx_index++] = ch;
+	if(ch == 't')
+	{
+		// echo back message
+		pBluetoothUart->Send(rx_buffer,rx_index);
+		rx_index = 0;
+	}
+
+
 }

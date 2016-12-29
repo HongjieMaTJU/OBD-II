@@ -162,7 +162,7 @@ void Board_Enable_PeriphClock()
 	Chip_Clock_EnablePeriphClock(SYSCTL_CLOCK_SWM);
     Chip_Clock_EnablePeriphClock(SYSCTL_CLOCK_IOCON);
 	Chip_Clock_EnablePeriphClock(SYSCTL_CLOCK_GPIO0);
-	Chip_Clock_EnablePeriphClock(SYSCTL_CLOCK_GPIO1);
+///	Chip_Clock_EnablePeriphClock(SYSCTL_CLOCK_GPIO1);
 	Chip_Clock_EnablePeriphClock(SYSCTL_CLOCK_MRT);
 	Chip_Clock_EnablePeriphClock(SYSCTL_CLOCK_RIT);
 	Chip_Clock_EnablePeriphClock(SYSCTL_CLOCK_CAN);
@@ -187,13 +187,13 @@ void Board_Configure_Bluetooth_USART_IO()
 	Chip_IOCON_PinMuxSet(LPC_IOCON,
 			BLUETOOTH_TX_PORT,
 			BLUETOOTH_TX_PIN,
-			IOCON_MODE_PULLDOWN | IOCON_S_MODE_3CLK);
+			IOCON_MODE_INACT | IOCON_S_MODE_0CLK);
 
 	/* Configure the bluetooth RX(PIO0_0)  pin to pull down mode and SMODE_3 */
 	Chip_IOCON_PinMuxSet(LPC_IOCON,
 			BLUETOOTH_RX_PORT,
 			BLUETOOTH_RX_PIN,
-			IOCON_MODE_PULLDOWN | IOCON_S_MODE_3CLK);
+			IOCON_MODE_INACT | IOCON_S_MODE_0CLK);
 
     /* Configure the bluetooth TX pin as the output direction */
 	Chip_GPIO_SetPinDIROutput(LPC_GPIO,
@@ -214,8 +214,13 @@ void Board_Configure_Bluetooth_USART_IO()
 	Chip_SWM_MovablePortPinAssign(SWM_UART0_RXD_I,
 			BLUETOOTH_RX_PORT,
 			BLUETOOTH_RX_PIN);
+     /* Disable the fixed funtion on PIO0_1 */
+	 Chip_SWM_DisableFixedPin(SWM_FIXED_ADC0_7);
+	 Chip_SWM_DisableFixedPin(SWM_FIXED_SCT0_OUT4);
 
-
+	  /* Disable the fixed funtion on PIO0_0 */
+	 Chip_SWM_DisableFixedPin(SWM_FIXED_ADC0_10);
+	 Chip_SWM_DisableFixedPin(SWM_FIXED_SCT0_OUT3);
 }
 
 
@@ -233,13 +238,13 @@ void Board_Configure_KWP_USART_IO()
 	Chip_IOCON_PinMuxSet(LPC_IOCON,
 			KWP_TX_PORT,
 			KWP_TX_PIN,
-			IOCON_MODE_PULLDOWN | IOCON_S_MODE_3CLK);
+			IOCON_MODE_INACT | IOCON_S_MODE_0CLK);
 
 	/* Configure the KWP RX(PIO0_26)  pin to pull down mode and SMODE_3 */
 	Chip_IOCON_PinMuxSet(LPC_IOCON,
 			KWP_RX_PORT,
 			KWP_RX_PIN,
-			IOCON_MODE_PULLDOWN | IOCON_S_MODE_3CLK);
+			IOCON_MODE_INACT | IOCON_S_MODE_0CLK);
 
     /* Configure the KWP TX pin as the output direction */
 	Chip_GPIO_SetPinDIROutput(LPC_GPIO,
@@ -279,13 +284,13 @@ void Board_Configure_CAN_IO()
 	Chip_IOCON_PinMuxSet(LPC_IOCON,
 			CAN_TX_PORT,
 			CAN_TX_PIN,
-			IOCON_S_MODE_3CLK);
+			IOCON_S_MODE_0CLK);
 
 	/* Configure the CAN RX(PIO0_24)  pin to pull down mode and SMODE_3 */
 	Chip_IOCON_PinMuxSet(LPC_IOCON,
 			CAN_RX_PORT,
 			CAN_RX_PIN,
-			IOCON_MODE_PULLDOWN | IOCON_S_MODE_3CLK);
+			IOCON_MODE_INACT | IOCON_S_MODE_0CLK);
 
     /* Configure the CAN TX pin as the output direction */
 	Chip_GPIO_SetPinDIROutput(LPC_GPIO,

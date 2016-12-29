@@ -10,6 +10,7 @@
 #include "chip.h"
 #include "adapter_board.h"
 #include "usart.h"
+#include "led.h"
 
 
 
@@ -31,6 +32,7 @@ UART::UART(LPC_USART_T* pUSARTn):uart_channel_(pUSARTn)
 	/* Setup the USART and create the instance,it can only be use in the constructor for one time, because the
 	 * USART can only have one instance
 	 */
+	uint32_t size = LPC_UARTD_API->uart_get_mem_size();
 	uart_handle_ = LPC_UARTD_API->uart_setup(reinterpret_cast<uint32_t>(uart_channel_), uart_mem_);
 
 	/* Initialize the RingBuffer tx_ring_buffer using of tx_buffer, and the TX_BUFFER_LEN must be
@@ -117,7 +119,7 @@ void UART::Set_RX_Callback(RX_CALLBACK_T rx_callback)
 /* @brief Push the str to the tx_ring_buffer for transmit data
  * and enable TX interrupt
  */
-void UART::Send(char *str,int length)
+void UART::Send(const char *str,int length)
 {
 	/* Wait until there is enough space for new data */
 	while(RingBuffer_GetFree(&tx_ring_buffer_) < length);
@@ -137,6 +139,8 @@ void  UART::Isr_Handle()
 	if(Chip_UART_GetIntStatus(uart_channel_)& UART_STAT_TXRDY)
 	{
 		tx_irq_handler();
+		Led::instance()->Blink_Led_TX();
+
 	}
 	if(Chip_UART_GetIntStatus(uart_channel_) & UART_STAT_RXRDY)
 	{
@@ -165,6 +169,7 @@ void UART::tx_irq_handler()
 
 			/* tansfer the data */
 			Chip_UART_SendByte(uart_channel_,ch);
+
 		}
 
 	}
@@ -173,6 +178,11 @@ void UART::tx_irq_handler()
 
 void UART::rx_irq_handler()
 {
+	/*char ch = (uint8_t)Chip_UART_ReadByte(uart_channel_);
+				if(rx_callback_)
+				{
+					(*rx_callback_)(ch);
+				}*/
 	if(Chip_UART_GetStatus(uart_channel_) & UART_STAT_RXRDY)
 	{
 		char ch = (uint8_t)Chip_UART_ReadByte(uart_channel_);

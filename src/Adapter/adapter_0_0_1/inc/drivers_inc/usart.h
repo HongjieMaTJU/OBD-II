@@ -19,7 +19,7 @@ typedef void *UART_HANDLE_T;
 typedef void (*RX_CALLBACK_T)(char);
 
 const int TX_BUFFER_LEN = 128;
-const int UART_Handle_MEM_LEN = 30;
+const int UART_Handle_MEM_LEN = 64;
 
 
 
@@ -39,7 +39,7 @@ public:
 	void Set_RX_Callback(RX_CALLBACK_T irq_callback);
 
 
-	void Send(char * str,int lenght);
+	void Send(const char * str,int lenght);
 	void Isr_Handle();
 
 private:
