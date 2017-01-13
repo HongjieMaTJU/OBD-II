@@ -18,8 +18,8 @@ struct  UART_CONFIG_T;
 typedef void *UART_HANDLE_T;
 typedef void (*RX_CALLBACK_T)(char);
 
-const int TX_BUFFER_LEN = 128;
-const int UART_Handle_MEM_LEN = 64;
+const int TX_BUFFER_LEN = 256;
+const int UART_Handle_MEM_LEN = 40;
 
 
 

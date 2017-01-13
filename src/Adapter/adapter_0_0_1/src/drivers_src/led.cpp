@@ -89,6 +89,9 @@ Led::Led()
 {
    led_timer_ = LedTimer::Instance(Led_Callback);
    Start_Timer();
+   Off_Led_TX();
+   Off_Led_RX();
+
 }
 
 /* Destructor */

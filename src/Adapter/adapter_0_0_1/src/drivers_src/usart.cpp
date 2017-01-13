@@ -11,6 +11,7 @@
 #include "adapter_board.h"
 #include "usart.h"
 #include "led.h"
+#include "timer.h"
 
 
 
@@ -121,8 +122,12 @@ void UART::Set_RX_Callback(RX_CALLBACK_T rx_callback)
  */
 void UART::Send(const char *str,int length)
 {
+	Chip_UART_IntEnable(uart_channel_,UART_INTEN_TXRDY);
 	/* Wait until there is enough space for new data */
-	while(RingBuffer_GetFree(&tx_ring_buffer_) < length);
+	while(RingBuffer_GetFree(&tx_ring_buffer_) < length)
+	{
+
+	}
 
 	/* Push the data to the ring buffer */
 	RingBuffer_InsertMult(&tx_ring_buffer_,str,length);
@@ -151,6 +156,7 @@ void  UART::Isr_Handle()
 
 void UART::tx_irq_handler()
 {
+	Timer::Instance(Timer1)->Stop();
 	if(RingBuffer_IsEmpty(&tx_ring_buffer_))// the ring buffer is empty
 	{
 		/* Ring buffer is empty, disable the TX interrupt
@@ -169,20 +175,14 @@ void UART::tx_irq_handler()
 
 			/* tansfer the data */
 			Chip_UART_SendByte(uart_channel_,ch);
-
 		}
-
 	}
+	Timer::Instance(Timer1)->Start_Millisecond(100);
 }
 
 
 void UART::rx_irq_handler()
 {
-	/*char ch = (uint8_t)Chip_UART_ReadByte(uart_channel_);
-				if(rx_callback_)
-				{
-					(*rx_callback_)(ch);
-				}*/
 	if(Chip_UART_GetStatus(uart_channel_) & UART_STAT_RXRDY)
 	{
 		char ch = (uint8_t)Chip_UART_ReadByte(uart_channel_);

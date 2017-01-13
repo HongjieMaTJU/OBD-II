@@ -12,7 +12,7 @@
 		<item value="LPC15xx_256K.cfx," key="flashdriver"/>
 		<item value="false" key="clipboard"/>
 		<item value="" key="extended"/>
-		<item value="C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\Debug\ecu_simulator_0_0_1.axf;C:\Users\cheri\Desktop\OBD-II\src\Adapter\adapter_0_0_1\Debug\adapter_0_0_1.axf," key="file"/>
+		<item value="C:\Users\cheri\Desktop\OBD-II\src\Adapter\adapter_0_0_1\Debug\adapter_0_0_1.axf;C:\Users\cheri\Desktop\OBD-II\src\Adapter\ecu_simulator_0_0_1\Debug\ecu_simulator_0_0_1.axf," key="file"/>
 		<item value="true" key="erase_mass"/>
 		<item value="false" key="reopen"/>
 		<item value="false" key="repeat"/>

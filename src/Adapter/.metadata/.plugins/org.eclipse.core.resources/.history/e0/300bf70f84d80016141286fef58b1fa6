@@ -1,0 +1,30 @@
+/*
+ * kwp_usart.h
+ *
+ *  Created on: 2016年12月22日
+ *      Author: Topon-Edison
+ */
+#ifndef DRIVERS_INC_KWP_USART_H_
+#define DRIVERS_INC_KWP_USART_H_
+#include <cstdint>
+
+class UART;
+
+class KWP_UART
+{
+public:
+	static KWP_UART * Instance();
+	static void  Kwp_RX_Callback(char ch);
+
+	void Send(char * str,int length);
+
+private:
+	KWP_UART();
+	UART * pUsart;
+
+};
+
+
+
+
+#endif /* DRIVERS_INC_KWP_USART_H_ */
