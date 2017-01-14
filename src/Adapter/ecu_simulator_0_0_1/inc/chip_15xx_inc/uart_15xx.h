@@ -46,7 +46,7 @@ extern "C" {
 /**
  * @brief UART register block structure
  */
-typedef struct {
+typedef struct LPC_USART_T{
 	__IO uint32_t  CFG;				/*!< Configuration register */
 	__IO uint32_t  CTRL;			/*!< Control register */
 	__IO uint32_t  STAT;			/*!< Status register */

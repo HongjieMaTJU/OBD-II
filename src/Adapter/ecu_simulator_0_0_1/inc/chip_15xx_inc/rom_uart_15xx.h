@@ -104,7 +104,7 @@ typedef void (*UART_DMA_REQ_T)(uint32_t src_adr, uint32_t dst_adr, uint32_t size
 /**
  * @brief UART ROM driver configutaion structure
  */
-typedef struct {
+typedef struct UART_CONFIG_T{
 	uint32_t sys_clk_in_hz;		/*!< System clock in Hz */
 	uint32_t baudrate_in_hz;	/*!< Baud rate in Hz */
 	uint8_t  config;			/*!< Configuration value */
