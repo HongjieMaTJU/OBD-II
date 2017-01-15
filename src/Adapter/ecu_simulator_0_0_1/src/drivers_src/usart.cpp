@@ -8,7 +8,7 @@
  */
 
 #include "chip.h"
-#include "adapter_board.h"
+#include "ecu_board.h"
 #include "usart.h"
 
 

@@ -42,7 +42,7 @@
 /**
  * @brief Ring buffer structure
  */
-typedef struct {
+typedef struct RINGBUFF_T {
 	void *data;
 	int count;
 	int itemSz;
