@@ -38,6 +38,8 @@
 
 #define TICKRATE_HZ1 (15)	/* 15 ticks per second */
 
+uint32_t index = 0;
+
 /*****************************************************************************
  * Public types/enumerations/variables
  ****************************************************************************/
@@ -56,8 +58,69 @@
  */
 void SysTick_Handler(void)
 {
-	Board_LED_Toggle(0);
-	Board_LED_Toggle(1);
+
+	switch(index)
+	{
+	case 0:
+		{
+			Board_LED_Set(0, true);
+			Board_LED_Set(1, false);
+			Board_LED_Set(2, false);
+			break;
+		}
+	case 1:
+		{
+			Board_LED_Set(0, false);
+			Board_LED_Set(1, true);
+			Board_LED_Set(2, false);
+			break;
+		}
+	case 2:
+		{
+			Board_LED_Set(0, false);
+			Board_LED_Set(2, true);
+			Board_LED_Set(1, false);
+			break;
+		}
+	case 3:
+		{
+			Board_LED_Set(0, true);
+			Board_LED_Set(1, true);
+			Board_LED_Set(2, false);
+			break;
+		}
+	case 4:
+		{
+			Board_LED_Set(0, false);
+			Board_LED_Set(1, true);
+			Board_LED_Set(2, true);
+			break;
+		}
+
+	case 5:
+		{
+			Board_LED_Set(1, false);
+			Board_LED_Set(0, true);
+			Board_LED_Set(2, true);
+			break;
+		}
+
+	case 6:
+		{
+			Board_LED_Set(1, true);
+			Board_LED_Set(0, true);
+			Board_LED_Set(2, true);
+			break;
+		}
+	default:
+		break;
+
+	}
+	//index++;
+	if(++index == 7)
+	{
+		index = 0;
+	}
 
 }
 
@@ -69,10 +132,12 @@ int main(void)
 {
 	uint32_t sysTickRate;
 
+
 	SystemCoreClockUpdate();
 	Board_Init();
-	Board_LED_Set(0, false);
-	Board_LED_Set(1, true);
+	Board_LED_Set(0, true);
+	Board_LED_Set(1, false);
+	Board_LED_Set(2, true);
 
 	/* The sysTick counter only has 24 bits of precision, so it will
 	   overflow quickly with a fast core clock. You can alter the

@@ -169,22 +169,20 @@ void IsoSerialAdapter::receiveFromEcu(Ecumsg* msg, int maxLen, int p2Timeout, in
     // Set the req/reply operation timeout
     Timer* timer = Timer::instance(1);
     timer->start(p2Timeout);
-    
     int i = 0;
-    for(; i < maxLen; i++) { // Only retrieve maxLen bytes
-        // Do we have Rx overrun issue?
+    for(; i < maxLen; i++) {
+    	//只可以接受小于最大长度的数据255字节
+        // 清除串口上一次残留数据
         uart_->clear();
-        
-        // Wait for data to be received
+
+        // 等待有效数据
         while(!uart_->ready()) {
             if (timer->isExpired())
-                goto extm; // exit by timeout
+                goto extm; // P2计时器超时
         }
-
+        // 获取数据
         (*msg) += uart_->get();
-        RX_LED(1); // Turn the receive LED on
-
-        // Reload the timer with p1Timeout
+        // 重启P1计时器，开始下一个字节数据接收
         timer->start(p1Timeout);
     }
 extm:
@@ -542,31 +540,21 @@ int IsoSerialAdapter::onRequest(const uint8_t* data, int len)
     msg->setData(data, len);
     msg->addHeaderAndChecksum();
 
-    // Ready to send it.. but how about P3 timeout?
+    // 检查P3计时器是否超时
     checkP3Timeout();
-    
-    if (!sendToEcu(msg.get(), P4_TIMEOUT)) {
-        return REPLY_WIRING_ERROR;
-    }
-
-    // Wait for multiple replies
+    if (!sendToEcu(msg.get(), P4_TIMEOUT)) return REPLY_WIRING_ERROR;
+    // 等待多帧响应
     for (int i = 0; ; i++) {
         receiveFromEcu(msg.get(), maxLen, p2Timeout, P1_MAX_TIMEOUT); 
-        if (msg->length() == 0)
-            break;
-        if (msg->length() < 5)
-            return REPLY_DATA_ERROR;
-            
-        reply = true; // Mark that we have received reply
+        if (msg->length() == 0) break;
+        if (msg->length() < 5) return REPLY_DATA_ERROR;
+        reply = true;
         
         // Strip the message header/checksum if option "Send Header" is not set
         if (!config_->getBoolProperty(PAR_HEADER_SHOW)) {
-            // Was the message OK?
-            if (!msg->stripHeaderAndChecksum()) {
-                return REPLY_CHKS_ERROR;
-            }
+            // 校验数据
+            if (!msg->stripHeaderAndChecksum()) return REPLY_CHKS_ERROR;
         }
-
         msg->toString(str);
         AdptSendReply(str); 
         str.resize(0);

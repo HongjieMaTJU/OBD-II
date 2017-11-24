@@ -173,6 +173,8 @@ void LongTimer_Callback()
 //	pBluetoothUart->Send("AT+AUTH1",8);
 	//pBluetoothUart->Send("Topon-Edison!\n",14);
 	pLongtimer->Start_Millisecond(1000);
+	pLed->Blink_Led_RX();
+	pLed->Blink_Led_TX();
 }
 
 

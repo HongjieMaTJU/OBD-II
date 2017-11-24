@@ -1,10 +1,5 @@
-22:52:04 **** Incremental Build of configuration Debug for project adapter_0_0_1 ****
+11:36:28 **** Incremental Build of configuration Debug for project adapter_0_0_1 ****
 make -r all 
-Building file: ../src/drivers_src/kwp_usart.cpp
-Invoking: MCU C++ Compiler
-arm-none-eabi-c++ -std=gnu++11 -D__NEWLIB__ -DDEBUG -D__CODE_RED -DCORE_M3 -DCPP_USE_HEAP -D__LPC15XX__ -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\adapter_0_0_1\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\adapter_0_0_1\inc\adapter_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\adapter_0_0_1\inc\chip_15xx_inc\usbd" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\adapter_0_0_1\inc\chip_15xx_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\adapter_0_0_1\inc\drivers_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\adapter_0_0_1\inc\obd_protocol_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\adapter_0_0_1\inc\utilities_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\adapter_0_0_1\inc\board_inc" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/drivers_src/kwp_usart.d" -MT"src/drivers_src/kwp_usart.o" -MT"src/drivers_src/kwp_usart.d" -o "src/drivers_src/kwp_usart.o" "../src/drivers_src/kwp_usart.cpp"
-Finished building: ../src/drivers_src/kwp_usart.cpp
- 
 Building file: ../src/adapter_0_0_1.cpp
 Invoking: MCU C++ Compiler
 arm-none-eabi-c++ -std=gnu++11 -D__NEWLIB__ -DDEBUG -D__CODE_RED -DCORE_M3 -DCPP_USE_HEAP -D__LPC15XX__ -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\adapter_0_0_1\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\adapter_0_0_1\inc\adapter_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\adapter_0_0_1\inc\chip_15xx_inc\usbd" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\adapter_0_0_1\inc\chip_15xx_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\adapter_0_0_1\inc\drivers_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\adapter_0_0_1\inc\obd_protocol_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\adapter_0_0_1\inc\utilities_inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\adapter_0_0_1\inc\board_inc" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/adapter_0_0_1.d" -MT"src/adapter_0_0_1.o" -MT"src/adapter_0_0_1.d" -o "src/adapter_0_0_1.o" "../src/adapter_0_0_1.cpp"
@@ -13,13 +8,13 @@ arm-none-eabi-c++ -std=gnu++11 -D__NEWLIB__ -DDEBUG -D__CODE_RED -DCORE_M3 -DCPP
      KWP_UART * hKwp_Uart =  KWP_UART::Instance();
                 ^
 ../src/adapter_0_0_1.cpp: In function 'void Init_Bluetooth()':
-../src/adapter_0_0_1.cpp:213:15: warning: comparison with string literal results in unspecified behaviour [-Waddress]
+../src/adapter_0_0_1.cpp:215:15: warning: comparison with string literal results in unspecified behaviour [-Waddress]
   while(str != "OK+Set:1")
                ^
-../src/adapter_0_0_1.cpp:200:10: warning: unused variable 'ch' [-Wunused-variable]
+../src/adapter_0_0_1.cpp:202:10: warning: unused variable 'ch' [-Wunused-variable]
      char ch[] = "AT";
           ^
-../src/adapter_0_0_1.cpp:209:9: warning: variable 'temp_str' set but not used [-Wunused-but-set-variable]
+../src/adapter_0_0_1.cpp:211:9: warning: variable 'temp_str' set but not used [-Wunused-but-set-variable]
   char * temp_str;
          ^
 ../src/adapter_0_0_1.cpp: At global scope:
@@ -32,7 +27,7 @@ Building target: adapter_0_0_1.axf
 Invoking: MCU C++ Linker
 arm-none-eabi-c++ -nostdlib -Xlinker -Map="adapter_0_0_1.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -mcpu=cortex-m3 -mthumb -T "adapter_0_0_1_Debug.ld" -o "adapter_0_0_1.axf"  ./src/drivers_src/can_controllor.o ./src/drivers_src/kwp_usart.o ./src/drivers_src/led.o ./src/drivers_src/timer.o ./src/drivers_src/usart.o  ./src/chip_15xx_src/acmp_15xx.o ./src/chip_15xx_src/adc_15xx.o ./src/chip_15xx_src/chip_15xx.o ./src/chip_15xx_src/clock_15xx.o ./src/chip_15xx_src/crc_15xx.o ./src/chip_15xx_src/dac_15xx.o ./src/chip_15xx_src/dma_15xx.o ./src/chip_15xx_src/eeprom.o ./src/chip_15xx_src/gpio_15xx.o ./src/chip_15xx_src/i2c_common_15xx.o ./src/chip_15xx_src/i2cm_15xx.o ./src/chip_15xx_src/i2cs_15xx.o ./src/chip_15xx_src/iap.o ./src/chip_15xx_src/iocon_15xx.o ./src/chip_15xx_src/pinint_15xx.o ./src/chip_15xx_src/pmu_15xx.o ./src/chip_15xx_src/ring_buffer.o ./src/chip_15xx_src/ritimer_15xx.o ./src/chip_15xx_src/rtc_15xx.o ./src/chip_15xx_src/sct_15xx.o ./src/chip_15xx_src/sct_pwm_15xx.o ./src/chip_15xx_src/sctipu_15xx.o ./src/chip_15xx_src/spi_15xx.o ./src/chip_15xx_src/stopwatch_15xx.o ./src/chip_15xx_src/swm_15xx.o ./src/chip_15xx_src/sysctl_15xx.o ./src/chip_15xx_src/sysinit_15xx.o ./src/chip_15xx_src/uart_15xx.o ./src/chip_15xx_src/wwdt_15xx.o  ./src/board_src/adpapter_board.o ./src/board_src/board_configure.o  ./src/adapter_0_0_1.o ./src/cr_cpp_config.o ./src/cr_startup_lpc15xx.o ./src/crp.o   
 Memory region         Used Size  Region Size  %age Used
-       MFlash256:       23664 B       256 KB      9.03%
+       MFlash256:       23740 B       256 KB      9.06%
          Ram0_16:        3992 B        16 KB     24.37%
          Ram1_16:          0 GB        16 KB      0.00%
           Ram2_4:          0 GB         4 KB      0.00%
@@ -42,8 +37,8 @@ Finished building target: adapter_0_0_1.axf
 Performing post-build steps
 arm-none-eabi-size "adapter_0_0_1.axf"; # arm-none-eabi-objcopy -v -O binary "adapter_0_0_1.axf" "adapter_0_0_1.bin" ; # checksum -p LPC1549 -d "adapter_0_0_1.bin";
    text	   data	    bss	    dec	    hex	filename
-  21528	   2136	   1856	  25520	   63b0	adapter_0_0_1.axf
+  21604	   2136	   1856	  25596	   63fc	adapter_0_0_1.axf
  
 
-22:52:06 Build Finished (took 2s.62ms)
+11:36:29 Build Finished (took 972ms)
 

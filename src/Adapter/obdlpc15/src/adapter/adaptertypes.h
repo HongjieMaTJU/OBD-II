@@ -123,7 +123,7 @@ public:
     void     setBytesProperty(int parameter, const ByteArray* bytes);
     const    ByteArray* getBytesProperty(int parameter) const;
 private:
-    const static int INT_PROP_LEN   = (PAR_WAKEUP_VAL - INT_PROPS_START   + 1);
+    const static int INT_PROP_LEN  = (PAR_WAKEUP_VAL - INT_PROPS_START   + 1);
     const static int BYTES_PROP_LEN = (PAR_WM_HEADER  - BYTES_PROPS_START + 1);
 
     AdapterConfig();
