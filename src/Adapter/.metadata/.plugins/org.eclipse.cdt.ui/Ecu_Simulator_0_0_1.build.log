@@ -1,6 +1,29 @@
+<<<<<<< HEAD
 11:46:15 **** Incremental Build of configuration Debug for project ecu_simulator_0_0_1 ****
 make -r all 
 make: Nothing to be done for `all'.
 
 11:46:15 Build Finished (took 137ms)
+=======
+13:57:11 **** Incremental Build of configuration Debug for project ecu_simulator_0_0_1 ****
+make -r all 
+Building target: ecu_simulator_0_0_1.axf
+Invoking: MCU C++ Linker
+arm-none-eabi-c++ -nostdlib -Xlinker -Map="ecu_simulator_0_0_1.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -mcpu=cortex-m3 -mthumb -T "Ecu_Simulator_0_0_1_Debug.ld" -o "ecu_simulator_0_0_1.axf"  ./src/drivers_src/can_controllor.o ./src/drivers_src/led.o ./src/drivers_src/timer.o ./src/drivers_src/usart.o  ./src/chip_15xx_src/acmp_15xx.o ./src/chip_15xx_src/adc_15xx.o ./src/chip_15xx_src/chip_15xx.o ./src/chip_15xx_src/clock_15xx.o ./src/chip_15xx_src/crc_15xx.o ./src/chip_15xx_src/dac_15xx.o ./src/chip_15xx_src/dma_15xx.o ./src/chip_15xx_src/eeprom.o ./src/chip_15xx_src/gpio_15xx.o ./src/chip_15xx_src/i2c_common_15xx.o ./src/chip_15xx_src/i2cm_15xx.o ./src/chip_15xx_src/i2cs_15xx.o ./src/chip_15xx_src/iap.o ./src/chip_15xx_src/iocon_15xx.o ./src/chip_15xx_src/pinint_15xx.o ./src/chip_15xx_src/pmu_15xx.o ./src/chip_15xx_src/ring_buffer.o ./src/chip_15xx_src/ritimer_15xx.o ./src/chip_15xx_src/rtc_15xx.o ./src/chip_15xx_src/sct_15xx.o ./src/chip_15xx_src/sct_pwm_15xx.o ./src/chip_15xx_src/sctipu_15xx.o ./src/chip_15xx_src/spi_15xx.o ./src/chip_15xx_src/stopwatch_15xx.o ./src/chip_15xx_src/swm_15xx.o ./src/chip_15xx_src/sysctl_15xx.o ./src/chip_15xx_src/sysinit_15xx.o ./src/chip_15xx_src/uart_15xx.o ./src/chip_15xx_src/wwdt_15xx.o  ./src/board_src/board_configure.o ./src/board_src/ecu_board.o  ./src/cr_cpp_config.o ./src/cr_startup_lpc15xx.o ./src/crp.o ./src/ecu_simulator_0_0_1.o   
+Memory region         Used Size  Region Size  %age Used
+       MFlash256:       23124 B       256 KB      8.82%
+         Ram0_16:        3016 B        16 KB     18.41%
+         Ram1_16:          0 GB        16 KB      0.00%
+          Ram2_4:          0 GB         4 KB      0.00%
+Finished building target: ecu_simulator_0_0_1.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "ecu_simulator_0_0_1.axf"; # arm-none-eabi-objcopy -v -O binary "ecu_simulator_0_0_1.axf" "ecu_simulator_0_0_1.bin" ; # checksum -p LPC1549 -d "ecu_simulator_0_0_1.bin";
+   text	   data	    bss	    dec	    hex	filename
+  21004	   2120	    896	  24020	   5dd4	ecu_simulator_0_0_1.axf
+ 
+
+13:57:12 Build Finished (took 933ms)
+>>>>>>> df58482f10945c124fbdce8ad3ea24f6cc7089fc
 

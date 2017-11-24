@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 11:36:28 **** Incremental Build of configuration Debug for project adapter_0_0_1 ****
 make -r all 
 Building file: ../src/adapter_0_0_1.cpp
@@ -41,4 +42,11 @@ arm-none-eabi-size "adapter_0_0_1.axf"; # arm-none-eabi-objcopy -v -O binary "ad
  
 
 11:36:29 Build Finished (took 972ms)
+=======
+13:57:50 **** Incremental Build of configuration Debug for project adapter_0_0_1 ****
+make -r all 
+make: Nothing to be done for `all'.
+
+13:57:50 Build Finished (took 154ms)
+>>>>>>> df58482f10945c124fbdce8ad3ea24f6cc7089fc
 

@@ -3768,13 +3768,18 @@ Command-line arguments:  -os win32 -ws win32 -arch x86
 
 !ENTRY org.eclipse.ui 4 4 2017-01-13 21:58:02.419
 !MESSAGE Plugin org.eclipse.cdt.ui, extension org.eclipse.ui.decorators, id org.eclipse.cdt.internal.ui.CustomBuildSettingsDecorator: Unknown extension tag found: decorator
+<<<<<<< HEAD
 !SESSION 2017-02-13 10:47:18.384 -----------------------------------------------
+=======
+!SESSION 2017-01-14 13:54:38.377 -----------------------------------------------
+>>>>>>> df58482f10945c124fbdce8ad3ea24f6cc7089fc
 eclipse.buildId=unknown
 java.version=1.8.0_65
 java.vendor=Oracle Corporation
 BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
 Command-line arguments:  -os win32 -ws win32 -arch x86
 
+<<<<<<< HEAD
 !ENTRY org.eclipse.ui 4 4 2017-02-13 10:47:26.001
 !MESSAGE Plugin org.eclipse.cdt.ui, extension org.eclipse.ui.decorators, id org.eclipse.cdt.internal.ui.CustomBuildSettingsDecorator: Duplicate id found: org.eclipse.cdt.internal.ui.CustomBuildSettingsDecorator
 
@@ -4505,4 +4510,10 @@ Command-line arguments:  -os win32 -ws win32 -arch x86
 !MESSAGE Plugin org.eclipse.cdt.ui, extension org.eclipse.ui.decorators, id org.eclipse.cdt.internal.ui.CustomBuildSettingsDecorator: Duplicate id found: org.eclipse.cdt.internal.ui.CustomBuildSettingsDecorator
 
 !ENTRY org.eclipse.ui 4 4 2017-11-22 17:09:05.849
+=======
+!ENTRY org.eclipse.ui 4 4 2017-01-14 13:56:53.188
+!MESSAGE Plugin org.eclipse.cdt.ui, extension org.eclipse.ui.decorators, id org.eclipse.cdt.internal.ui.CustomBuildSettingsDecorator: Duplicate id found: org.eclipse.cdt.internal.ui.CustomBuildSettingsDecorator
+
+!ENTRY org.eclipse.ui 4 4 2017-01-14 13:56:53.204
+>>>>>>> df58482f10945c124fbdce8ad3ea24f6cc7089fc
 !MESSAGE Plugin org.eclipse.cdt.ui, extension org.eclipse.ui.decorators, id org.eclipse.cdt.internal.ui.CustomBuildSettingsDecorator: Unknown extension tag found: decorator
