@@ -1,0 +1,37 @@
+﻿Field=#~Integer~#~50|Field=Comment~String~Comment~100|Field=Description~String~Description~100|Field=Designator~String~Designator~100|Field=Footprint~String~Footprint~100|Field=LibRef~String~LibRef~100|Field=Quantity~Integer~Quantity~100|ReportField=Currency~<none>|ReportField=ProductionQuantity~1|ReportField=ProjectFileName~CAN to Bluetooth-Based-HM-13.PrjPcb|ReportField=ProjectFullPath~C:\Users\cheri\Desktop\OBD-II\pcb\Projects\OBD-II-Base-HM-13\CAN to Bluetooth-Based-HM-13.PrjPcb|ReportField=Title~Bill of Materials For Project [CAN to Bluetooth-Based-HM-13.PrjPcb] (No PCB Document Selected)|ReportField=TotalQuantity~60|ReportField=ReportTime~11:05:59|ReportField=ReportDate~2017/6/1|ReportField=ReportDateTime~2017/6/1 11:05:59|ReportField=OutputName~Bill of Materials|ReportField=OutputType~BOM_PartType|ReportField=GeneratorName~BOM|ReportField=GeneratorDescription~Bill of Materials|ReportField=VariantName~None|ReportField=Address1~|ReportField=Address2~|ReportField=Address3~|ReportField=Address4~|ReportField=Application_BuildNumber~|ReportField=ApprovedBy~|ReportField=Author~|ReportField=CheckedBy~|ReportField=CompanyName~|ReportField=CurrentDate~2017/6/1|ReportField=CurrentTime~11:05:56|ReportField=Date~|ReportField=DocumentFullPathAndName~C:\Users\cheri\Desktop\OBD-II\pcb\Projects\OBD-II-Base-HM-13\Bluetooth.SchDoc|ReportField=DocumentName~Bluetooth.SchDoc|ReportField=DocumentNumber~|ReportField=DrawnBy~|ReportField=Engineer~|ReportField=ImagePath~|ReportField=ModifiedDate~2016/11/2|ReportField=Organization~|ReportField=ProjectName~CAN to Bluetooth-Based-HM-13.PrjPcb|ReportField=Revision~|ReportField=Rule~|ReportField=SheetNumber~|ReportField=SheetTotal~|ReportField=Time~|ReportField=Title~|ReportField=DataSourceFileName~CAN to Bluetooth-Based-HM-13.PrjPcb|ReportField=DataSourceFullPath~C:\Users\cheri\Desktop\OBD-II\pcb\Projects\OBD-II-Base-HM-13\CAN to Bluetooth-Based-HM-13.PrjPcb
+1|0.1uF|ceramic|C1, C4, C8, C10, C12, C15, C16, C17, C23|0603|Cap1|9
+2|10uF|ceramic|C2, C3, C9, C11|0603|Cap1|4
+3|22pF|ceramic|C5, C6|0603|Cap1|2
+4|4.7uF|ceramic|C7|0603|Cap1|1
+5|560pF|ceramic|C13, C14|0603|Cap1|2
+6|220uF|aluminum|C19|CAPM-7.0*4.5|Cap3|1
+7|0.01uF|ceramic|C20|0603|Cap1|1
+8|100uF/16V|aluminum|C21|CAPM-7.0*4.5|Cap3|1
+9|10uF/16V|aluminum|C22, C24|CAPM-5.5*3.3|Cap3|2
+10|B340A||D1|DO214-AC|B340A-13-F|1
+11|1N4007||D2, D3|DO214-AC|1N4007|2
+12|LED||L1, L2, L3, L4|0805|LED|4
+13|15uH||L5|7*7*4-15uH|Inductor|1
+14|Debug||P1|JATG_10pin|JTAG_10Pin|1
+15||Header, 3-Pin|P2, P3|HDR1X3|Header 3|2
+16|downloader|Header, 4-Pin|P4|HDR1X4|Header 4|1
+17|470||R1|0603|Res|1
+18|10K||R2, R6, R11|0603|Res|3
+19|510R||R3|0603|Res|1
+20|330R||R4, R5, R7|0603|Res|3
+21|100R||R8, R9|0603|Res|2
+22|3.3K||R10|0603|Res|1
+23|3.24K||R12|0603|Res|1
+24|470R||R13|0603|Res|1
+25|820R||R14|0603|Res|1
+26|100K||R15|0603|Res|1
+27|HM-13||U1|HM-13|HM-13|1
+28|OBD-Connector||U2|OBD-MaleConnector|OBD-MaleHead|1
+29|TJF1051T / 3||U3|TJF1051|TJF1051T / 3|1
+30|LPC1549||U4|LPC1549JBD48|LPC1549JBD48|1
+31|MC33660EFR2||U5|SOP-8|MC33660EFR2|1
+32|TPS5430||U6|TPS5430|TPS5430|1
+33|LM317L||U7|LM317L|LM317L|1
+34|MicroUSB||U8|Micro-USB|MicroUSB_B|1
+35|IMP809TEUR-T||U9|SOT23-3|IMP809TEUR-T|1
+36|12MHZ||X1|12Mhz-DFN|OSC|1

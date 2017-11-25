@@ -1,0 +1,10 @@
+Added Component: Designator=S1(BUtton-T4)
+Added Pin To Net: NetName=R\S\T\ Pin=S1-1
+Added Pin To Net: NetName=R\S\T\ Pin=S1-1
+Added Pin To Net: NetName=GND Pin=S1-2
+Added Pin To Net: NetName=GND Pin=S1-2
+Added Member To Class: ClassName=Core Member=Component S1 Button
+Added Room: Name=Core
+Added Room: Name=PL2303A
+Added Room: Name=Power
+Added Room: Name=USB

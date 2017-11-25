@@ -33,6 +33,8 @@ int main(void) {
     Board_Init();
     // Set the LED to the state of "On"
     Board_LED_Set(0, true);
+    Board_LED_Set(0, false);
+    Board_LED_Set(0, true);
 #endif
 #endif
 

@@ -1,0 +1,41 @@
+19:21:54 **** Incremental Build of configuration Debug for project c++ ****
+make -r all 
+Building file: ../src/c++.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -D__NEWLIB__ -DDEBUG -D__CODE_RED -DCORE_M3 -DCPP_USE_HEAP -D__LPC15XX__ -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\c++\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\lpc_chip_15xx\inc" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -mcpu=cortex-m3 -mthumb -D__NEWLIB__ -MMD -MP -MF"src/c++.d" -MT"src/c++.o" -MT"src/c++.d" -o "src/c++.o" "../src/c++.cpp"
+Finished building: ../src/c++.cpp
+ 
+Building file: ../src/cr_cpp_config.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -D__NEWLIB__ -DDEBUG -D__CODE_RED -DCORE_M3 -DCPP_USE_HEAP -D__LPC15XX__ -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\c++\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\lpc_chip_15xx\inc" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -mcpu=cortex-m3 -mthumb -D__NEWLIB__ -MMD -MP -MF"src/cr_cpp_config.d" -MT"src/cr_cpp_config.o" -MT"src/cr_cpp_config.d" -o "src/cr_cpp_config.o" "../src/cr_cpp_config.cpp"
+Finished building: ../src/cr_cpp_config.cpp
+ 
+Building file: ../src/cr_startup_lpc15xx.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -D__NEWLIB__ -DDEBUG -D__CODE_RED -DCORE_M3 -DCPP_USE_HEAP -D__LPC15XX__ -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\c++\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\lpc_chip_15xx\inc" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -mcpu=cortex-m3 -mthumb -D__NEWLIB__ -MMD -MP -MF"src/cr_startup_lpc15xx.d" -MT"src/cr_startup_lpc15xx.o" -MT"src/cr_startup_lpc15xx.d" -o "src/cr_startup_lpc15xx.o" "../src/cr_startup_lpc15xx.cpp"
+Finished building: ../src/cr_startup_lpc15xx.cpp
+ 
+Building file: ../src/crp.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__NEWLIB__ -DDEBUG -D__CODE_RED -DCORE_M3 -DCPP_USE_HEAP -D__LPC15XX__ -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\c++\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\lpc_chip_15xx\inc" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/crp.d" -MT"src/crp.o" -MT"src/crp.d" -o "src/crp.o" "../src/crp.c"
+Finished building: ../src/crp.c
+ 
+Building target: c++.axf
+Invoking: MCU C++ Linker
+arm-none-eabi-c++ -nostdlib -L"C:\Users\cheri\Desktop\OBD-II\src\Adapter\lpc_chip_15xx\Debug" -Xlinker -Map="c++.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -mcpu=cortex-m3 -mthumb -T "c++_Debug.ld" -o "c++.axf"  ./src/c++.o ./src/cr_cpp_config.o ./src/cr_startup_lpc15xx.o ./src/crp.o   -llpc_chip_15xx
+Memory region         Used Size  Region Size  %age Used
+       MFlash256:         988 B       256 KB      0.38%
+         Ram0_16:          32 B        16 KB      0.20%
+         Ram1_16:          0 GB        16 KB      0.00%
+          Ram2_4:          0 GB         4 KB      0.00%
+Finished building target: c++.axf
+ 
+/bin/make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "c++.axf"; # arm-none-eabi-objcopy -v -O binary "c++.axf" "c++.bin" ; # checksum -p LPC1549 -d "c++.bin";
+   text	   data	    bss	    dec	    hex	filename
+    988	      0	     32	   1020	    3fc	c++.axf
+ 
+
+19:21:56 Build Finished (took 1s.550ms)
+

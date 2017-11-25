@@ -1,0 +1,7 @@
+11:02:37 **** Clean-only build of configuration Debug for project usbd_rom_cdc_vcom ****
+make -r clean 
+rm -rf  ./example/src/cdc_desc.o ./example/src/cdc_main.o ./example/src/cdc_vcom.o ./example/src/cr_startup_lpc15xx.o ./example/src/sysinit.o  ./example/src/cdc_desc.d ./example/src/cdc_main.d ./example/src/cdc_vcom.d ./example/src/cr_startup_lpc15xx.d ./example/src/sysinit.d  usbd_rom_cdc_vcom.axf
+ 
+
+11:02:37 Build Finished (took 146ms)
+

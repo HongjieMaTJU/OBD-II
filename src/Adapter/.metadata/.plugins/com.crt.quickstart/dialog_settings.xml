@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="ExternalProjectImportWizard">
+		<item value="true" key="WizardProjectsImportPage.STORE_NESTED_PROJECTS"/>
+		<item value="true" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
+		<item value="true" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
+		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value=""/>
+			<item value="C:\Users\cheri\Desktop\OBD-II\source code res\检测仪参考代码\ELM327_Code\allpro-master"/>
+		</list>
+		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value="C:\nxp\LPCXpresso_8.2.2_650\lpcxpresso\Examples\LPCOpen\lpcopen_2_20_lpcxpresso_nxp_lpcxpresso_1549.zip"/>
+			<item value="C:\Users\cheri\Desktop\OBD-II\source code res\检测仪参考代码\ELM327_Code.zip"/>
+			<item value=""/>
+			<item value="D:\nxp\LPCXpresso_8.2.2_650\lpcxpresso\Examples\LPCOpen\lpcopen_2_20_lpcxpresso_nxp_lpcxpresso_1549.zip"/>
+		</list>
+	</section>
+	<section name="com.crt.quickstart.views.wizards.examples.QSExampleSelectionPage">
+		<item value="C:\Users\cheri\Desktop\OBD-II\src\Work_joanna\Work_joanna\obdlpc15" key="dirname"/>
+	</section>
+</section>

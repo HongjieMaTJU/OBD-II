@@ -108,8 +108,8 @@ void Board_Debug_Init(void)
 }
 
 #define MAXLEDS 3
-static const uint8_t ledpins[MAXLEDS] = {25, 3, 1};
-static const uint8_t ledports[MAXLEDS] = {0, 0, 1};
+static const uint8_t ledpins[MAXLEDS] = {24, 25, 2};
+static const uint8_t ledports[MAXLEDS] = {0, 0, 0};
 
 /* Initializes board LED(s) */
 static void Board_LED_Init(void)
@@ -119,7 +119,7 @@ static void Board_LED_Init(void)
 	for (idx = 0; idx < MAXLEDS; idx++) {
 		/* Set the GPIO as output with initial state off (high) */
 		Chip_GPIO_SetPinDIROutput(LPC_GPIO, ledports[idx], ledpins[idx]);
-		Chip_GPIO_SetPinState(LPC_GPIO, ledports[idx], ledpins[idx], true);
+		Chip_GPIO_SetPinState(LPC_GPIO, ledports[idx], ledpins[idx], false);
 	}
 }
 

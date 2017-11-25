@@ -1,0 +1,153 @@
+19:37:37 **** Build of configuration Debug for project obdlpc15 ****
+make -r all 
+Building file: ../src/util/algorithms.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -D__NEWLIB__ -DDEBUG -D__CODE_RED -DCORE_M3 -DCPP_USE_HEAP -D__LPC15XX__ -D__USE_CMSIS -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\inc" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\src\drv\lpc15xx" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\src\util" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\src\adapter" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\inc\chip_15xx" -I"C:\Users\cheri\Desktop\OBD-II\src\Adapter\obdlpc15\inc\chip_common" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -Wno-sign-compare -Wno-unused-function -mcpu=cortex-m3 -mthumb -D__NEWLIB__ -MMD -MP -MF"src/util/algorithms.d" -MT"src/util/algorithms.o" -MT"src/util/algorithms.d" -o "src/util/algorithms.o" "../src/util/algorithms.cpp"
+In file included from c:\nxp\lpcxpresso_8.2.2_650\lpcxpresso\tools\arm-none-eabi\include\c++\5.4.1\cstdint:35:0,
+                 from ../src/util/lstring.h:15,
+                 from ../src/util/algorithms.h:11,
+                 from ../src/util/algorithms.cpp:10:
+c:\nxp\lpcxpresso_8.2.2_650\lpcxpresso\tools\arm-none-eabi\include\c++\5.4.1\bits\c++0x_warning.h:32:2: error: #error This file requires compiler and library support for the ISO C++ 2011 standard. This support must be enabled with the -std=c++11 or -std=gnu++11 compiler options.
+ #error This file requires compiler and library support \
+  ^
+In file included from ../src/util/algorithms.h:11:0,
+                 from ../src/util/algorithms.cpp:10:
+../src/util/lstring.h:25:18: error: 'uint32_t' does not name a type
+     const static uint32_t STRING_SIZE = 50;
+                  ^
+../src/util/lstring.h:26:18: error: 'uint32_t' does not name a type
+     const static uint32_t npos = 0xFFFFFFFF;
+                  ^
+../src/util/lstring.h:27:21: error: expected ')' before 'size'
+     string(uint32_t size = STRING_SIZE);
+                     ^
+../src/util/lstring.h:30:21: error: expected ')' before 'count'
+     string(uint32_t count, char ch);
+                     ^
+../src/util/lstring.h:32:17: error: 'uint32_t' has not been declared
+     void resize(uint32_t count);
+                 ^
+../src/util/lstring.h:33:17: error: 'uint32_t' has not been declared
+     void resize(uint32_t count, char ch);
+                 ^
+../src/util/lstring.h:35:35: error: 'uint32_t' has not been declared
+     string& append(const char* s, uint32_t count);
+                                   ^
+../src/util/lstring.h:36:13: error: expected ';' at end of member declaration
+     string& append(uint32_t count, char ch);
+             ^
+../src/util/lstring.h:36:20: error: 'util::string& util::string::append' conflicts with a previous declaration
+     string& append(uint32_t count, char ch);
+                    ^
+../src/util/lstring.h:35:13: note: previous declaration 'util::string::append'
+     string& append(const char* s, uint32_t count);
+             ^
+../src/util/lstring.h:36:29: error: expected ')' before 'count'
+     string& append(uint32_t count, char ch);
+                             ^
+../src/util/lstring.h:37:13: error: expected ';' at end of member declaration
+     string& assign(uint32_t count, char ch);
+             ^
+../src/util/lstring.h:37:29: error: expected ')' before 'count'
+     string& assign(uint32_t count, char ch);
+                             ^
+../src/util/lstring.h:39:5: error: 'uint32_t' does not name a type
+     uint32_t copy(char* dest, uint32_t count, uint32_t pos = 0) const;
+     ^
+../src/util/lstring.h:42:5: error: 'uint32_t' does not name a type
+     uint32_t find(const string& str, uint32_t pos = 0) const;
+     ^
+../src/util/lstring.h:43:5: error: 'uint32_t' does not name a type
+     uint32_t find(char ch, uint32_t pos = 0) const;
+     ^
+../src/util/lstring.h:44:5: error: 'uint32_t' does not name a type
+     uint32_t length() const { return length_; }
+     ^
+../src/util/lstring.h:45:19: error: 'uint32_t' has not been declared
+     string substr(uint32_t pos, uint32_t count = npos) const;
+                   ^
+../src/util/lstring.h:45:33: error: 'uint32_t' has not been declared
+     string substr(uint32_t pos, uint32_t count = npos) const;
+                                 ^
+../src/util/lstring.h:49:21: error: 'uint32_t' has not been declared
+     char operator[](uint32_t pos) const { return data_[pos]; }
+                     ^
+../src/util/lstring.h:50:22: error: declaration of 'operator[]' as non-function
+     char& operator[](uint32_t pos) { return data_[pos]; }
+                      ^
+../src/util/lstring.h:50:20: error: expected ';' at end of member declaration
+     char& operator[](uint32_t pos) { return data_[pos]; }
+                    ^
+../src/util/lstring.h:50:31: error: expected ')' before 'pos'
+     char& operator[](uint32_t pos) { return data_[pos]; }
+                               ^
+../src/util/lstring.h:54:15: error: 'uint32_t' has not been declared
+     void init(uint32_t size);
+               ^
+../src/util/lstring.h:56:5: error: 'uint16_t' does not name a type
+     uint16_t length_;
+     ^
+../src/util/lstring.h:57:5: error: 'uint16_t' does not name a type
+     uint16_t allocatedLength_;
+     ^
+../src/util/lstring.h:45:50: error: 'npos' was not declared in this scope
+     string substr(uint32_t pos, uint32_t count = npos) const;
+                                                  ^
+../src/util/lstring.h: In member function 'bool util::string::empty() const':
+../src/util/lstring.h:41:34: error: 'length_' was not declared in this scope
+     bool empty() const { return (length_ == 0); }
+                                  ^
+In file included from ../src/util/algorithms.cpp:10:0:
+../src/util/algorithms.h: At global scope:
+../src/util/algorithms.h:18:5: error: 'uint32_t' does not name a type
+     uint32_t stoul(const string& str, uint32_t* pos = 0, int base = 10);
+     ^
+../src/util/algorithms.h:20:19: error: 'uint8_t' was not declared in this scope
+     char to_ascii(uint8_t byte);
+                   ^
+../src/util/algorithms.cpp: In function 'void util::to_lower(util::string&)':
+../src/util/algorithms.cpp:22:29: error: 'class util::string' has no member named 'length'
+     for (int i = 0; i < str.length(); i++) {
+                             ^
+../src/util/algorithms.cpp:23:16: error: lvalue required as left operand of assignment
+         str[i] = tolower(str[i]);
+                ^
+../src/util/algorithms.cpp: In function 'void util::to_upper(util::string&)':
+../src/util/algorithms.cpp:33:29: error: 'class util::string' has no member named 'length'
+     for (int i = 0; i < str.length(); i++) {
+                             ^
+../src/util/algorithms.cpp:34:16: error: lvalue required as left operand of assignment
+         str[i] = toupper(str[i]);
+                ^
+../src/util/algorithms.cpp: In function 'bool util::is_xdigits(const util::string&)':
+../src/util/algorithms.cpp:45:19: error: 'const class util::string' has no member named 'length'
+     int len = str.length();
+                   ^
+../src/util/algorithms.cpp: In function 'void util::remove_space(util::string&)':
+../src/util/algorithms.cpp:64:19: error: 'class util::string' has no member named 'length'
+     int len = str.length();
+                   ^
+../src/util/algorithms.cpp:68:22: error: lvalue required as left operand of assignment
+             str[j++] = str[i];
+                      ^
+../src/util/algorithms.cpp: At global scope:
+../src/util/algorithms.cpp:81:1: error: 'uint32_t' does not name a type
+ uint32_t stoul(const string& str, uint32_t* pos, int base)
+ ^
+../src/util/algorithms.cpp:93:15: error: redefinition of 'char util::to_ascii'
+ char to_ascii(uint8_t byte)
+               ^
+In file included from ../src/util/algorithms.cpp:10:0:
+../src/util/algorithms.h:20:10: note: 'char util::to_ascii' previously defined here
+     char to_ascii(uint8_t byte);
+          ^
+../src/util/algorithms.cpp:93:15: error: 'uint8_t' was not declared in this scope
+ char to_ascii(uint8_t byte)
+               ^
+../src/util/algorithms.cpp:100:1: error: expected '}' at end of input
+ }
+ ^
+make: *** [src/util/algorithms.o] Error 1
+
+19:37:39 Build Finished (took 1s.933ms)
+

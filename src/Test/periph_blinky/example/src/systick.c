@@ -36,12 +36,12 @@
  * Private types/enumerations/variables
  ****************************************************************************/
 
-#define TICKRATE_HZ1 (15)	/* 15 ticks per second */
+#define TICKRATE_HZ1 (5)	/* 15 ticks per second */
 
 /*****************************************************************************
  * Public types/enumerations/variables
  ****************************************************************************/
-
+int systic = 0;
 /*****************************************************************************
  * Private functions
  ****************************************************************************/
@@ -56,8 +56,15 @@
  */
 void SysTick_Handler(void)
 {
+	systic++;
 	Board_LED_Toggle(0);
 	Board_LED_Toggle(1);
+	if(systic==100)
+	{
+		systic = 0;
+		printf("tick_");
+	}
+
 }
 
 /**
@@ -72,7 +79,7 @@ int main(void)
 	Board_Init();
 	Board_LED_Set(0, false);
 	Board_LED_Set(1, true);
-
+    Board_LED_Set(1,true);
 	/* The sysTick counter only has 24 bits of precision, so it will
 	   overflow quickly with a fast core clock. You can alter the
 	   sysTick divider to generate slower sysTick clock rates. */

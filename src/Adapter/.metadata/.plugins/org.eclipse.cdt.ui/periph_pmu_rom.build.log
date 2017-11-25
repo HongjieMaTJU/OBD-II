@@ -1,0 +1,7 @@
+11:02:33 **** Clean-only build of configuration Debug for project periph_pmu_rom ****
+make -r clean 
+rm -rf  ./example/src/cr_startup_lpc15xx.o ./example/src/pmu_rom.o ./example/src/sysinit.o  ./example/src/cr_startup_lpc15xx.d ./example/src/pmu_rom.d ./example/src/sysinit.d  periph_pmu_rom.axf
+ 
+
+11:02:33 Build Finished (took 144ms)
+

@@ -1,0 +1,18 @@
+Added Component: Designator=U1(Micro-USB-B-Female)
+Added Pin To Net: NetName=5V Pin=U1-1
+Added Pin To Net: NetName=5V Pin=U1-1
+Added Pin To Net: NetName=5V Pin=U1-1
+Added Pin To Net: NetName=5V Pin=U1-1
+Added Pin To Net: NetName=5V Pin=U1-1
+Added Pin To Net: NetName=5V Pin=U1-1
+Added Pin To Net: NetName=5V Pin=U1-1
+Added Pin To Net: NetName=5V Pin=U1-1
+Added Pin To Net: NetName=5V Pin=U1-1
+Added Pin To Net: NetName=D- Pin=U1-2
+Added Pin To Net: NetName=D+ Pin=U1-3
+Added Pin To Net: NetName=GND Pin=U1-5
+Added Member To Class: ClassName=USB Member=Component U1 MicroUSB-B-Female
+Added Room: Name=Bluetooth
+Added Room: Name=Core
+Added Room: Name=Power
+Added Room: Name=USB

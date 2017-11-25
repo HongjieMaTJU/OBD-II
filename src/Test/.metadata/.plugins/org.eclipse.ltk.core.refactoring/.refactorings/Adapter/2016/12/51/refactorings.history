@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Adapter/src/drviver/Timer&apos; to &apos;Timer.cpp&apos;" description="Rename resource &apos;Timer&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/drviver/Timer" name="Timer.cpp" stamp="1481554717835" updateReferences="true"/>
+</session>

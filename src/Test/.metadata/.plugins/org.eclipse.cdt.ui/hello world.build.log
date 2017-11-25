@@ -1,0 +1,9 @@
+12:37:21 **** Incremental Build of configuration Debug for project hello world ****
+make all 
+Cannot run program "make": Launching failed
+
+Error: Program "make" not found in PATH
+PATH=[\bin;D:/nxp/LPCXpresso_8.2.2_650/lpcxpresso/jre/bin/client;D:/nxp/LPCXpresso_8.2.2_650/lpcxpresso/jre/bin;D:/nxp/LPCXpresso_8.2.2_650/lpcxpresso/jre/lib/i386;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\dotnet\;C:\Program Files\MySQL\MySQL Utilities 1.6\;C:\Program Files\Git\cmd;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\cheri\AppData\Local\Microsoft\WindowsApps;D:\Python27;D:\Program Files\Java\jdk1.8.0_111\bin\;d:\nxp\LPCXpresso_8.2.2_650\lpcxpresso]
+
+12:37:21 Build Finished (took 71ms)
+

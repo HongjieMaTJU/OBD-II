@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item value="false" key="isRegEx"/>
+		<item value="Led" key="selection"/>
+		<item value="true" key="casesensitive"/>
+		<item value="false" key="incremental"/>
+		<item value="true" key="wrap"/>
+		<item value="false" key="wholeword"/>
+		<list key="findhistory">
+			<item value="f"/>
+			<item value="AdapterLed"/>
+			<item value="AdapterLed::AdapterLed():tx_count(0),rx_count(0)"/>
+			<item value="Ecu"/>
+			<item value="LPC_RIT"/>
+			<item value="LPC_MRT_CH_T"/>
+		</list>
+		<list key="replacehistory">
+			<item value="Led"/>
+			<item value="Board"/>
+			<item value="LPC_RITIMER "/>
+			<item value="LPC_MRT_CH_Type"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item value="273" key="DIALOG_WIDTH"/>
+		<item value="1|Microsoft YaHei UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Microsoft YaHei UI" key="DIALOG_FONT_NAME"/>
+		<item value="400" key="DIALOG_HEIGHT"/>
+		<item value="592" key="DIALOG_X_ORIGIN"/>
+		<item value="172" key="DIALOG_Y_ORIGIN"/>
+	</section>
+</section>
