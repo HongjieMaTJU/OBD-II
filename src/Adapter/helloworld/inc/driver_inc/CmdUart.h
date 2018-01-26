@@ -18,9 +18,9 @@ const int TX_BUFFER_LEN = 100;
 
 typedef bool (*UartRecvHandler)(uint8_t ch);
 
-class CmdUart {
+class BT_UART {
 public:
-    static CmdUart* instance();
+    static BT_UART* instance();
     static void configure();
     void irqHandler();
     void init(uint32_t speed);
@@ -30,7 +30,7 @@ public:
     void ready(bool val) { ready_ = val; }
     void handler(UartRecvHandler handler) { handler_ = handler; }
 private:
-    CmdUart();
+    BT_UART();
     void txIrqHandler();
     void rxIrqHandler();
 

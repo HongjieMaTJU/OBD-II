@@ -20,7 +20,7 @@ using namespace util;
 
 const int ISO_CAN_LEN = 7;
 
-IsoCanAdapter::IsoCanAdapter()
+ISO15765_2::ISO15765_2()
 {
     extended_ = false;
     canPriority_ = 0;
@@ -34,7 +34,7 @@ IsoCanAdapter::IsoCanAdapter()
  * Setting CAN custom filter
  * @param[in] filter The filter bytes
  */
-void IsoCanAdapter::setFilter(const uint8_t* filter)
+void ISO15765_2::setFilter(const uint8_t* filter)
 {
     memcpy(filter_, filter, sizeof(filter_));
     setFilterAndMask();
@@ -44,7 +44,7 @@ void IsoCanAdapter::setFilter(const uint8_t* filter)
  * Setting CAN custom mask
  * @param[in] mask The mask bytes
  */
-void IsoCanAdapter::setMask(const uint8_t* mask)
+void ISO15765_2::setMask(const uint8_t* mask)
 {
     memcpy(mask_, mask, sizeof(mask_));
     setFilterAndMask();
@@ -56,7 +56,7 @@ void IsoCanAdapter::setMask(const uint8_t* mask)
  * @param[in] len The message length
  * @return true if OK, false if data issues
  */
-bool IsoCanAdapter::sendToEcu(const uint8_t* data, int len)
+bool ISO15765_2::sendToEcu(const uint8_t* data, int len)
 {
     if (len > ISO_CAN_LEN) {
         return false; // REPLY_DATA_ERROR
@@ -79,7 +79,7 @@ bool IsoCanAdapter::sendToEcu(const uint8_t* data, int len)
  * @param[in] msg CanMsgbuffer instance pointer
  * @param[out] str The output string
  */
-void IsoCanAdapter::formatReplyWithHeader(const CanMsgBuffer* msg, util::string& str)
+void ISO15765_2::formatReplyWithHeader(const CanMsgBuffer* msg, util::string& str)
 {
     CanIDToString(msg->id, str, msg->extended);
     bool useSpaces = AdapterConfig::instance()->getBoolProperty(PAR_SPACES);
@@ -100,7 +100,7 @@ void IsoCanAdapter::formatReplyWithHeader(const CanMsgBuffer* msg, util::string&
  * Process first/next/single frames
  * @param[in] msg CanMsgbuffer instance pointer
  */
-void IsoCanAdapter::processFrame(const CanMsgBuffer* msg)
+void ISO15765_2::processFrame(const CanMsgBuffer* msg)
 {
     util::string str;
     if (config_->getBoolProperty(PAR_HEADER_SHOW)) {
@@ -117,48 +117,38 @@ void IsoCanAdapter::processFrame(const CanMsgBuffer* msg)
  * @param[in] sendReply send reply to user flag
  * @return true if message received, false otherwise
  */
-bool IsoCanAdapter::receiveFromEcu(bool sendReply)
-{
+bool ISO15765_2::ReceiveMsgFromEcu(bool sendReply) {
     const int p2Timeout = getP2MaxTimeout();
     CanMsgBuffer msgBuffer;
     bool msgReceived = false;
-    
     Timer* timer = Timer::instance(0);
     timer->start(p2Timeout);
-
     do {
         if (!driver_->isReady())
             continue;
         driver_->read(&msgBuffer);
-        
-        // Message log
-        history_->add2Buffer(&msgBuffer, false, msgBuffer.msgnum);
-        
-        // Reload the timer
         timer->start(p2Timeout);
-
         msgReceived = true;
         if (!sendReply)
             continue;
         switch ((msgBuffer.data[0] & 0xF0) >> 4) {
-            case CANSingleFrame:
+            case kSingleFrame:
                 processFrame(&msgBuffer);
                 break;
-            case CANFirstFrame:
+            case kFirstFrame:
                 processFlowFrame(&msgBuffer);
                 processFrame(&msgBuffer);
                 break;
-            case CANConsecutiveFrame:
+            case kConsecutiveFrame:
                 processFrame(&msgBuffer);
                 break;
         }
     } while (!timer->isExpired());
-
     return msgReceived;
 }
 
 
-int IsoCanAdapter::getP2MaxTimeout() const
+int ISO15765_2::getP2MaxTimeout() const
 {
     int p2Timeout = config_->getIntProperty(PAR_TIMEOUT); 
     return p2Timeout ? p2Timeout : CAN_P2_MAX_TIMEOUT;
@@ -170,7 +160,7 @@ int IsoCanAdapter::getP2MaxTimeout() const
  * @param[in] len The message length
  * @return The completion status code
  */
-int IsoCanAdapter::onRequest(const uint8_t* data, int len)
+int ISO15765_2::onRequest(const uint8_t* data, int len)
 {
     if (!sendToEcu(data, len))
         return REPLY_DATA_ERROR;
@@ -182,13 +172,13 @@ int IsoCanAdapter::onRequest(const uint8_t* data, int len)
  * @param[in] sendReply Reply flag
  * @return Protocol value if ECU is supporting CAN protocol, 0 otherwise
  */
-int IsoCanAdapter::onConnectEcu(bool sendReply)
+int ISO15765_2::onConnectEcu(bool sendReply)
 {
     CanMsgBuffer msgBuffer(getID(), extended_, 8, 0x02, 0x01, 0x00);
 
     open();
 
-    switch (OBDProfile::instance()->getProtocol()) {
+    switch (ISO15031_5::instance()->getProtocol()) {
     	case PROT_ISO15765_1150:
     		connected_ = true;
     		return PROT_ISO15765_1150;
@@ -211,7 +201,7 @@ int IsoCanAdapter::onConnectEcu(bool sendReply)
 /**
  * Print the messages buffer
  */
-void IsoCanAdapter::dumpBuffer()
+void ISO15765_2::dumpBuffer()
 {
     history_->dumpCurrentBuffer();
 }
@@ -219,7 +209,7 @@ void IsoCanAdapter::dumpBuffer()
 /**
  * Test wiring connectivity for CAN
  */
-void IsoCanAdapter::wiringCheck()
+void ISO15765_2::wiringCheck()
 {
     bool failed = false;
     driver_->setBitBang(true);
@@ -248,7 +238,7 @@ void IsoCanAdapter::wiringCheck()
 /**
  * IsoCan11Adapter class members
  */
-void IsoCan11Adapter::open()
+void ISO15765_2_11::open()
 {
     setFilterAndMask();
     
@@ -256,7 +246,7 @@ void IsoCan11Adapter::open()
     AdptLED::instance()->startTimer();
 }
 
-uint32_t IsoCan11Adapter::getID() const
+uint32_t ISO15765_2_11::getID() const
 { 
     NumericType id;
 
@@ -272,7 +262,7 @@ uint32_t IsoCan11Adapter::getID() const
     return id.lvalue;
 }
 
-void IsoCan11Adapter::setFilterAndMask()
+void ISO15765_2_11::setFilterAndMask()
 {
     // Mask 11 bit
     NumericType mask;
@@ -297,7 +287,7 @@ void IsoCan11Adapter::setFilterAndMask()
     driver_->setFilterAndMask(filter.lvalue, mask.lvalue, false);
 }
 
-void IsoCan11Adapter::processFlowFrame(const CanMsgBuffer* msg)
+void ISO15765_2_11::processFlowFrame(const CanMsgBuffer* msg)
 {
     CanMsgBuffer ctrlData(getID(), false, 8, 0x30, 0x0, 0x00);
     ctrlData.id |= (msg->id & 0x07);
@@ -307,13 +297,13 @@ void IsoCan11Adapter::processFlowFrame(const CanMsgBuffer* msg)
     history_->add2Buffer(&ctrlData, true, 0);
 }
 
-void IsoCan11Adapter::getDescription()
+void ISO15765_2_11::getDescription()
 {
     bool useAutoSP = config_->getBoolProperty(PAR_USE_AUTO_SP);
     AdptSendReply(useAutoSP ? "AUTO, ISO 15765-4 (CAN 11/500)" : "ISO 15765-4 (CAN 11/500)");
 }
 
-void IsoCan11Adapter::getDescriptionNum()
+void ISO15765_2_11::getDescriptionNum()
 {
     bool useAutoSP = config_->getBoolProperty(PAR_USE_AUTO_SP);
     AdptSendReply(useAutoSP ? "A6" : "6"); 
@@ -322,7 +312,7 @@ void IsoCan11Adapter::getDescriptionNum()
 /**
  * IsoCan29Adapter class members
  */
-void IsoCan29Adapter::open()
+void ISO15765_2_29::open()
 {
     setFilterAndMask();
     
@@ -330,7 +320,7 @@ void IsoCan29Adapter::open()
     AdptLED::instance()->startTimer();
 }
 
-uint32_t IsoCan29Adapter::getID() const
+uint32_t ISO15765_2_29::getID() const
 { 
     NumericType id;
 
@@ -348,7 +338,7 @@ uint32_t IsoCan29Adapter::getID() const
     return id.lvalue;
 }
 
-void IsoCan29Adapter::setFilterAndMask() 
+void ISO15765_2_29::setFilterAndMask() 
 {
     // Mask 29 bit
     NumericType mask;
@@ -377,7 +367,7 @@ void IsoCan29Adapter::setFilterAndMask()
     driver_->setFilterAndMask(filter.lvalue, mask.lvalue, true);
 }
 
-void IsoCan29Adapter::processFlowFrame(const CanMsgBuffer* msg)
+void ISO15765_2_29::processFlowFrame(const CanMsgBuffer* msg)
 {
     CanMsgBuffer ctrlData(getID(), true, 8, 0x30, 0x0, 0x00);
     ctrlData.id |= (msg->id & 0xFF) << 8;
@@ -387,13 +377,13 @@ void IsoCan29Adapter::processFlowFrame(const CanMsgBuffer* msg)
     history_->add2Buffer(&ctrlData, true, 0);
 }
 
-void IsoCan29Adapter::getDescription()
+void ISO15765_2_29::getDescription()
 {
     bool useAutoSP = config_->getBoolProperty(PAR_USE_AUTO_SP);
     AdptSendReply(useAutoSP ? "AUTO, ISO 15765-4 (CAN 29/500)" : "ISO 15765-4 (CAN 29/500)");
 }
 
-void IsoCan29Adapter::getDescriptionNum()
+void ISO15765_2_29::getDescriptionNum()
 {
     bool useAutoSP = config_->getBoolProperty(PAR_USE_AUTO_SP);
     AdptSendReply(useAutoSP ? "A7" : "7"); 

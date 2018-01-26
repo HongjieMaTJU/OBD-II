@@ -28,15 +28,15 @@ static const char Err0Message[] = "Program Error";     // Wrong coding?
  * Instance accessor
  * @return The OBDProfile instace pointer
  **/
-OBDProfile* OBDProfile::instance()
+ISO15031_5* ISO15031_5::instance()
 {
-    static OBDProfile obdProfile;
+    static ISO15031_5 obdProfile;
     return &obdProfile;
 }
 /**
  * Construct OBDProfile object
  */
-OBDProfile::OBDProfile()
+ISO15031_5::ISO15031_5()
 {
     adapter_ = ProtocolAdapter::getAdapter(ADPTR_AUTO);
 }
@@ -44,17 +44,17 @@ OBDProfile::OBDProfile()
 /**
  * Proxies....
  */
-void OBDProfile::getProtocolDescription() const
+void ISO15031_5::getProtocolDescription() const
 {
     adapter_->getDescription();
 }
 
-void OBDProfile::getProtocolDescriptionNum() const
+void ISO15031_5::getProtocolDescriptionNum() const
 {
     adapter_->getDescriptionNum();
 }
 
-void OBDProfile::dumpBuffer()
+void ISO15031_5::dumpBuffer()
 {
     adapter_->dumpBuffer();
 }
@@ -65,7 +65,7 @@ void OBDProfile::dumpBuffer()
  * @param[in] refreshConnection The flag
  * @return The completion status
  */
-int OBDProfile::setProtocol(int num, bool refreshConnection)
+int ISO15031_5::setProtocol(int num, bool refreshConnection)
 {
     ProtocolAdapter* pvadapter = adapter_;
     switch (num) {
@@ -118,7 +118,7 @@ int OBDProfile::setProtocol(int num, bool refreshConnection)
  * @param[in] cmdString The command
  * @return The status code
  */
-void OBDProfile::onRequest(const string& cmdString)
+void ISO15031_5::onRequest(const string& cmdString)
 {
     int result = onRequestImpl(cmdString);
     switch(result) {
@@ -162,7 +162,7 @@ void OBDProfile::onRequest(const string& cmdString)
  * @param[in] cmdString The command
  * @return The status code
  */
-int OBDProfile::onRequestImpl(const string& cmdString)
+int ISO15031_5::onRequestImpl(const string& cmdString)
 {
     const char* OBD_TEST_SEQ = "0100";
     uint8_t data[OBD_IN_MSG_LEN];
@@ -220,7 +220,7 @@ int OBDProfile::onRequestImpl(const string& cmdString)
  * @param[in] len The request length
  * @return true if set, false otherwise
  */
-bool OBDProfile::sendLengthCheck(const uint8_t* msg, int len)
+bool ISO15031_5::sendLengthCheck(const uint8_t* msg, int len)
 {
     int maxLen = OBD_IN_MSG_DLEN;
     
@@ -235,12 +235,12 @@ bool OBDProfile::sendLengthCheck(const uint8_t* msg, int len)
     return true;
 }
 
-int OBDProfile::getProtocol() const
+int ISO15031_5::getProtocol() const
 {
     return adapter_->getProtocol();
 }
 
-void OBDProfile::closeProtocol()
+void ISO15031_5::closeProtocol()
 {
     adapter_->closeProtocol();
 }
@@ -248,7 +248,7 @@ void OBDProfile::closeProtocol()
 /**
  * ISO KW1,KW2 display, applies only to 9141/14230 adapter
  */
-int OBDProfile::kwDisplay()
+int ISO15031_5::kwDisplay()
 {
     ProtocolAdapter::getAdapter(ADPTR_ISO)->kwDisplay();
     return REPLY_OK;
@@ -257,7 +257,7 @@ int OBDProfile::kwDisplay()
 /**
  * ISO 9141/14230 hearbeat, implemented only in ISO serial adapter
  */
-void OBDProfile::sendHeartBeat()
+void ISO15031_5::sendHeartBeat()
 {
     adapter_->sendHeartBeat();
 }
@@ -265,7 +265,7 @@ void OBDProfile::sendHeartBeat()
 /**
  * Test wiring connectivity for all protocols
  */
-void OBDProfile::wiringCheck()
+void ISO15031_5::wiringCheck()
 {
     ProtocolAdapter::getAdapter(ADPTR_PWM)->wiringCheck();
     ProtocolAdapter::getAdapter(ADPTR_VPW)->wiringCheck();

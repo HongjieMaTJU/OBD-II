@@ -22,7 +22,7 @@ const uint32_t PinAssign = ((RxPin << 8) + (RxPort * 32)) | (TxPin  + (TxPort * 
 /**
  * Constructor
  */
-CmdUart::CmdUart()
+BT_UART::BT_UART()
   : txLen_(0),
     txPos_(0),
     ready_(false),
@@ -33,16 +33,16 @@ CmdUart::CmdUart()
 /**
  * CmdUart singleton
  */
-CmdUart* CmdUart::instance()
+BT_UART* BT_UART::instance()
 {
-    static CmdUart instance;
+    static BT_UART instance;
     return &instance;;
 }
 
 /**
  * Configure UART0
  */
-void CmdUart::configure()
+void BT_UART::configure()
 {
     // Enable UART0 clock
     LPC_SYSCON->SYSAHBCLKCTRL[1] |=  (1 << 17);
@@ -62,7 +62,7 @@ void CmdUart::configure()
  * discard the allocated UART memory block afterwards
  * @parameter[in] speed Speed to configure
  */
-void CmdUart::init(uint32_t speed)
+void BT_UART::init(uint32_t speed)
 {
     const int UART_MEM_LEN = 40;
 
@@ -93,7 +93,7 @@ void CmdUart::init(uint32_t speed)
 /**
  * CmdUart TX handler
  */
-void CmdUart::txIrqHandler()
+void BT_UART::txIrqHandler()
 {
     // Fill TX until full or until TX buffer is empty
     if (txPos_ < txLen_) {
@@ -109,7 +109,7 @@ void CmdUart::txIrqHandler()
 /**
  * CmdUart RX handler
  */
-void CmdUart::rxIrqHandler()
+void BT_UART::rxIrqHandler()
 {
    // if (!(UARTGetStatus(LPC_USART0) & UART_STAT_RXRDY))
     //    return;
@@ -123,7 +123,7 @@ void CmdUart::rxIrqHandler()
 /**
  * CmdUart IRQ handler
  */
-void CmdUart::irqHandler()
+void BT_UART::irqHandler()
 {
    // if (UARTGetIntsEnabled(LPC_USART0) & UART_INTEN_TXRDY) {
         txIrqHandler();
@@ -138,7 +138,7 @@ void CmdUart::irqHandler()
  * Send one character, blocking call for echo purposes
  * @parameter[in] ch Character to send
  */
-void CmdUart::send(uint8_t ch) 
+void BT_UART::send(uint8_t ch) 
 {
    // while (!(UARTGetStatus(LPC_USART0) & UART_STAT_TXRDY))
         ;
@@ -149,7 +149,7 @@ void CmdUart::send(uint8_t ch)
  * Send the string asynch
  * @parameter[in] str String to send
  */
-void CmdUart::send(const util::string& str)
+void BT_UART::send(const util::string& str)
 {
     // wait for TX interrupt disabled when the previous transmission completed
     //while ((UARTGetIntsEnabled(LPC_USART0) & UART_INTEN_TXRDY)) {
@@ -168,6 +168,6 @@ void CmdUart::send(const util::string& str)
  */
 extern "C" void UART0_IRQHandler(void)
 {
-    if (CmdUart::instance())
-        CmdUart::instance()->irqHandler();
+    if (BT_UART::instance())
+        BT_UART::instance()->irqHandler();
 }

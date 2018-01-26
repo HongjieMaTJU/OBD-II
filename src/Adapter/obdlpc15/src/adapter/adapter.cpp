@@ -22,7 +22,7 @@ using namespace std;
 using namespace util;
 
 static string CmdBuffer(RX_CMD_LEN);
-static CmdUart* glblUart;
+static BT_UART* bt_uart;
 
 /**
  * Enable the clocks and peripherals, initialize the drivers
@@ -44,7 +44,7 @@ static void SetAllRegisters()
     // LPC I/O pins
     LPC_SYSCON->SYSAHBCLKCTRL0 |= (1 << 14); // PIO0
     
-    CmdUart::configure();
+    BT_UART::configure();
     EcuUart::configure();
     CanDriver::configure();
     AdptLED::configure();
@@ -66,9 +66,9 @@ static bool UserUartRcvHandler(uint8_t ch)
     }
 
     if (AdapterConfig::instance()->getBoolProperty(PAR_ECHO) && ch != '\n') {
-        glblUart->send(ch);
+        bt_uart->send(ch);
         if (ch == '\r' && AdapterConfig::instance()->getBoolProperty(PAR_LINEFEED)) {
-            glblUart->send('\n');
+            bt_uart->send('\n');
         }
     }
     
@@ -90,7 +90,7 @@ static bool UserUartRcvHandler(uint8_t ch)
  */
 void AdptSendString(const util::string& str)
 {
-    glblUart->send(str);
+    bt_uart->send(str);
 }
 
 const int UART_SPEED = 115200;
@@ -100,15 +100,15 @@ const int UART_SPEED = 115200;
  */
 static void AdapterRun() 
 {
-    glblUart = CmdUart::instance();
-    glblUart->init(UART_SPEED);
-    glblUart->handler(UserUartRcvHandler);
+    bt_uart = BT_UART::instance();
+    bt_uart->init(UART_SPEED);
+    bt_uart->handler(UserUartRcvHandler);
     AdptPowerModeConfigure();
     AdptDispatcherInit();
 
     for(;;) {    
-        if (glblUart->ready()) {
-            glblUart->ready(false);
+        if (bt_uart->ready()) {
+            bt_uart->ready(false);
             AdptOnCmd(CmdBuffer);
         }
         else {

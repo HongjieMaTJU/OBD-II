@@ -1,0 +1,12 @@
+20:04:56 **** Incremental Build of configuration Debug for project obdlpc15 ****
+make -r all 
+make: Nothing to be done for `all'.
+20:05:00 **** Incremental Build of configuration Debug for project obdlpc15 ****
+make -r all 
+make: Nothing to be done for `all'.
+20:05:02 **** Incremental Build of configuration Debug for project obdlpc15 ****
+make -r all 
+make: Nothing to be done for `all'.
+20:09:18 **** Incremental Build of configuration Debug for project obdlpc15 ****
+make -r all 
+make: Nothing to be done for `all'.

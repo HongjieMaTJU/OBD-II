@@ -161,7 +161,6 @@ CanDriver::CanDriver()
             __WFI(); // Go to sleep
         }
     }
-
     // Enable the CAN Interrupt
     NVIC_EnableIRQ(C_CAN0_IRQn);
 }
@@ -241,7 +240,7 @@ bool CanDriver::setFilterAndMask(uint32_t filter, uint32_t mask, bool extended)
 bool CanDriver::read(CanMsgBuffer* buff)
 {
     CAN_MSG_OBJ msg;
-    uint32_t mask = msgBitMask;
+    uint32_t mask = msgBitMask;  //msgBitMask indicates which msgobj is ready and wait to be read
     for (int i = 1; i < 32; i++) {
         uint32_t val = 1 << i;
         if (val & mask) {

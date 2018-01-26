@@ -13,7 +13,7 @@ class CanDriver;
 class CanHistory;
 struct CanMsgBuffer;
 
-class IsoCanAdapter : public ProtocolAdapter {
+class ISO15765_2 : public ProtocolAdapter {
 public:
     static const int CANSingleFrame      = 0;
     static const int CANFirstFrame       = 1;
@@ -29,7 +29,7 @@ public:
     virtual void wiringCheck();
     virtual void dumpBuffer();
 protected:
-    IsoCanAdapter();
+    ISO15765_2();
     virtual uint32_t getID() const = 0;
     virtual void setFilterAndMask() = 0;
     virtual void processFlowFrame(const CanMsgBuffer* msgBuffer) = 0;
@@ -49,9 +49,9 @@ protected:
     uint8_t     mask_[5];      // 4 bytes + length
 };
 
-class IsoCan11Adapter : public IsoCanAdapter {
+class ISO15765_2_11 : public ISO15765_2 {
 public:
-    IsoCan11Adapter() {}
+    ISO15765_2_11() {}
     virtual void getDescription();
     virtual void getDescriptionNum();
     virtual uint32_t getID() const;
@@ -62,9 +62,9 @@ public:
 private:
 };
 
-class IsoCan29Adapter : public IsoCanAdapter {
+class ISO15765_2_29 : public ISO15765_2 {
 public:
-    IsoCan29Adapter() { extended_ = true; }
+    ISO15765_2_29() { extended_ = true; }
     virtual void getDescription();
     virtual void getDescriptionNum();
     virtual uint32_t getID() const;

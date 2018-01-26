@@ -10,11 +10,11 @@
 
 #include "padapter.h"
 
-class OBDProfile {
+class ISO15031_5 {
 private:
-    OBDProfile();
+    ISO15031_5();
 public:
-    static OBDProfile* instance();
+    static ISO15031_5* instance();
     void getProfileDescription() const;
     void getProtocolDescription() const;
     void getProtocolDescriptionNum() const;

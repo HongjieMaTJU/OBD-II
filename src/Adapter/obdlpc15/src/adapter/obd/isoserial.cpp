@@ -162,17 +162,14 @@ bool IsoSerialAdapter::sendToEcu(const Ecumsg* msg, int p4Timeout)
  * @param[in] p2timeout The P2 timeout
  * @param[in] p1timeout The P1 timeout
  */
-void IsoSerialAdapter::receiveFromEcu(Ecumsg* msg, int maxLen, int p2Timeout, int p1Timeout)
+void ISO14230_2::receiveFromEcu(Ecumsg* msg, int maxLen, int p2Timeout, int p1Timeout)
 {
     msg->length(0);
     
-    // Set the req/reply operation timeout
     Timer* timer = Timer::instance(1);
     timer->start(p2Timeout);
     int i = 0;
     for(; i < maxLen; i++) {
-    	//只可以接受小于最大长度的数据255字节
-        // 清除串口上一次残留数据
         uart_->clear();
 
         // 等待有效数据
@@ -199,38 +196,25 @@ bool IsoSerialAdapter::ecuSlowInit()
     // Sending 0x33 at 5bps
     const int BIT_INTERVAL = 200; // 200ms
     bool sts = true;
-
     TX_LED(1); // Turn the transmit LED on
-
-    // Disable USART
-    uart_->setBitBang(true);
-
+    k_uart_->setBitBang(true);
     uint16_t ch = isoInitByte_;
     ch <<= 1;    // Shift to accommodate start bit
     ch |= 0x200; // Add stop bit
-
     for (int i = 0; i < 10; i++) {
         uint8_t val = (ch & 0x01);
-        uart_->setBit(val);
+        k_uart_->setBit(val);
         Delay1ms(BIT_INTERVAL);
         ch >>= 1;
     }
-
-    TX_LED(0); // Turn the transmit LED off
-
-    // Get the feedback status, the last bit (stop bit)
-    if (!uart_->getBit()) {
+    if (!k_uart_->getBit()) {
         sts = false;   // Wiring error, no +12V power?
     }
-    
-    // Enable USART
-    uart_->setBitBang(false);
-    
-    // Do we have Rx overrun issue?
-    uart_->clear();
+    k_uart_->setBitBang(false);
+    k_uart_->clear();
     
     // Clear Rx FIFO
-    uart_->clearRxFifo();
+    k_uart_->clearRxFifo();
 
     return sts;
 }

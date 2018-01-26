@@ -188,7 +188,7 @@ int VpwAdapter::onConnectEcu(bool sendReply)
 
     open();
 
-    if (OBDProfile::instance()->getProtocol() == PROT_J1850_VPW) {
+    if (ISO15031_5::instance()->getProtocol() == PROT_J1850_VPW) {
     	connected_ = true;
     	return PROT_J1850_VPW;
     }

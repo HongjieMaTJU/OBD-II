@@ -140,7 +140,7 @@ static void OnSendReplyCopyright(const string& cmd, int par)
  */
 static void OnWiringTest(const string& cmd, int par)
 {
-    OBDProfile::instance()->wiringCheck();
+    ISO15031_5::instance()->wiringCheck();
 }
 
 /**
@@ -170,7 +170,7 @@ static void OnSendReplyVersion(const string& cmd, int par)
  */
 static void OnBufferDump(const string& cmd, int par)
 {
-    OBDProfile::instance()->dumpBuffer();    
+    ISO15031_5::instance()->dumpBuffer();    
 }
 
 /**
@@ -180,7 +180,7 @@ static void OnBufferDump(const string& cmd, int par)
  */
 static void OnProtocolDescribe(const string& cmd, int par)
 {    
-    OBDProfile::instance()->getProtocolDescription(); 
+    ISO15031_5::instance()->getProtocolDescription(); 
 }
 
 /**
@@ -190,7 +190,7 @@ static void OnProtocolDescribe(const string& cmd, int par)
  */
 static void OnProtocolDescribeNum(const string& cmd, int par)
 {
-    OBDProfile::instance()->getProtocolDescriptionNum(); 
+    ISO15031_5::instance()->getProtocolDescriptionNum(); 
 }
 
 /**
@@ -215,7 +215,7 @@ static void OnSetIsoBaudRate(const string& cmd, int par)
  */
 static void OnKwDisplay(const string& cmd, int par)
 {
-    OBDProfile::instance()->kwDisplay();
+    ISO15031_5::instance()->kwDisplay();
 }
 
 static void OnJ1939Monitor(const string& cmd, int par)
@@ -241,7 +241,7 @@ static void OnSetRcvAddress(const string& cmd, int par)
  */
 static void OnProtocolClose(const string& cmd, int par)
 {
-    OBDProfile::instance()->closeProtocol();
+    ISO15031_5::instance()->closeProtocol();
 }
 
 /**
@@ -290,7 +290,7 @@ static void OnSetProtocol(const string& cmd, int par)
     }
     
     AdapterConfig::instance()->setBoolProperty(PAR_USE_AUTO_SP, useAutoSP);
-    OBDProfile::instance()->setProtocol(protocol, true);
+    ISO15031_5::instance()->setProtocol(protocol, true);
     AdptSendReply(OkMessage);
 }
 
@@ -523,7 +523,7 @@ void AdptOnCmd(string& cmdString)
     // Do we have AT sequence here?
     if (cmdString.substr(0,2) != "AT") { // Not AT sequence
         if (is_xdigits(cmdString)) {     // Should be only digits
-            OBDProfile::instance()->onRequest(cmdString);
+            ISO15031_5::instance()->onRequest(cmdString);
             succeeded = true;
         }
     }
@@ -551,7 +551,7 @@ void AdptDispatcherInit()
  */
 void AdptCheckHeartBeat()
 {
-    OBDProfile::instance()->sendHeartBeat();
+    ISO15031_5::instance()->sendHeartBeat();
 }
 
 /**

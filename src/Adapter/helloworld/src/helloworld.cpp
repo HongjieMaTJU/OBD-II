@@ -22,7 +22,7 @@ using namespace std;
 using namespace util;
 
 static string CmdBuffer(RX_CMD_LEN);
-static CmdUart* glblUart;
+static BT_UART* glblUart;
 
 /**
  * Enable the clocks and peripherals, initialize the drivers
@@ -44,7 +44,7 @@ static void SetAllRegisters()
     // LPC I/O pins
    // LPC_SYSCON->SYSAHBCLKCTRL0 |= (1 << 14); // PIO0
 
-    CmdUart::configure();
+    BT_UART::configure();
     EcuUart::configure();
     CanDriver::configure();
     AdptLED::configure();
@@ -100,7 +100,7 @@ const int UART_SPEED = 115200;
  */
 static void AdapterRun()
 {
-    glblUart = CmdUart::instance();
+    glblUart = BT_UART::instance();
     glblUart->init(UART_SPEED);
     glblUart->handler(UserUartRcvHandler);
     AdptPowerModeConfigure();

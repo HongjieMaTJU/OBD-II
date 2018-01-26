@@ -28,8 +28,8 @@ ProtocolAdapter* ProtocolAdapter::getAdapter(int adapterType)
     static PwmAdapter  pwmAdapter;
     static AutoAdapter autoAdapter;
     static IsoSerialAdapter isoAdapter;
-    static IsoCan11Adapter canAdapter;
-    static IsoCan29Adapter canExtAdapter;
+    static ISO15765_2_11 canAdapter;
+    static ISO15765_2_29 canExtAdapter;
 
     switch (adapterType) {
         case ADPTR_AUTO:
